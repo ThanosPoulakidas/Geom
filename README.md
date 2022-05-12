@@ -3,27 +3,27 @@
 
   
 
-[![][Fontbakery]](https://googlefonts.github.io/googlefonts-project-template/fontbakery/fontbakery-report.html)
+[![][Fontbakery]](https://ThanosPoulakidas.github.io/Geom/fontbakery/fontbakery-report.html)
 
-[![][Universal]](https://googlefonts.github.io/googlefonts-project-template/fontbakery/fontbakery-report.html)
+[![][Universal]](https://ThanosPoulakidas.github.io/Geom/fontbakery/fontbakery-report.html)
 
-[![][GF Profile]](https://googlefonts.github.io/googlefonts-project-template/fontbakery/fontbakery-report.html)
+[![][GF Profile]](https://ThanosPoulakidas.github.io/Geom/fontbakery/fontbakery-report.html)
 
-[![][Outline Correctness]](https://googlefonts.github.io/googlefonts-project-template/fontbakery/fontbakery-report.html)
+[![][Outline Correctness]](https://ThanosPoulakidas.github.io/Geom/fontbakery/fontbakery-report.html)
 
-[![][Shaping]](https://googlefonts.github.io/googlefonts-project-template/fontbakery/fontbakery-report.html)
+[![][Shaping]](https://ThanosPoulakidas.github.io/Geom/fontbakery/fontbakery-report.html)
 
   
 
-[Fontbakery]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fgooglefonts-project-template%2Fgh-pages%2Fbadges%2Foverall.json
+[Fontbakery]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FThanosPoulakidas%2FGeom%2Fgh-pages%2Fbadges%2Foverall.json
 
-[GF Profile]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fgooglefonts-project-template%2Fgh-pages%2Fbadges%2FGoogleFonts.json
+[GF Profile]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FThanosPoulakidas%2FGeom%2Fgh-pages%2Fbadges%2FGoogleFonts.json
 
-[Outline Correctness]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fgooglefonts-project-template%2Fgh-pages%2Fbadges%2FOutlineCorrectnessChecks.json
+[Outline Correctness]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FThanosPoulakidas%2FGeom%2Fgh-pages%2Fbadges%2FOutlineCorrectnessChecks.json
 
-[Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fgooglefonts-project-template%2Fgh-pages%2Fbadges%2FShapingChecks.json
+[Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FThanosPoulakidas%2FGeom%2Fgh-pages%2Fbadges%2FShapingChecks.json
 
-[Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fgooglefonts-project-template%2Fgh-pages%2Fbadges%2FUniversal.json
+[Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FThanosPoulakidas%2FGeom%2Fgh-pages%2Fbadges%2FUniversal.json
 
   
 
@@ -61,7 +61,7 @@ If you want to build fonts manually on your own computer:
 
   
 
-The proof files and QA tests are also available automatically via GitHub Actions - look at `https://yourname.github.io/your-font-repository-name`.
+The proof files and QA tests are also available automatically via GitHub Actions - look at https://ThanosPoulakidas.github.io/Geom.
 
   
 
