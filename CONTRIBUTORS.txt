@@ -8,3 +8,7 @@
 #
 # Names should be added to this file as:
 # Name <email address>
+
+Thanos Poulakidas <thanospoulakidas@gmail.com>
+
+

@@ -1,7 +1,7 @@
 sources:
-  - Rubik.glyphs
-  - Rubik-Italic.glyphs
+  - Geom-Light.glyphs
+  - Geom-Ultra.glyphs
+  - Geom-Variable.glyphs
 axisOrder:
   - wght
-  - ital
-familyName: Rubik
+familyName: Geom
