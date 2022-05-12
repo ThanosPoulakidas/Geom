@@ -1,88 +1,104 @@
+
 # GEOM
-Geom is a variable and static sans typeface designed by Thanos Poulakidas.
 
+  
 
-## Basic Information
+[![][Fontbakery]](https://googlefonts.github.io/googlefonts-project-template/fontbakery/fontbakery-report.html)
+
+[![][Universal]](https://googlefonts.github.io/googlefonts-project-template/fontbakery/fontbakery-report.html)
+
+[![][GF Profile]](https://googlefonts.github.io/googlefonts-project-template/fontbakery/fontbakery-report.html)
+
+[![][Outline Correctness]](https://googlefonts.github.io/googlefonts-project-template/fontbakery/fontbakery-report.html)
+
+[![][Shaping]](https://googlefonts.github.io/googlefonts-project-template/fontbakery/fontbakery-report.html)
+
+  
+
+[Fontbakery]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fgooglefonts-project-template%2Fgh-pages%2Fbadges%2Foverall.json
+
+[GF Profile]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fgooglefonts-project-template%2Fgh-pages%2Fbadges%2FGoogleFonts.json
+
+[Outline Correctness]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fgooglefonts-project-template%2Fgh-pages%2Fbadges%2FOutlineCorrectnessChecks.json
+
+[Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fgooglefonts-project-template%2Fgh-pages%2Fbadges%2FShapingChecks.json
+
+[Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fgooglefonts-project-template%2Fgh-pages%2Fbadges%2FUniversal.json
+
+  
+
 Geom, is a contemporary geometric sans serif typeface. It has 7 weights. This typeface is intended for display purposes but it works just as well in small texts. Even though the geometric typefaces look more dynamic in relation with other typefaces, Geom has gone one step further by having an even more additional dynamic characteristics on some of its characters. The typeface is a variable font which includes a Latin and Greek character set.
 
+  
 
-**Variable Axes**
+![Sample Image](documentation/image1.png)
+
+## Variable Axes
 
 Geom has the following axes:
 
-- Weight (wght) - 300 to 900. (Default 300) Controls the darkness of the composed text. 
+  
+- Weight (wght) - 300 to 900. (Default 300) Controls the darkness of the composed text.
+  
 
+## Building
 
-**Language Support**
-<details>
-<summary>Expand</summary>
-<p>
-Latin: English
-<p>
-Greek: Monotonic Modern Greek.
-<p>
-</details>  
+  
 
-## Building the fonts
+Fonts are built automatically by GitHub Actions - take a look in the "Actions" tab for the latest build.
 
-### Step 1: Install Requirements
+  
 
-Set up a virtual environment in the root directory:
+If you want to build fonts manually on your own computer:
 
-```
-virtualenv -p python3 venv
-```
+  
 
-Activate the virtual environment with:
+*  `make build` will produce font files.
 
-```
-source venv/bin/activate
-```
+*  `make test` will run [FontBakery](https://github.com/googlefonts/fontbakery)'s quality assurance tests.
 
-Install requirements with:
+*  `make proof` will generate HTML proof files.
 
-```
-pip install -U -r requirements.txt
-```
+  
 
-### Step 2: Build the fonts
+The proof files and QA tests are also available automatically via GitHub Actions - look at `https://yourname.github.io/your-font-repository-name`.
 
-**Building the fonts**
+  
 
-The scripts for building the fonts are in the `/sources/` folder.
+## Changelog
 
-To build the variable font run:
+  
 
-```
-cd sources
-sh build_vf.sh
-```
+When you update your font (new version or new release), please report all notable changes here, with a date.
 
-To build the static ttfs run:
+[Font Versioning](https://github.com/googlefonts/gf-docs/tree/main/Spec#font-versioning) is based on semver.
 
-```
-cd sources
-sh build_statics.sh
-```
+Changelog example:
 
-To build the variable font and the static ttfs run:
+  
 
-```
-cd sources
-sh build_all.sh
-```  
+**26 May 2021. Version 2.13**
 
-If you want to build otf's do so through Glyphs using the source Glyphs file. 
+- MAJOR Font turned to a variable font.
 
+- SIGNIFICANT New Stylistic sets added.
 
-```
-
-## ChangeLog
-
-This is version 1.000. No changes to report. 
+  
 
 ## License
 
-Geom is licensed under the SIL Open Font License v1.1 (<http://scripts.sil.org/OFL>).
+  
 
-To view the copyright and specific terms and conditions please refer to [OFL.txt](https://github.com/ThanosPoulakidas/Geom/blob/main/OFL.txt)
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+This license is available with a FAQ at
+
+https://scripts.sil.org/OFL
+
+  
+
+## Repository Layout
+
+  
+
+This font repository structure is inspired by [Unified Font Repository v0.3](https://github.com/unified-font-repository/Unified-Font-Repository), modified for the Google Fonts workflow.
