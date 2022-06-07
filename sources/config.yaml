@@ -1,7 +1,12 @@
 sources:
   - Geom-Light.glyphs
+  - Geom-Regular.glyphs
+  - Geom-Medium.glyphs
+  - Geom-Semi.glyphs
+  - Geom-Bold.glyphs
+  - Geom-Extra.glyphs
   - Geom-Ultra.glyphs
-  - Geom-Variable.glyphs
+  - Geom[wght].glyphs
 axisOrder:
   - wght
 familyName: Geom
