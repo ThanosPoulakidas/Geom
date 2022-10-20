@@ -1,9 +1,0 @@
-/* Webfont: Geom-Light */@font-face {
-    font-family: 'GeomLight';
-    src: url('Geom-Light.woff2') format('woff2'), /* Modern Browsers */
-         url('Geom-Light.otf') format('opentype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-

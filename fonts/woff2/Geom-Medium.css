@@ -1,9 +1,0 @@
-/* Webfont: Geom-Medium */@font-face {
-    font-family: 'GeomMed';
-    src: url('Geom-Medium.woff2') format('woff2'), /* Modern Browsers */
-         url('Geom-Medium.otf') format('opentype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-

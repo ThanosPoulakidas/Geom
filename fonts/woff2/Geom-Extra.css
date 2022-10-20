@@ -1,9 +1,0 @@
-/* Webfont: Geom-Extra */@font-face {
-    font-family: 'Geom';
-    src: url('Geom-Extra.woff2') format('woff2'), /* Modern Browsers */
-         url('Geom-Extra.otf') format('opentype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-

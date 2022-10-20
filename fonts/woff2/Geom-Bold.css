@@ -1,9 +1,0 @@
-/* Webfont: Geom-Bold */@font-face {
-    font-family: 'Geom';
-    src: url('Geom-Bold.woff2') format('woff2'), /* Modern Browsers */
-         url('Geom-Bold.otf') format('opentype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-
