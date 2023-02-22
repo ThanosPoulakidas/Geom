@@ -38,7 +38,7 @@ Geom, is a contemporary geometric sans serif typeface. It has 7 weights. This ty
 Geom has the following axes:
 
   
-- Weight (wght) - 300 to 900. (Default 300) Controls the darkness of the composed text.
+- Weight (wght) - 300 to 900. (Default 400) Controls the darkness of the composed text.
   
 
 ## Building
