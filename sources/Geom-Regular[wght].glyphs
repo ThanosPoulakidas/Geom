@@ -588,6 +588,7 @@ oH = 161;
 oV = 185;
 tH = 153;
 }
+}
 },
 {
 name = GSDimensionPlugin.Dimensions;
