@@ -3,5 +3,6 @@ sources:
 axisOrder:
   - wght
 familyName: Geom
-removeOutlineOverlaps: false
+removeOutlineOverlaps: 
+  - false
 
