@@ -1,1431 +1,2655 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.8
+Fontbakery version: 0.8.13
 
-<details><summary><b>[11] Rubik-BoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
-
-
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+<details><summary><b>[20] Geom-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+* 🔥 **FAIL** In this font fsType is set to 4 meaning that:
+The font may be embedded, and temporarily loaded on the remote system, but documents that use it must not be editable.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright (c) 2022 The Geom Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.sTypoLineGap is "9" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 982 when it should be at least 1200 [code: bad-hhea-range]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Geom-Light.ttf', 'fonts/ttf/Geom-Black.ttf', 'fonts/ttf/Geom-SemiBold.ttf', 'fonts/ttf/Geom-Medium.ttf', 'fonts/ttf/Geom-Regular.ttf', 'fonts/ttf/Geom-Bold.ttf', 'fonts/ttf/Geom-ExtraBold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1056, but got 759 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 278, but got 259 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 sTypoLineGap (9) and hhea lineGap (0) must be equal. [code: lineGap]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: i̇ ǐ i̒ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ j̆ j̇ j̊ j̋ ǰ j̒ j̧̀ j̧́ j̧̃ j̧̄ j̧̆ j̧̇ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Space and non-breaking space have the same width? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_widths">com.google.fonts/check/whitespace_widths</a>)</summary><div>
+
+
+* 🔥 **FAIL** Space and non-breaking space have differing width: The space glyph named space is 280 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has "Sidebearing arithmetic" (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* uni0499
-	* hbar
-	* uni0525
-	* uni00B5
-	* uni04A2
-	* uni049B
-	* uni05D2
-	* uni05EA
-	* uni05DC and 48 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
-
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
+
+	- NULL.1
+
+	- Upsilondieresis_alt
+
+	- f_t
+
+	- i.loclTRK
+
+	- periodcentered.loclCAT
+
+	- periodcentered.loclCAT.case
+
+	- t_t
+
+	- tonos.case
+
+	- uni000D
+
+	- uni004A0301
+
+	- uni006A0301
+
 	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
+
+	- uni0394
+
+	- uni0394.1
+
+	- uni03BC.001
+
+	- uni2126 
+
+	- w_w_w
  [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2 
-	- And Glyph name: uni00AD	Contours detected: 1	Expected: 0
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
 
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* quotedbl (U+0022): X=279.0,Y=702.0 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=488.5,Y=702.0 (should be at cap-height 700?)
-	* dollar (U+0024): X=477.0,Y=701.0 (should be at cap-height 700?)
-	* quotesingle (U+0027): X=279.0,Y=702.0 (should be at cap-height 700?)
-	* at (U+0040): X=704.5,Y=0.5 (should be at baseline 0?)
-	* macron (U+00AF): X=46.0,Y=698.0 (should be at cap-height 700?)
-	* macron (U+00AF): X=370.0,Y=698.0 (should be at cap-height 700?)
-	* aring (U+00E5): X=411.5,Y=699.0 (should be at cap-height 700?)
-	* aring (U+00E5): X=368.0,Y=699.0 (should be at cap-height 700?)
-	* amacron (U+0101): X=228.0,Y=698.0 (should be at cap-height 700?) and 57 more.
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
 
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni05DC (U+05DC): L<<238.0,434.0>--<237.0,434.0>> -> L<<237.0,434.0>--<105.0,434.0>>
-	* uni05DC (U+05DC): L<<261.0,434.0>--<238.0,434.0>> -> L<<238.0,434.0>--<237.0,434.0>>
-	* uniFB3C (U+FB3C): L<<238.0,434.0>--<237.0,434.0>> -> L<<237.0,434.0>--<105.0,434.0>> and uniFB3C (U+FB3C): L<<261.0,434.0>--<238.0,434.0>> -> L<<238.0,434.0>--<237.0,434.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
 
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** The following glyphs have jaggy segments:
-	* uni0494 (U+0494): B<<252.0,236.0>-<233.0,219.0>-<227.0,188.0>>/L<<227.0,188.0>--<227.0,190.0>> = 10.954062643398332 and uni0494 (U+0494): L<<227.0,188.0>--<227.0,190.0>>/L<<227.0,190.0>--<192.0,25.0>> = 11.976132444203333 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] Rubik-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
 
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
 
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
 
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* hbar
-	* uni0525
-	* uni04A2
-	* uni049B
-	* uni05D2
-	* uni044E
-	* zero.zero
-	* uni05B8
-	* uni04E8 and 30 more.
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
 
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
 
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
 
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
 
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
 
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
-	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
 
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: uni0493	Contours detected: 2	Expected: 1
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-	- And Glyph name: uni0493	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
 
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* i (U+0069): X=62.0,Y=702.0 (should be at cap-height 700?)
-	* i (U+0069): X=202.0,Y=702.0 (should be at cap-height 700?)
-	* j (U+006A): X=73.0,Y=702.0 (should be at cap-height 700?)
-	* j (U+006A): X=216.0,Y=702.0 (should be at cap-height 700?)
-	* j (U+006A): X=77.0,Y=1.0 (should be at baseline 0?)
-	* j (U+006A): X=212.0,Y=-1.0 (should be at baseline 0?)
-	* braceleft (U+007B): X=255.0,Y=-1.5 (should be at baseline 0?)
-	* uni00B5 (U+00B5): X=323.0,Y=1.0 (should be at baseline 0?)
-	* atilde (U+00E3): X=170.5,Y=701.0 (should be at cap-height 700?)
-	* ntilde (U+00F1): X=201.5,Y=701.0 (should be at cap-height 700?) and 64 more.
+* ⚠ **WARN** The most common width is 604 among a set of 4 math glyphs.
+The following math glyphs have a different width, though:
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
+Width = 585:
+plus
+
+Width = 594:
+less
+
+Width = 568:
+equal
+
+Width = 593:
+greater
+
+Width = 591:
+logicalnot, plusminus
+
+Width = 638:
+multiply
+
+Width = 634:
+approxequal
+
+Width = 586:
+notequal
+ [code: width-outliers]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+</div></details><details><summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info">com.google.fonts/check/gpos_kerning_info</a>)</summary><div>
+
+
+* ⚠ **WARN** GPOS table lacks kerning information. [code: lacks-kern-info]
+</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have segments which seem very short:
+
+	* quotedbl (U+0022) contains a short segment L<<188.0,708.0>--<188.0,708.0>>
+
+	* quotedbl (U+0022) contains a short segment L<<367.0,708.0>--<367.0,708.0>>
+
+	* quotesingle (U+0027) contains a short segment L<<188.0,708.0>--<188.0,708.0>>
+
+	* three (U+0033) contains a short segment B<<201.0,370.0>-<210.0,372.0>-<219.0,373.5>>
+
+	* three (U+0033) contains a short segment B<<219.0,373.5>-<228.0,375.0>-<237.0,375.5>>
+
+	* three (U+0033) contains a short segment B<<237.0,375.5>-<246.0,376.0>-<255.0,376.5>>
+
+	* three (U+0033) contains a short segment B<<255.0,376.5>-<264.0,377.0>-<273.0,377.0>>
+
+	* at (U+0040) contains a short segment B<<687.0,158.0>-<672.0,158.0>-<660.5,164.0>>
+
+	* at (U+0040) contains a short segment B<<660.5,164.0>-<649.0,170.0>-<641.5,180.5>>
+
+	* at (U+0040) contains a short segment B<<641.5,180.5>-<634.0,191.0>-<630.0,206.0>>
+
+	* at (U+0040) contains a short segment B<<630.0,206.0>-<626.0,221.0>-<626.0,239.0>>
+
+	* onequarter (U+00BC) contains a short segment B<<496.0,289.0>-<496.0,290.0>-<496.5,290.5>>
+
+	* onequarter (U+00BC) contains a short segment B<<496.5,290.5>-<497.0,291.0>-<497.0,291.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<595.0,289.0>-<595.0,290.0>-<595.5,290.5>>
+
+	* threequarters (U+00BE) contains a short segment B<<595.5,290.5>-<596.0,291.0>-<596.0,291.0>>
+
+	* Oslash (U+00D8) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
+
+	* Oslash (U+00D8) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
+
+	* ae (U+00E6) contains a short segment B<<280.0,491.0>-<273.0,492.0>-<266.5,492.0>>
+
+	* ae (U+00E6) contains a short segment B<<266.5,492.0>-<260.0,492.0>-<253.0,492.0>>
+
+	* ae (U+00E6) contains a short segment B<<226.0,421.0>-<232.0,422.0>-<238.0,422.0>>
+
+	* ae (U+00E6) contains a short segment B<<238.0,422.0>-<244.0,422.0>-<250.0,422.0>>
+
+	* ae (U+00E6) contains a short segment B<<31.0,171.0>-<31.0,163.0>-<31.5,156.5>>
+
+	* ae (U+00E6) contains a short segment B<<31.5,156.5>-<32.0,150.0>-<33.0,143.0>>
+
+	* ae (U+00E6) contains a short segment B<<207.0,-10.0>-<213.0,-11.0>-<219.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<219.0,-11.0>-<225.0,-11.0>-<231.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<621.0,-10.0>-<628.0,-11.0>-<634.5,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<634.5,-11.0>-<641.0,-11.0>-<648.0,-11.0>>
+
+	* thorn (U+00FE) contains a short segment L<<142.0,62.0>--<144.0,62.0>>
+
+	* Eng (U+014A) contains a short segment B<<535.0,-125.0>-<527.0,-125.0>-<518.5,-123.5>>
+
+	* Eng (U+014A) contains a short segment B<<518.5,-123.5>-<510.0,-122.0>-<502.0,-119.0>>
+
+	* Eng (U+014A) contains a short segment B<<502.0,-187.0>-<513.0,-190.0>-<525.0,-192.0>>
+
+	* Eng (U+014A) contains a short segment B<<525.0,-192.0>-<537.0,-194.0>-<552.0,-194.0>>
+
+	* eng (U+014B) contains a short segment B<<349.0,-125.0>-<341.0,-125.0>-<332.5,-123.5>>
+
+	* eng (U+014B) contains a short segment B<<332.5,-123.5>-<324.0,-122.0>-<316.0,-119.0>>
+
+	* OE (U+0152) contains a short segment B<<520.0,0.0>-<508.0,-4.0>-<495.5,-6.0>>
+
+	* OE (U+0152) contains a short segment B<<495.5,-6.0>-<483.0,-8.0>-<470.0,-10.0>>
+
+	* OE (U+0152) contains a short segment B<<470.0,-10.0>-<457.0,-12.0>-<444.0,-13.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<280.0,491.0>-<273.0,492.0>-<266.5,492.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<266.5,492.0>-<260.0,492.0>-<253.0,492.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<226.0,421.0>-<232.0,422.0>-<238.0,422.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<238.0,422.0>-<244.0,422.0>-<250.0,422.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<31.0,171.0>-<31.0,163.0>-<31.5,156.5>>
+
+	* aeacute (U+01FD) contains a short segment B<<31.5,156.5>-<32.0,150.0>-<33.0,143.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<207.0,-10.0>-<213.0,-11.0>-<219.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<219.0,-11.0>-<225.0,-11.0>-<231.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<621.0,-10.0>-<628.0,-11.0>-<634.5,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<634.5,-11.0>-<641.0,-11.0>-<648.0,-11.0>>
+
+	* Oslashacute (U+01FE) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
+
+	* Oslashacute (U+01FE) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
+
+	* minute (U+2032) contains a short segment L<<147.0,708.0>--<147.0,708.0>>
+
+	* second (U+2033) contains a short segment L<<147.0,708.0>--<147.0,708.0>>
+
+	* second (U+2033) contains a short segment L<<326.0,708.0>--<326.0,708.0>>
+
+	* uni2074 (U+2074) contains a short segment B<<201.0,575.0>-<201.0,576.0>-<201.5,576.5>>
+
+	* uni2074 (U+2074) contains a short segment B<<201.5,576.5>-<202.0,577.0>-<202.0,577.0>>
+
+	* Euro (U+20AC) contains a short segment B<<503.0,590.5>-<509.0,596.0>-<514.0,601.0>>
+
+	* Euro (U+20AC) contains a short segment B<<514.0,601.0>-<519.0,606.0>-<524.5,611.5>>
+
+	* uni2113 (U+2113) contains a short segment B<<307.0,47.0>-<303.0,47.0>-<300.0,47.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<300.0,47.0>-<297.0,47.0>-<293.0,48.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<404.0,564.0>-<405.0,569.0>-<405.0,574.5>>
+
+	* uni2113 (U+2113) contains a short segment B<<405.0,574.5>-<405.0,580.0>-<405.0,585.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<293.0,715.0>-<293.0,715.0>-<293.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<293.0,715.0>-<293.0,715.0>-<293.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<164.0,538.0>-<164.0,538.0>-<164.0,538.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<164.0,538.0>-<164.0,538.0>-<164.0,538.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<164.0,143.0>-<164.0,137.0>-<164.0,130.5>> 
+
+	* uni2113 (U+2113) contains a short segment B<<164.0,130.5>-<164.0,124.0>-<164.0,118.0>> [code: found-short-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni0524 (U+0524): L<<512.0,24.0>--<512.0,124.0>> -> L<<512.0,124.0>--<512.0,125.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
+
+	* Eng (U+014A): L<<666.0,-37.0>--<666.0,0.0>> -> L<<666.0,0.0>--<666.0,705.0>>
+
+	* Oslash (U+00D8): L<<235.0,129.0>--<435.0,332.0>> -> L<<435.0,332.0>--<635.0,534.0>>
+
+	* Oslashacute (U+01FE): L<<235.0,129.0>--<435.0,332.0>> -> L<<435.0,332.0>--<635.0,534.0>>
+
+	* exclam (U+0021): L<<172.0,203.0>--<189.0,621.0>> -> L<<189.0,621.0>--<193.0,705.0>>
+
+	* exclam (U+0021): L<<95.0,705.0>--<99.0,621.0>> -> L<<99.0,621.0>--<117.0,203.0>>
+
+	* exclamdbl (U+203C): L<<172.0,203.0>--<189.0,621.0>> -> L<<189.0,621.0>--<193.0,705.0>>
+
+	* exclamdbl (U+203C): L<<314.0,705.0>--<318.0,621.0>> -> L<<318.0,621.0>--<336.0,203.0>>
+
+	* exclamdbl (U+203C): L<<391.0,203.0>--<408.0,621.0>> -> L<<408.0,621.0>--<412.0,705.0>>
+
+	* exclamdbl (U+203C): L<<95.0,705.0>--<99.0,621.0>> -> L<<99.0,621.0>--<117.0,203.0>>
+
+	* exclamdown (U+00A1): L<<118.0,324.0>--<102.0,-53.0>> -> L<<102.0,-53.0>--<96.0,-179.0>>
+
+	* exclamdown (U+00A1): L<<194.0,-179.0>--<189.0,-53.0>> -> L<<189.0,-53.0>--<173.0,324.0>>
+
+	* minute (U+2032): L<<85.0,443.0>--<135.0,655.0>> -> L<<135.0,655.0>--<147.0,708.0>>
+
+	* quotedbl (U+0022): L<<126.0,443.0>--<176.0,655.0>> -> L<<176.0,655.0>--<188.0,708.0>>
+
+	* quotedbl (U+0022): L<<305.0,443.0>--<355.0,655.0>> -> L<<355.0,655.0>--<367.0,708.0>>
+
+	* quotesingle (U+0027): L<<126.0,443.0>--<176.0,655.0>> -> L<<176.0,655.0>--<188.0,708.0>>
+
+	* second (U+2033): L<<264.0,443.0>--<314.0,655.0>> -> L<<314.0,655.0>--<326.0,708.0>>
+
+	* second (U+2033): L<<85.0,443.0>--<135.0,655.0>> -> L<<135.0,655.0>--<147.0,708.0>> 
+
+	* thorn (U+00FE): L<<142.0,-247.0>--<142.0,-12.0>> -> L<<142.0,-12.0>--<142.0,62.0>> [code: found-colinear-vectors]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
- * g (U+0067): L<<548.0,495.0>--<549.0,13.0>>
- * gbreve (U+011F): L<<548.0,495.0>--<549.0,13.0>>
- * gcircumflex (U+011D): L<<548.0,495.0>--<549.0,13.0>>
- * gdotaccent (U+0121): L<<548.0,495.0>--<549.0,13.0>>
- * uni0123 (U+0123): L<<548.0,495.0>--<549.0,13.0>>
- * uni0434 (U+0434): L<<208.0,106.0>--<403.0,107.0>>
- * uni05E9 (U+05E9): L<<182.0,547.0>--<184.0,284.0>>
- * uni05EA (U+05EA): L<<246.0,0.0>--<72.0,1.0>>
- * uniFB2A (U+FB2A): L<<182.0,547.0>--<184.0,284.0>>
- * uniFB2B (U+FB2B): L<<182.0,547.0>--<184.0,284.0>> and 4 more.
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] Rubik-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+	* Pi (U+03A0): L<<610.0,705.0>--<80.0,706.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[19] Geom-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+* 🔥 **FAIL** In this font fsType is set to 4 meaning that:
+The font may be embedded, and temporarily loaded on the remote system, but documents that use it must not be editable.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright (c) 2022 The Geom Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.sTypoLineGap is "9" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 982 when it should be at least 1200 [code: bad-hhea-range]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Geom-Light.ttf', 'fonts/ttf/Geom-Black.ttf', 'fonts/ttf/Geom-SemiBold.ttf', 'fonts/ttf/Geom-Medium.ttf', 'fonts/ttf/Geom-Regular.ttf', 'fonts/ttf/Geom-Bold.ttf', 'fonts/ttf/Geom-ExtraBold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1056, but got 759 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 278, but got 259 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 sTypoLineGap (9) and hhea lineGap (0) must be equal. [code: lineGap]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: i̇ ǐ i̒ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ j̆ j̇ j̊ j̋ ǰ j̒ j̧̀ j̧́ j̧̃ j̧̄ j̧̆ j̧̇ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Space and non-breaking space have the same width? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_widths">com.google.fonts/check/whitespace_widths</a>)</summary><div>
+
+
+* 🔥 **FAIL** Space and non-breaking space have differing width: The space glyph named space is 280 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has "Sidebearing arithmetic" (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* uni0423
-	* uni0499
-	* hbar
-	* uni0525
-	* uni04A2
-	* uni045E
-	* uni049B
-	* uni05D2
-	* uni05EA and 51 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
-
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
+
+	- NULL.1
+
+	- Upsilondieresis_alt
+
+	- f_t
+
+	- i.loclTRK
+
+	- periodcentered.loclCAT
+
+	- periodcentered.loclCAT.case
+
+	- t_t
+
+	- tonos.case
+
+	- uni000D
+
+	- uni004A0301
+
+	- uni006A0301
+
 	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
+
+	- uni0394
+
+	- uni0394.1
+
+	- uni03BC.001
+
+	- uni2126 
+
+	- w_w_w
  [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: uni0493	Contours detected: 2	Expected: 1
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-	- And Glyph name: uni0493	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
 
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* quotedbl (U+0022): X=289.5,Y=700.5 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=484.5,Y=700.5 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=34.5,Y=700.5 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=229.5,Y=700.5 (should be at cap-height 700?)
-	* ampersand (U+0026): X=406.5,Y=-2.0 (should be at baseline 0?)
-	* quotesingle (U+0027): X=34.5,Y=700.5 (should be at cap-height 700?)
-	* quotesingle (U+0027): X=229.5,Y=700.5 (should be at cap-height 700?)
-	* b (U+0062): X=53.0,Y=702.0 (should be at cap-height 700?)
-	* b (U+0062): X=276.0,Y=702.0 (should be at cap-height 700?)
-	* d (U+0064): X=385.0,Y=702.0 (should be at cap-height 700?) and 84 more.
+* ⚠ **WARN** The most common width is 691 among a set of 3 math glyphs.
+The following math glyphs have a different width, though:
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
+Width = 674:
+plus
+
+Width = 666:
+less
+
+Width = 653:
+equal
+
+Width = 667:
+greater
+
+Width = 686:
+logicalnot
+
+Width = 636:
+plusminus
+
+Width = 700:
+multiply
+
+Width = 685:
+divide
+
+Width = 634:
+approxequal
+
+Width = 688:
+notequal
+ [code: width-outliers]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+</div></details><details><summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info">com.google.fonts/check/gpos_kerning_info</a>)</summary><div>
+
+
+* ⚠ **WARN** GPOS table lacks kerning information. [code: lacks-kern-info]
+</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni049C (U+049C): L<<393.0,448.0>--<394.0,450.0>> -> L<<394.0,450.0>--<523.0,678.0>>
-	* uni05E9 (U+05E9): L<<250.0,545.0>--<250.0,335.0>> -> L<<250.0,335.0>--<250.0,334.0>>
-	* uniFB2A (U+FB2A): L<<250.0,545.0>--<250.0,335.0>> -> L<<250.0,335.0>--<250.0,334.0>>
-	* uniFB2B (U+FB2B): L<<250.0,545.0>--<250.0,335.0>> -> L<<250.0,335.0>--<250.0,334.0>>
-	* uniFB2C (U+FB2C): L<<250.0,545.0>--<250.0,335.0>> -> L<<250.0,335.0>--<250.0,334.0>>
-	* uniFB2D (U+FB2D): L<<250.0,545.0>--<250.0,335.0>> -> L<<250.0,335.0>--<250.0,334.0>> and uniFB49 (U+FB49): L<<250.0,545.0>--<250.0,335.0>> -> L<<250.0,335.0>--<250.0,334.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
+
+	* Eng (U+014A): L<<719.0,24.0>--<719.0,81.0>> -> L<<719.0,81.0>--<719.0,700.0>>
+
+	* Oslash (U+00D8): L<<403.0,161.0>--<483.0,328.0>> -> L<<483.0,328.0>--<549.0,467.0>>
+
+	* Oslashacute (U+01FE): L<<403.0,161.0>--<483.0,328.0>> -> L<<483.0,328.0>--<549.0,467.0>>
+
+	* minute (U+2032): L<<261.0,697.0>--<261.0,699.0>> -> L<<261.0,699.0>--<261.0,700.0>>
+
+	* quotedbl (U+0022): L<<315.0,697.0>--<315.0,699.0>> -> L<<315.0,699.0>--<315.0,700.0>>
+
+	* quotedbl (U+0022): L<<572.0,697.0>--<572.0,699.0>> -> L<<572.0,699.0>--<572.0,700.0>>
+
+	* quotesingle (U+0027): L<<319.0,697.0>--<319.0,699.0>> -> L<<319.0,699.0>--<319.0,700.0>>
+
+	* second (U+2033): L<<257.0,697.0>--<257.0,699.0>> -> L<<257.0,699.0>--<257.0,700.0>>
+
+	* second (U+2033): L<<514.0,697.0>--<514.0,699.0>> -> L<<514.0,699.0>--<514.0,700.0>> 
+
+	* thorn (U+00FE): L<<238.0,-225.0>--<238.0,-20.0>> -> L<<238.0,-20.0>--<233.0,55.0>> [code: found-colinear-vectors]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
- * g (U+0067): L<<620.0,493.0>--<621.0,17.0>>
- * gbreve (U+011F): L<<620.0,493.0>--<621.0,17.0>>
- * gcircumflex (U+011D): L<<620.0,493.0>--<621.0,17.0>>
- * gdotaccent (U+0121): L<<620.0,493.0>--<621.0,17.0>>
- * uni0123 (U+0123): L<<620.0,493.0>--<621.0,17.0>>
- * uni0474 (U+0474): L<<736.0,672.0>--<735.0,495.0>>
- * uni05E3 (U+05E3): L<<548.0,308.0>--<549.0,-97.0>> and uniFB43 (U+FB43): L<<548.0,308.0>--<549.0,-97.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] Rubik-SemiBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+	* Pi (U+03A0): L<<685.0,705.0>--<58.0,700.0>> 
+
+	* brokenbar (U+00A6): L<<437.0,173.0>--<270.0,174.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[20] Geom-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+* 🔥 **FAIL** In this font fsType is set to 4 meaning that:
+The font may be embedded, and temporarily loaded on the remote system, but documents that use it must not be editable.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright (c) 2022 The Geom Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.sTypoLineGap is "9" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 982 when it should be at least 1200 [code: bad-hhea-range]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Geom-Light.ttf', 'fonts/ttf/Geom-Black.ttf', 'fonts/ttf/Geom-SemiBold.ttf', 'fonts/ttf/Geom-Medium.ttf', 'fonts/ttf/Geom-Regular.ttf', 'fonts/ttf/Geom-Bold.ttf', 'fonts/ttf/Geom-ExtraBold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1056, but got 759 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 278, but got 259 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 sTypoLineGap (9) and hhea lineGap (0) must be equal. [code: lineGap]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: i̇ ǐ i̒ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ j̆ j̇ j̊ j̋ ǰ j̒ j̧̀ j̧́ j̧̃ j̧̄ j̧̆ j̧̇ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Space and non-breaking space have the same width? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_widths">com.google.fonts/check/whitespace_widths</a>)</summary><div>
+
+
+* 🔥 **FAIL** Space and non-breaking space have differing width: The space glyph named space is 280 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has "Sidebearing arithmetic" (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* hbar
-	* uni0525
-	* uni04A2
-	* uni049B
-	* uni05D2
-	* uni05EA
-	* uni044E
-	* zero.zero
-	* uni0493 and 41 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
 
 
 * ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
 
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+	- f + f
+
+	- f + i
+
+	- i + f
+
+	- f + l
+
+	- l + f 
+
+	- i + l [code: lacks-kern-info]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
+
+	- NULL.1
+
+	- Upsilondieresis_alt
+
+	- f_t
+
+	- i.loclTRK
+
+	- periodcentered.loclCAT
+
+	- periodcentered.loclCAT.case
+
+	- t_t
+
+	- tonos.case
+
+	- uni000D
+
+	- uni004A0301
+
+	- uni006A0301
+
 	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
+
+	- uni0394
+
+	- uni0394.1
+
+	- uni03BC.001
+
+	- uni2126 
+
+	- w_w_w
  [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2 
-	- And Glyph name: uni00AD	Contours detected: 1	Expected: 0
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
 
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
 
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* dollar (U+0024): X=465.0,Y=702.0 (should be at cap-height 700?)
-	* at (U+0040): X=694.0,Y=0.5 (should be at baseline 0?)
-	* cent (U+00A2): X=162.0,Y=1.0 (should be at baseline 0?)
-	* uni00B5 (U+00B5): X=160.0,Y=2.0 (should be at baseline 0?)
-	* atilde (U+00E3): X=404.0,Y=702.0 (should be at cap-height 700?)
-	* atilde (U+00E3): X=455.5,Y=700.5 (should be at cap-height 700?)
-	* ntilde (U+00F1): X=418.0,Y=702.0 (should be at cap-height 700?)
-	* ntilde (U+00F1): X=469.5,Y=700.5 (should be at cap-height 700?)
-	* otilde (U+00F5): X=401.0,Y=702.0 (should be at cap-height 700?)
-	* otilde (U+00F5): X=452.5,Y=700.5 (should be at cap-height 700?) and 35 more.
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
 
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni04A1 (U+04A1): L<<217.0,402.0>--<216.0,402.0>> -> L<<216.0,402.0>--<69.0,402.0>>
-	* uni05DC (U+05DC): L<<237.0,448.0>--<236.0,448.0>> -> L<<236.0,448.0>--<113.0,448.0>>
-	* uni05DC (U+05DC): L<<262.0,448.0>--<237.0,448.0>> -> L<<237.0,448.0>--<236.0,448.0>>
-	* uniFB3C (U+FB3C): L<<237.0,448.0>--<236.0,448.0>> -> L<<236.0,448.0>--<113.0,448.0>> and uniFB3C (U+FB3C): L<<262.0,448.0>--<237.0,448.0>> -> L<<237.0,448.0>--<236.0,448.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
 
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** The following glyphs have jaggy segments:
-	* uni0494 (U+0494): B<<242.0,255.0>-<220.0,236.0>-<213.0,199.0>>/L<<213.0,199.0>--<213.0,201.0>> = 10.713123022791033 and uni0494 (U+0494): L<<213.0,199.0>--<213.0,201.0>>/L<<213.0,201.0>--<175.0,25.0>> = 12.183656585987368 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] Rubik-LightItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
 
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
 
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
 
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni05B8
-	* Euro
-	* uni20B4
-	* Hbar
-	* uni20AE and yen
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
 
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
 
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
 
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
-	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
 
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2 
-	- And Glyph name: uni00AD	Contours detected: 1	Expected: 0
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* parenleft (U+0028): X=288.0,Y=698.5 (should be at cap-height 700?)
-	* parenright (U+0029): X=199.0,Y=698.0 (should be at cap-height 700?)
-	* one (U+0031): X=342.0,Y=699.0 (should be at cap-height 700?)
-	* at (U+0040): X=645.0,Y=-1.5 (should be at baseline 0?)
-	* braceright (U+007D): X=296.5,Y=699.5 (should be at cap-height 700?)
-	* questiondown (U+00BF): X=197.0,Y=-2.0 (should be at baseline 0?)
-	* oslash (U+00F8): X=15.0,Y=1.0 (should be at baseline 0?)
-	* ccaron (U+010D): X=232.0,Y=699.0 (should be at cap-height 700?)
-	* eogonek (U+0119): X=164.0,Y=-2.0 (should be at baseline 0?)
-	* ecaron (U+011B): X=246.0,Y=699.0 (should be at cap-height 700?) and 29 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni0524 (U+0524): L<<496.0,60.0>--<496.0,60.0>> -> L<<496.0,60.0>--<496.0,60.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-	* uni0495 (U+0495): L<<185.0,462.0>--<139.0,242.0>>/L<<139.0,242.0>--<146.0,277.0>> = 0.4999504830075268 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] Rubik-BlackItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
-
-
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
-
-
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
-
-
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* uni0423
-	* uni0499
-	* hbar
-	* uni0525
-	* uni00B5
-	* uni04A2
-	* uni045E
-	* uni049B
-	* uni05D2 and 59 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
-
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
-	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2 
-	- And Glyph name: uni00AD	Contours detected: 1	Expected: 0
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* quotedbl (U+0022): X=312.5,Y=700.5 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=567.5,Y=700.5 (should be at cap-height 700?)
-	* dollar (U+0024): X=211.0,Y=-2.0 (should be at baseline 0?)
-	* ampersand (U+0026): X=357.5,Y=-2.0 (should be at baseline 0?)
-	* quotesingle (U+0027): X=312.5,Y=700.5 (should be at cap-height 700?)
-	* b (U+0062): X=139.5,Y=702.0 (should be at cap-height 700?)
-	* b (U+0062): X=362.5,Y=702.0 (should be at cap-height 700?)
-	* d (U+0064): X=470.5,Y=702.0 (should be at cap-height 700?)
-	* d (U+0064): X=693.5,Y=702.0 (should be at cap-height 700?)
-	* h (U+0068): X=139.5,Y=702.0 (should be at cap-height 700?) and 90 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni04A2 (U+04A2): L<<450.0,220.0>--<450.0,220.0>> -> L<<450.0,220.0>--<450.0,220.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-	* uni0494 (U+0494): B<<296.5,180.5>-<279.0,172.0>-<274.0,149.0>>/L<<274.0,149.0>--<275.0,153.0>> = 1.7714697400342114
-	* uni0494 (U+0494): L<<274.0,149.0>--<275.0,153.0>>/L<<275.0,153.0>--<248.0,27.0>> = 1.9414863909143467
-	* uni0496 (U+0496): L<<847.0,0.0>--<847.0,0.0>>/B<<847.0,0.0>-<829.0,1.0>-<822.0,10.0>> = 3.1798301198641643 and uni049B (U+049B): L<<356.0,0.0>--<356.0,0.0>>/B<<356.0,0.0>-<347.0,2.0>-<342.0,6.5>> = 12.528807709151492 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[10] Rubik-ExtraBoldItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
-
-
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
-
-
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
-
-
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* uni0499
-	* hbar
-	* uni0525
-	* uni00B5
-	* uni04A2
-	* uni045E
-	* uni049B
-	* uni05D2
-	* uni05EA and 54 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
-
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
-	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2 
-	- And Glyph name: uni00AD	Contours detected: 1	Expected: 0
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* quotedbl (U+0022): X=296.0,Y=701.0 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=528.0,Y=701.0 (should be at cap-height 700?)
-	* dollar (U+0024): X=496.0,Y=699.0 (should be at cap-height 700?)
-	* ampersand (U+0026): X=359.0,Y=1.5 (should be at baseline 0?)
-	* quotesingle (U+0027): X=296.0,Y=701.0 (should be at cap-height 700?)
-	* parenleft (U+0028): X=292.0,Y=-1.0 (should be at baseline 0?)
-	* parenright (U+0029): X=-16.0,Y=-1.0 (should be at baseline 0?)
-	* less (U+003C): X=403.0,Y=-1.0 (should be at baseline 0?)
-	* less (U+003C): X=403.0,Y=-1.0 (should be at baseline 0?)
-	* greater (U+003E): X=21.0,Y=-2.0 (should be at baseline 0?) and 53 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-	* uni0494 (U+0494): B<<284.5,215.0>-<258.0,203.0>-<250.0,168.0>>/L<<250.0,168.0>--<251.0,171.0>> = 5.559947263309426 and uni0494 (U+0494): L<<250.0,168.0>--<251.0,171.0>>/L<<251.0,171.0>--<220.0,26.0>> = 6.367179864268598 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] Rubik-MediumItalic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
-
-
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
-
-
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
-
-
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* hbar
-	* uni0525
-	* uni04A2
-	* uni049B
-	* uni05D2
-	* uni044E
-	* zero.zero
-	* uni0493
-	* uni05B8 and 33 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
-
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
-	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2 
-	- And Glyph name: uni00AD	Contours detected: 1	Expected: 0
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
-
-
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* i (U+0069): X=149.0,Y=702.0 (should be at cap-height 700?)
-	* i (U+0069): X=289.0,Y=702.0 (should be at cap-height 700?)
-	* j (U+006A): X=159.0,Y=702.0 (should be at cap-height 700?)
-	* j (U+006A): X=302.0,Y=702.0 (should be at cap-height 700?)
-	* j (U+006A): X=14.0,Y=1.0 (should be at baseline 0?)
-	* j (U+006A): X=149.0,Y=-1.0 (should be at baseline 0?)
-	* braceleft (U+007B): X=206.5,Y=-1.5 (should be at baseline 0?)
-	* atilde (U+00E3): X=266.5,Y=701.0 (should be at cap-height 700?)
-	* ntilde (U+00F1): X=282.5,Y=701.0 (should be at cap-height 700?)
-	* otilde (U+00F5): X=265.5,Y=701.0 (should be at cap-height 700?) and 68 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni04CB (U+04CB): L<<563.0,84.0>--<563.0,84.0>> -> L<<563.0,84.0>--<563.0,84.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-	* uni0494 (U+0494): B<<233.0,273.5>-<208.0,252.0>-<199.0,210.0>>/L<<199.0,210.0>--<199.0,211.0>> = 12.094757077012089
-	* uni0494 (U+0494): L<<199.0,210.0>--<199.0,211.0>>/L<<199.0,211.0>--<160.0,24.0>> = 11.780523776915402 and uni04A1 (U+04A1): L<<138.0,24.0>--<222.0,415.0>>/L<<222.0,415.0>--<222.0,414.0>> = 12.12477582008083 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] Rubik-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
-
-
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
-
-
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
-
-
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni05B8
-	* Euro
-	* uni20B4
-	* Hbar
-	* uni20AE and yen
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
-
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
-
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
-	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: uni0493	Contours detected: 2	Expected: 1
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-	- And Glyph name: uni0493	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
 
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* parenleft (U+0028): X=204.0,Y=698.5 (should be at cap-height 700?)
-	* parenright (U+0029): X=115.0,Y=698.5 (should be at cap-height 700?)
-	* one (U+0031): X=263.0,Y=699.0 (should be at cap-height 700?)
-	* braceright (U+007D): X=197.0,Y=699.5 (should be at cap-height 700?)
-	* questiondown (U+00BF): X=97.0,Y=-2.0 (should be at baseline 0?)
-	* aogonek (U+0105): X=445.0,Y=1.0 (should be at baseline 0?)
-	* eogonek (U+0119): X=213.0,Y=-2.0 (should be at baseline 0?)
-	* uogonek (U+0173): X=485.0,Y=-2.0 (should be at baseline 0?)
-	* uni0409 (U+0409): X=43.0,Y=1.0 (should be at baseline 0?)
-	* uni0409 (U+0409): X=43.0,Y=1.0 (should be at baseline 0?) and 10 more.
+* ⚠ **WARN** The most common width is 630 among a set of 3 math glyphs.
+The following math glyphs have a different width, though:
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
+Width = 610:
+equal
+
+Width = 639:
+logicalnot
+
+Width = 614:
+plusminus
+
+Width = 669:
+multiply
+
+Width = 645:
+divide
+
+Width = 648:
+greaterequal, minus, lessequal
+
+Width = 634:
+approxequal
+
+Width = 637:
+notequal
+ [code: width-outliers]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have segments which seem very short:
+
+	* quotedbl (U+0022) contains a short segment L<<251.0,704.0>--<251.0,704.0>>
+
+	* quotedbl (U+0022) contains a short segment L<<469.0,704.0>--<469.0,704.0>>
+
+	* quotesingle (U+0027) contains a short segment L<<254.0,704.0>--<254.0,704.0>>
+
+	* three (U+0033) contains a short segment B<<209.0,334.0>-<216.0,335.0>-<226.5,335.5>>
+
+	* three (U+0033) contains a short segment B<<268.5,337.0>-<279.0,337.0>-<285.0,337.0>>
+
+	* at (U+0040) contains a short segment B<<719.0,140.0>-<701.0,140.0>-<688.5,147.5>>
+
+	* at (U+0040) contains a short segment B<<688.5,147.5>-<676.0,155.0>-<669.0,167.5>>
+
+	* at (U+0040) contains a short segment B<<669.0,167.5>-<662.0,180.0>-<659.0,197.0>>
+
+	* at (U+0040) contains a short segment B<<659.0,197.0>-<656.0,214.0>-<658.0,232.0>>
+
+	* onequarter (U+00BC) contains a short segment B<<577.0,297.0>-<577.0,296.0>-<577.5,296.5>>
+
+	* onequarter (U+00BC) contains a short segment B<<577.5,296.5>-<578.0,297.0>-<579.0,297.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<706.0,297.0>-<706.0,296.0>-<706.5,296.5>>
+
+	* threequarters (U+00BE) contains a short segment B<<706.5,296.5>-<707.0,297.0>-<708.0,297.0>>
+
+	* Oslash (U+00D8) contains a short segment B<<185.0,342.0>-<185.0,345.0>-<185.0,348.0>>
+
+	* Oslash (U+00D8) contains a short segment B<<185.0,348.0>-<185.0,351.0>-<185.0,353.0>>
+
+	* ae (U+00E6) contains a short segment B<<283.0,520.0>-<276.0,521.0>-<269.0,521.0>>
+
+	* ae (U+00E6) contains a short segment B<<269.0,521.0>-<262.0,521.0>-<254.0,520.0>>
+
+	* ae (U+00E6) contains a short segment B<<232.0,412.0>-<235.0,413.0>-<238.0,413.0>>
+
+	* ae (U+00E6) contains a short segment B<<238.0,413.0>-<241.0,413.0>-<244.0,413.0>>
+
+	* ae (U+00E6) contains a short segment B<<30.0,179.0>-<29.0,171.0>-<29.0,164.5>>
+
+	* ae (U+00E6) contains a short segment B<<29.0,164.5>-<29.0,158.0>-<30.0,150.0>>
+
+	* ae (U+00E6) contains a short segment B<<209.0,-11.0>-<216.0,-11.0>-<225.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<225.0,-11.0>-<234.0,-11.0>-<243.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<642.0,-13.0>-<651.0,-14.0>-<659.5,-14.0>>
+
+	* ae (U+00E6) contains a short segment B<<659.5,-14.0>-<668.0,-14.0>-<678.0,-13.0>>
+
+	* ae (U+00E6) contains a short segment L<<522.0,261.0>--<520.0,259.0>>
+
+	* thorn (U+00FE) contains a short segment L<<187.0,59.0>--<191.0,59.0>>
+
+	* Eng (U+014A) contains a short segment B<<511.0,-78.0>-<502.0,-78.0>-<493.5,-76.0>>
+
+	* Eng (U+014A) contains a short segment B<<493.5,-76.0>-<485.0,-74.0>-<475.0,-71.0>>
+
+	* eng (U+014B) contains a short segment B<<352.0,-78.0>-<343.0,-78.0>-<334.5,-76.0>>
+
+	* OE (U+0152) contains a short segment B<<494.0,-5.0>-<482.0,-8.0>-<469.0,-9.5>>
+
+	* OE (U+0152) contains a short segment B<<469.0,-9.5>-<456.0,-11.0>-<443.0,-12.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<283.0,520.0>-<276.0,521.0>-<269.0,521.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<269.0,521.0>-<262.0,521.0>-<254.0,520.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<232.0,412.0>-<235.0,413.0>-<238.0,413.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<238.0,413.0>-<241.0,413.0>-<244.0,413.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<30.0,179.0>-<29.0,171.0>-<29.0,164.5>>
+
+	* aeacute (U+01FD) contains a short segment B<<29.0,164.5>-<29.0,158.0>-<30.0,150.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<209.0,-11.0>-<216.0,-11.0>-<225.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<225.0,-11.0>-<234.0,-11.0>-<243.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<642.0,-13.0>-<651.0,-14.0>-<659.5,-14.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<659.5,-14.0>-<668.0,-14.0>-<678.0,-13.0>>
+
+	* aeacute (U+01FD) contains a short segment L<<522.0,261.0>--<520.0,259.0>>
+
+	* Oslashacute (U+01FE) contains a short segment B<<185.0,342.0>-<185.0,345.0>-<185.0,348.0>>
+
+	* Oslashacute (U+01FE) contains a short segment B<<185.0,348.0>-<185.0,351.0>-<185.0,353.0>>
+
+	* xi (U+03BE) contains a short segment B<<301.5,-63.5>-<303.0,-74.0>-<303.0,-81.0>>
+
+	* minute (U+2032) contains a short segment L<<218.0,704.0>--<218.0,704.0>>
+
+	* second (U+2033) contains a short segment L<<215.0,704.0>--<215.0,704.0>>
+
+	* second (U+2033) contains a short segment L<<433.0,704.0>--<433.0,704.0>>
+
+	* uni2074 (U+2074) contains a short segment B<<195.0,583.0>-<195.0,582.0>-<195.5,582.5>>
+
+	* uni2074 (U+2074) contains a short segment B<<195.5,582.5>-<196.0,583.0>-<197.0,583.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<313.0,73.0>-<309.0,72.0>-<306.5,72.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<306.5,72.0>-<304.0,72.0>-<301.0,72.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<260.0,118.0>-<259.0,122.0>-<258.5,126.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<258.5,126.0>-<258.0,130.0>-<258.0,135.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<415.0,563.0>-<416.0,569.0>-<415.5,575.5>>
+
+	* uni2113 (U+2113) contains a short segment B<<415.5,575.5>-<415.0,582.0>-<414.0,588.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<303.0,715.0>-<300.0,715.0>-<298.5,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<298.5,715.0>-<297.0,715.0>-<295.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<158.0,543.0>-<157.0,540.0>-<157.0,538.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<157.0,538.0>-<157.0,536.0>-<157.0,533.0>>
+
+	* integral (U+222B) contains a short segment B<<104.0,-144.0>-<99.0,-139.0>-<94.0,-134.5>>
+
+	* integral (U+222B) contains a short segment B<<94.0,-134.5>-<89.0,-130.0>-<84.0,-126.5>>
+
+	* integral (U+222B) contains a short segment B<<84.0,-126.5>-<79.0,-123.0>-<73.0,-121.0>>
+
+	* integral (U+222B) contains a short segment B<<73.0,-121.0>-<67.0,-119.0>-<59.0,-119.0>>
+
+	* integral (U+222B) contains a short segment B<<236.0,672.0>-<243.0,669.0>-<248.0,664.0>>
+
+	* integral (U+222B) contains a short segment B<<248.0,664.0>-<253.0,659.0>-<258.5,655.5>> 
+
+	* integral (U+222B) contains a short segment B<<258.5,655.5>-<264.0,652.0>-<270.5,649.0>> [code: found-short-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni05B3 (U+05B3): L<<26.0,-131.0>--<26.0,-134.0>> -> L<<26.0,-134.0>--<26.0,-223.0>>
-	* uni05C7 (U+05C7): L<<26.0,-131.0>--<26.0,-134.0>> -> L<<26.0,-134.0>--<26.0,-223.0>>
-	* uni05DC (U+05DC): L<<173.0,513.0>--<170.0,513.0>> -> L<<170.0,513.0>--<92.0,514.0>>
-	* uni05DC (U+05DC): L<<207.0,513.0>--<173.0,513.0>> -> L<<173.0,513.0>--<170.0,513.0>>
-	* uniFB2F (U+FB2F): L<<311.0,-131.0>--<311.0,-134.0>> -> L<<311.0,-134.0>--<311.0,-223.0>>
-	* uniFB3C (U+FB3C): L<<173.0,513.0>--<170.0,513.0>> -> L<<170.0,513.0>--<92.0,514.0>> and uniFB3C (U+FB3C): L<<207.0,513.0>--<173.0,513.0>> -> L<<173.0,513.0>--<170.0,513.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
+
+	* Eng (U+014A): L<<693.0,-7.0>--<693.0,41.0>> -> L<<693.0,41.0>--<693.0,702.0>>
+
+	* Oslash (U+00D8): L<<319.0,145.0>--<459.0,330.0>> -> L<<459.0,330.0>--<592.0,501.0>>
+
+	* Oslashacute (U+01FE): L<<319.0,145.0>--<459.0,330.0>> -> L<<459.0,330.0>--<592.0,501.0>>
+
+	* exclam (U+0021): L<<196.0,215.0>--<234.0,618.0>> -> L<<234.0,618.0>--<235.0,702.0>>
+
+	* exclam (U+0021): L<<79.0,702.0>--<81.0,618.0>> -> L<<81.0,618.0>--<119.0,215.0>>
+
+	* exclamdbl (U+203C): L<<196.0,215.0>--<234.0,618.0>> -> L<<234.0,618.0>--<235.0,702.0>>
+
+	* exclamdbl (U+203C): L<<323.0,702.0>--<325.0,618.0>> -> L<<325.0,618.0>--<363.0,215.0>>
+
+	* exclamdbl (U+203C): L<<440.0,215.0>--<478.0,618.0>> -> L<<478.0,618.0>--<479.0,702.0>>
+
+	* exclamdbl (U+203C): L<<79.0,702.0>--<81.0,618.0>> -> L<<81.0,618.0>--<119.0,215.0>>
+
+	* exclamdown (U+00A1): L<<119.0,309.0>--<82.0,-74.0>> -> L<<82.0,-74.0>--<79.0,-179.0>>
+
+	* exclamdown (U+00A1): L<<236.0,-179.0>--<234.0,-74.0>> -> L<<234.0,-74.0>--<197.0,309.0>>
+
+	* minute (U+2032): L<<123.0,392.0>--<212.0,676.0>> -> L<<212.0,676.0>--<218.0,704.0>>
+
+	* quotedbl (U+0022): L<<157.0,392.0>--<245.0,676.0>> -> L<<245.0,676.0>--<251.0,704.0>>
+
+	* quotedbl (U+0022): L<<375.0,392.0>--<463.0,676.0>> -> L<<463.0,676.0>--<469.0,704.0>>
+
+	* quotesingle (U+0027): L<<159.0,392.0>--<248.0,676.0>> -> L<<248.0,676.0>--<254.0,704.0>>
+
+	* second (U+2033): L<<121.0,392.0>--<209.0,676.0>> -> L<<209.0,676.0>--<215.0,704.0>>
+
+	* second (U+2033): L<<339.0,392.0>--<427.0,676.0>> -> L<<427.0,676.0>--<433.0,704.0>> 
+
+	* thorn (U+00FE): L<<190.0,-236.0>--<190.0,-16.0>> -> L<<190.0,-16.0>--<187.0,59.0>> [code: found-colinear-vectors]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
- * uni0434 (U+0434): L<<133.0,58.0>--<409.0,60.0>> and uni0446 (U+0446): L<<495.0,498.0>--<494.0,58.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] Rubik-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+	* Pi (U+03A0): L<<648.0,705.0>--<69.0,703.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[20] Geom-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+* 🔥 **FAIL** In this font fsType is set to 4 meaning that:
+The font may be embedded, and temporarily loaded on the remote system, but documents that use it must not be editable.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright (c) 2022 The Geom Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.sTypoLineGap is "9" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 982 when it should be at least 1200 [code: bad-hhea-range]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Geom-Light.ttf', 'fonts/ttf/Geom-Black.ttf', 'fonts/ttf/Geom-SemiBold.ttf', 'fonts/ttf/Geom-Medium.ttf', 'fonts/ttf/Geom-Regular.ttf', 'fonts/ttf/Geom-Bold.ttf', 'fonts/ttf/Geom-ExtraBold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1056, but got 759 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 278, but got 259 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 sTypoLineGap (9) and hhea lineGap (0) must be equal. [code: lineGap]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: i̇ ǐ i̒ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ j̆ j̇ j̊ j̋ ǰ j̒ j̧̀ j̧́ j̧̃ j̧̄ j̧̆ j̧̇ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Space and non-breaking space have the same width? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_widths">com.google.fonts/check/whitespace_widths</a>)</summary><div>
+
+
+* 🔥 **FAIL** Space and non-breaking space have differing width: The space glyph named space is 280 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has "Sidebearing arithmetic" (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* hbar
-	* uni0525
-	* uni04A2
-	* uni049B
-	* uni05D2
-	* uni05EA
-	* uni044E
-	* zero.zero
-	* uni05B8 and 36 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
 
 
 * ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
 
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+	- f + f
+
+	- f + i
+
+	- i + f
+
+	- f + l
+
+	- l + f 
+
+	- i + l [code: lacks-kern-info]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
+
+	- NULL.1
+
+	- Upsilondieresis_alt
+
+	- f_t
+
+	- i.loclTRK
+
+	- periodcentered.loclCAT
+
+	- periodcentered.loclCAT.case
+
+	- t_t
+
+	- tonos.case
+
+	- uni000D
+
+	- uni004A0301
+
+	- uni006A0301
+
 	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
+
+	- uni0394
+
+	- uni0394.1
+
+	- uni03BC.001
+
+	- uni2126 
+
+	- w_w_w
  [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: uni0493	Contours detected: 2	Expected: 1
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-	- And Glyph name: uni0493	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
 
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* cent (U+00A2): X=225.0,Y=-2.0 (should be at baseline 0?)
-	* atilde (U+00E3): X=303.5,Y=702.0 (should be at cap-height 700?)
-	* atilde (U+00E3): X=353.0,Y=700.5 (should be at cap-height 700?)
-	* ntilde (U+00F1): X=334.5,Y=702.0 (should be at cap-height 700?)
-	* ntilde (U+00F1): X=384.0,Y=700.5 (should be at cap-height 700?)
-	* otilde (U+00F5): X=316.5,Y=702.0 (should be at cap-height 700?)
-	* otilde (U+00F5): X=366.0,Y=700.5 (should be at cap-height 700?)
-	* eogonek (U+0119): X=207.0,Y=1.0 (should be at baseline 0?)
-	* itilde (U+0129): X=153.5,Y=702.0 (should be at cap-height 700?)
-	* itilde (U+0129): X=203.0,Y=700.5 (should be at cap-height 700?) and 26 more.
+* ⚠ **WARN** The most common width is 633 among a set of 3 math glyphs.
+The following math glyphs have a different width, though:
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
+Width = 615:
+plus
+
+Width = 618:
+less
+
+Width = 596:
+equal
+
+Width = 617:
+greater
+
+Width = 623:
+logicalnot
+
+Width = 606:
+plusminus
+
+Width = 658:
+multiply
+
+Width = 631:
+divide
+
+Width = 634:
+approxequal
+
+Width = 620:
+notequal
+ [code: width-outliers]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have segments which seem very short:
+
+	* quotedbl (U+0022) contains a short segment L<<230.0,705.0>--<230.0,706.0>>
+
+	* quotedbl (U+0022) contains a short segment L<<435.0,705.0>--<435.0,706.0>>
+
+	* quotesingle (U+0027) contains a short segment L<<232.0,705.0>--<232.0,706.0>>
+
+	* three (U+0033) contains a short segment B<<206.0,346.0>-<214.0,347.0>-<224.0,348.0>>
+
+	* three (U+0033) contains a short segment B<<224.0,348.0>-<234.0,349.0>-<244.0,349.5>>
+
+	* three (U+0033) contains a short segment B<<244.0,349.5>-<254.0,350.0>-<264.0,350.5>>
+
+	* three (U+0033) contains a short segment B<<264.0,350.5>-<274.0,351.0>-<281.0,351.0>>
+
+	* at (U+0040) contains a short segment B<<709.0,146.0>-<692.0,146.0>-<679.5,153.0>>
+
+	* at (U+0040) contains a short segment B<<679.5,153.0>-<667.0,160.0>-<659.5,171.5>>
+
+	* at (U+0040) contains a short segment B<<659.5,171.5>-<652.0,183.0>-<649.0,199.5>>
+
+	* at (U+0040) contains a short segment B<<649.0,199.5>-<646.0,216.0>-<648.0,235.0>>
+
+	* onequarter (U+00BC) contains a short segment L<<450.0,140.0>--<450.0,140.0>>
+
+	* onequarter (U+00BC) contains a short segment B<<550.0,294.0>-<550.0,294.0>-<550.5,294.5>>
+
+	* onequarter (U+00BC) contains a short segment B<<550.5,294.5>-<551.0,295.0>-<551.0,295.0>>
+
+	* threequarters (U+00BE) contains a short segment L<<569.0,140.0>--<569.0,140.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<669.0,294.0>-<669.0,294.0>-<669.5,294.5>>
+
+	* threequarters (U+00BE) contains a short segment B<<669.5,294.5>-<670.0,295.0>-<670.0,295.0>>
+
+	* Oslash (U+00D8) contains a short segment B<<170.0,346.0>-<169.0,348.0>-<169.0,350.0>>
+
+	* Oslash (U+00D8) contains a short segment B<<169.0,350.0>-<169.0,352.0>-<169.0,354.0>>
+
+	* ae (U+00E6) contains a short segment B<<282.0,511.0>-<275.0,511.0>-<268.0,511.0>>
+
+	* ae (U+00E6) contains a short segment B<<268.0,511.0>-<261.0,511.0>-<253.0,510.0>>
+
+	* ae (U+00E6) contains a short segment B<<230.0,415.0>-<234.0,416.0>-<238.0,416.0>>
+
+	* ae (U+00E6) contains a short segment B<<238.0,416.0>-<242.0,416.0>-<246.0,416.0>>
+
+	* ae (U+00E6) contains a short segment B<<30.0,176.0>-<29.0,169.0>-<29.5,162.0>>
+
+	* ae (U+00E6) contains a short segment B<<29.5,162.0>-<30.0,155.0>-<31.0,147.0>>
+
+	* ae (U+00E6) contains a short segment B<<209.0,-10.0>-<215.0,-11.0>-<223.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<223.0,-11.0>-<231.0,-11.0>-<239.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<635.0,-12.0>-<644.0,-13.0>-<651.5,-13.0>>
+
+	* ae (U+00E6) contains a short segment B<<651.5,-13.0>-<659.0,-13.0>-<668.0,-13.0>>
+
+	* ae (U+00E6) contains a short segment L<<508.0,258.0>--<506.0,255.0>>
+
+	* thorn (U+00FE) contains a short segment L<<172.0,60.0>--<175.0,60.0>>
+
+	* Eng (U+014A) contains a short segment B<<519.0,-93.0>-<511.0,-93.0>-<502.0,-91.5>>
+
+	* Eng (U+014A) contains a short segment B<<502.0,-91.5>-<493.0,-90.0>-<484.0,-87.0>>
+
+	* Eng (U+014A) contains a short segment B<<484.0,-177.0>-<497.0,-180.0>-<511.0,-182.0>>
+
+	* eng (U+014B) contains a short segment B<<351.0,-93.0>-<343.0,-93.0>-<334.0,-91.5>>
+
+	* OE (U+0152) contains a short segment B<<540.0,0.0>-<527.0,-2.0>-<514.0,-4.0>>
+
+	* OE (U+0152) contains a short segment B<<486.0,-6.0>-<473.0,-10.0>-<460.0,-11.0>>
+
+	* OE (U+0152) contains a short segment B<<460.0,-11.0>-<447.0,-12.0>-<434.0,-12.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<282.0,511.0>-<275.0,511.0>-<268.0,511.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<268.0,511.0>-<261.0,511.0>-<253.0,510.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<230.0,415.0>-<234.0,416.0>-<238.0,416.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<238.0,416.0>-<242.0,416.0>-<246.0,416.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<30.0,176.0>-<29.0,169.0>-<29.5,162.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<29.5,162.0>-<30.0,155.0>-<31.0,147.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<209.0,-10.0>-<215.0,-11.0>-<223.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<223.0,-11.0>-<231.0,-11.0>-<239.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<635.0,-12.0>-<644.0,-13.0>-<651.5,-13.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<651.5,-13.0>-<659.0,-13.0>-<668.0,-13.0>>
+
+	* aeacute (U+01FD) contains a short segment L<<508.0,258.0>--<506.0,255.0>>
+
+	* Oslashacute (U+01FE) contains a short segment B<<170.0,346.0>-<169.0,348.0>-<169.0,350.0>>
+
+	* Oslashacute (U+01FE) contains a short segment B<<169.0,350.0>-<169.0,352.0>-<169.0,354.0>>
+
+	* xi (U+03BE) contains a short segment B<<304.5,-65.5>-<306.0,-76.0>-<306.0,-84.0>>
+
+	* minute (U+2032) contains a short segment L<<203.0,705.0>--<203.0,706.0>>
+
+	* second (U+2033) contains a short segment L<<201.0,705.0>--<201.0,706.0>>
+
+	* second (U+2033) contains a short segment L<<406.0,705.0>--<406.0,706.0>>
+
+	* uni2074 (U+2074) contains a short segment L<<97.0,426.0>--<97.0,426.0>>
+
+	* uni2074 (U+2074) contains a short segment B<<197.0,580.0>-<197.0,580.0>-<197.5,580.5>>
+
+	* uni2074 (U+2074) contains a short segment B<<197.5,580.5>-<198.0,581.0>-<198.0,581.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<311.0,64.0>-<307.0,63.0>-<304.0,63.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<304.0,63.0>-<301.0,63.0>-<299.0,64.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<254.0,110.0>-<253.0,116.0>-<252.5,121.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<252.5,121.0>-<252.0,126.0>-<252.0,132.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<412.0,563.0>-<412.0,569.0>-<411.5,575.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<411.5,575.0>-<411.0,581.0>-<411.0,587.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<299.0,715.0>-<298.0,715.0>-<297.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<297.0,715.0>-<296.0,715.0>-<294.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<160.0,541.0>-<160.0,540.0>-<160.0,538.5>>
+
+	* uni2113 (U+2113) contains a short segment B<<160.0,538.5>-<160.0,537.0>-<160.0,534.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<160.0,139.0>-<160.0,133.0>-<160.0,126.5>>
+
+	* integral (U+222B) contains a short segment B<<101.0,-156.0>-<96.0,-151.0>-<91.0,-146.0>>
+
+	* integral (U+222B) contains a short segment B<<91.0,-146.0>-<86.0,-141.0>-<80.5,-136.5>>
+
+	* integral (U+222B) contains a short segment B<<80.5,-136.5>-<75.0,-132.0>-<69.0,-129.5>>
+
+	* integral (U+222B) contains a short segment B<<246.5,675.5>-<252.0,670.0>-<257.0,665.5>> 
+
+	* integral (U+222B) contains a short segment B<<257.0,665.5>-<262.0,661.0>-<269.0,658.0>> [code: found-short-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni0524 (U+0524): L<<504.0,25.0>--<504.0,140.0>> -> L<<504.0,140.0>--<504.0,142.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
+
+	* Eng (U+014A): L<<684.0,-17.0>--<684.0,27.0>> -> L<<684.0,27.0>--<684.0,703.0>>
+
+	* Oslash (U+00D8): L<<291.0,139.0>--<451.0,330.0>> -> L<<451.0,330.0>--<607.0,512.0>>
+
+	* Oslashacute (U+01FE): L<<291.0,139.0>--<451.0,330.0>> -> L<<451.0,330.0>--<607.0,512.0>>
+
+	* exclam (U+0021): L<<188.0,211.0>--<219.0,619.0>> -> L<<219.0,619.0>--<221.0,703.0>>
+
+	* exclam (U+0021): L<<84.0,703.0>--<87.0,619.0>> -> L<<87.0,619.0>--<118.0,211.0>>
+
+	* exclamdbl (U+203C): L<<188.0,211.0>--<219.0,619.0>> -> L<<219.0,619.0>--<221.0,703.0>>
+
+	* exclamdbl (U+203C): L<<319.0,703.0>--<322.0,619.0>> -> L<<322.0,619.0>--<353.0,211.0>>
+
+	* exclamdbl (U+203C): L<<423.0,211.0>--<454.0,619.0>> -> L<<454.0,619.0>--<456.0,703.0>>
+
+	* exclamdbl (U+203C): L<<84.0,703.0>--<87.0,619.0>> -> L<<87.0,619.0>--<118.0,211.0>>
+
+	* exclamdown (U+00A1): L<<118.0,314.0>--<88.0,-67.0>> -> L<<88.0,-67.0>--<84.0,-179.0>>
+
+	* exclamdown (U+00A1): L<<222.0,-179.0>--<219.0,-67.0>> -> L<<219.0,-67.0>--<189.0,314.0>>
+
+	* minute (U+2032): L<<119.0,409.0>--<195.0,669.0>> -> L<<195.0,669.0>--<203.0,705.0>>
+
+	* quotedbl (U+0022): L<<146.0,409.0>--<222.0,669.0>> -> L<<222.0,669.0>--<230.0,705.0>>
+
+	* quotedbl (U+0022): L<<351.0,409.0>--<427.0,669.0>> -> L<<427.0,669.0>--<435.0,705.0>>
+
+	* quotesingle (U+0027): L<<148.0,409.0>--<224.0,669.0>> -> L<<224.0,669.0>--<232.0,705.0>>
+
+	* second (U+2033): L<<117.0,409.0>--<193.0,669.0>> -> L<<193.0,669.0>--<201.0,705.0>>
+
+	* second (U+2033): L<<322.0,409.0>--<398.0,669.0>> -> L<<398.0,669.0>--<406.0,705.0>> 
+
+	* thorn (U+00FE): L<<174.0,-239.0>--<174.0,-14.0>> -> L<<174.0,-14.0>--<172.0,60.0>> [code: found-colinear-vectors]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
- * g (U+0067): L<<561.0,495.0>--<562.0,14.0>>
- * gbreve (U+011F): L<<561.0,495.0>--<562.0,14.0>>
- * gcircumflex (U+011D): L<<561.0,495.0>--<562.0,14.0>>
- * gdotaccent (U+0121): L<<561.0,495.0>--<562.0,14.0>>
- * uni0123 (U+0123): L<<561.0,495.0>--<562.0,14.0>>
- * uni0434 (U+0434): L<<228.0,118.0>--<401.0,119.0>>
- * uni05E9 (U+05E9): L<<194.0,547.0>--<196.0,293.0>>
- * uni05EA (U+05EA): L<<260.0,0.0>--<70.0,1.0>>
- * uniFB2A (U+FB2A): L<<194.0,547.0>--<196.0,293.0>>
- * uniFB2B (U+FB2B): L<<194.0,547.0>--<196.0,293.0>> and 5 more.
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[10] Rubik-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+	* Pi (U+03A0): L<<635.0,705.0>--<72.0,704.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[20] Geom-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+* 🔥 **FAIL** In this font fsType is set to 4 meaning that:
+The font may be embedded, and temporarily loaded on the remote system, but documents that use it must not be editable.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright (c) 2022 The Geom Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.sTypoLineGap is "9" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 982 when it should be at least 1200 [code: bad-hhea-range]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Geom-Light.ttf', 'fonts/ttf/Geom-Black.ttf', 'fonts/ttf/Geom-SemiBold.ttf', 'fonts/ttf/Geom-Medium.ttf', 'fonts/ttf/Geom-Regular.ttf', 'fonts/ttf/Geom-Bold.ttf', 'fonts/ttf/Geom-ExtraBold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1056, but got 759 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 278, but got 259 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 sTypoLineGap (9) and hhea lineGap (0) must be equal. [code: lineGap]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: i̇ ǐ i̒ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ j̆ j̇ j̊ j̋ ǰ j̒ j̧̀ j̧́ j̧̃ j̧̄ j̧̆ j̧̇ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Space and non-breaking space have the same width? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_widths">com.google.fonts/check/whitespace_widths</a>)</summary><div>
+
+
+* 🔥 **FAIL** Space and non-breaking space have differing width: The space glyph named space is 280 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has "Sidebearing arithmetic" (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* uni0423
-	* uni0499
-	* hbar
-	* uni0525
-	* uni04A2
-	* uni045E
-	* uni049B
-	* uni05D2
-	* uni05EA and 51 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
 
 
 * ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
 
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+	- f + f
+
+	- f + i
+
+	- i + f
+
+	- f + l
+
+	- l + f 
+
+	- i + l [code: lacks-kern-info]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
+
+	- NULL.1
+
+	- Upsilondieresis_alt
+
+	- f_t
+
+	- i.loclTRK
+
+	- periodcentered.loclCAT
+
+	- periodcentered.loclCAT.case
+
+	- t_t
+
+	- tonos.case
+
+	- uni000D
+
+	- uni004A0301
+
+	- uni006A0301
+
 	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
+
+	- uni0394
+
+	- uni0394.1
+
+	- uni03BC.001
+
+	- uni2126 
+
+	- w_w_w
  [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: uni0493	Contours detected: 2	Expected: 1
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-	- And Glyph name: uni0493	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
 
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* quotedbl (U+0022): X=272.5,Y=701.0 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=445.0,Y=701.0 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=40.0,Y=701.0 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=213.0,Y=701.0 (should be at cap-height 700?)
-	* dollar (U+0024): X=419.0,Y=702.0 (should be at cap-height 700?)
-	* ampersand (U+0026): X=407.5,Y=1.5 (should be at baseline 0?)
-	* quotesingle (U+0027): X=40.0,Y=701.0 (should be at cap-height 700?)
-	* quotesingle (U+0027): X=213.0,Y=701.0 (should be at cap-height 700?)
-	* parenleft (U+0028): X=355.0,Y=-1.0 (should be at baseline 0?)
-	* parenright (U+0029): X=48.0,Y=-1.0 (should be at baseline 0?) and 46 more.
+* ⚠ **WARN** The most common width is 619 among a set of 3 math glyphs.
+The following math glyphs have a different width, though:
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
+Width = 600:
+plus
 
+Width = 606:
+less
 
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
- * g (U+0067): L<<597.0,494.0>--<598.0,16.0>>
- * gbreve (U+011F): L<<597.0,494.0>--<598.0,16.0>>
- * gcircumflex (U+011D): L<<597.0,494.0>--<598.0,16.0>>
- * gdotaccent (U+0121): L<<597.0,494.0>--<598.0,16.0>>
- * uni0123 (U+0123): L<<597.0,494.0>--<598.0,16.0>>
- * uni0474 (U+0474): L<<719.0,675.0>--<718.0,528.0>>
- * uni05E9 (U+05E9): L<<228.0,546.0>--<229.0,318.0>>
- * uniFB2A (U+FB2A): L<<228.0,546.0>--<229.0,318.0>>
- * uniFB2B (U+FB2B): L<<228.0,546.0>--<229.0,318.0>>
- * uniFB2C (U+FB2C): L<<228.0,546.0>--<229.0,318.0>> and 3 more.
+Width = 582:
+equal
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[10] Rubik-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+Width = 605:
+greater
 
+Width = 607:
+logicalnot
 
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+Width = 599:
+plusminus
 
+Width = 648:
+multiply
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+Width = 618:
+divide
+
+Width = 634:
+approxequal
+
+Width = 603:
+notequal
+ [code: width-outliers]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
 
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uniFB31
-	* wgrave
-	* atilde
-	* summation
-	* G
-	* U
-	* uni0457
-	* minus.case
-	* ldot
-	* uniFB49 and 665 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
 
 
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
+* ⚠ **WARN** The following glyphs have segments which seem very short:
 
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+	* quotedbl (U+0022) contains a short segment L<<209.0,707.0>--<209.0,707.0>>
 
+	* quotedbl (U+0022) contains a short segment L<<401.0,707.0>--<401.0,707.0>>
 
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+	* quotesingle (U+0027) contains a short segment L<<210.0,707.0>--<210.0,707.0>>
 
+	* three (U+0033) contains a short segment B<<204.0,358.0>-<212.0,360.0>-<221.5,361.0>>
 
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
-	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+	* three (U+0033) contains a short segment B<<221.5,361.0>-<231.0,362.0>-<240.5,362.5>>
 
+	* three (U+0033) contains a short segment B<<240.5,362.5>-<250.0,363.0>-<259.5,363.5>>
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
+	* three (U+0033) contains a short segment B<<259.5,363.5>-<269.0,364.0>-<277.0,364.0>>
 
-The following glyphs do not have the recommended number of contours:
+	* at (U+0040) contains a short segment B<<698.0,152.0>-<682.0,152.0>-<670.0,158.5>>
 
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2 
-	- And Glyph name: uni00AD	Contours detected: 1	Expected: 0
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+	* at (U+0040) contains a short segment B<<670.0,158.5>-<658.0,165.0>-<650.5,176.0>>
 
+	* at (U+0040) contains a short segment B<<650.5,176.0>-<643.0,187.0>-<639.5,203.0>>
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
+	* at (U+0040) contains a short segment B<<639.5,203.0>-<636.0,219.0>-<637.0,237.0>>
+
+	* onequarter (U+00BC) contains a short segment B<<523.0,292.0>-<523.0,292.0>-<523.5,292.5>>
+
+	* onequarter (U+00BC) contains a short segment B<<523.5,292.5>-<524.0,293.0>-<524.0,293.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<632.0,292.0>-<632.0,292.0>-<632.5,292.5>>
+
+	* threequarters (U+00BE) contains a short segment B<<632.5,292.5>-<633.0,293.0>-<633.0,293.0>>
+
+	* Oslash (U+00D8) contains a short segment B<<154.0,350.0>-<154.0,351.0>-<154.0,352.0>>
+
+	* Oslash (U+00D8) contains a short segment B<<154.0,352.0>-<154.0,353.0>-<154.0,354.0>>
+
+	* ae (U+00E6) contains a short segment B<<281.0,501.0>-<274.0,502.0>-<267.5,502.0>>
+
+	* ae (U+00E6) contains a short segment B<<267.5,502.0>-<261.0,502.0>-<253.0,501.0>>
+
+	* ae (U+00E6) contains a short segment B<<228.0,418.0>-<233.0,419.0>-<238.0,419.0>>
+
+	* ae (U+00E6) contains a short segment B<<238.0,419.0>-<243.0,419.0>-<248.0,419.0>>
+
+	* ae (U+00E6) contains a short segment B<<31.0,174.0>-<30.0,166.0>-<30.5,159.5>>
+
+	* ae (U+00E6) contains a short segment B<<30.5,159.5>-<31.0,153.0>-<32.0,145.0>>
+
+	* ae (U+00E6) contains a short segment B<<208.0,-10.0>-<214.0,-11.0>-<221.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<221.0,-11.0>-<228.0,-11.0>-<235.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<628.0,-11.0>-<636.0,-12.0>-<643.0,-12.0>>
+
+	* ae (U+00E6) contains a short segment B<<643.0,-12.0>-<650.0,-12.0>-<658.0,-12.0>>
+
+	* ae (U+00E6) contains a short segment L<<495.0,254.0>--<492.0,251.0>>
+
+	* thorn (U+00FE) contains a short segment L<<157.0,61.0>--<160.0,61.0>>
+
+	* Eng (U+014A) contains a short segment B<<527.0,-109.0>-<519.0,-109.0>-<510.5,-107.5>>
+
+	* Eng (U+014A) contains a short segment B<<510.5,-107.5>-<502.0,-106.0>-<493.0,-103.0>>
+
+	* Eng (U+014A) contains a short segment B<<493.0,-182.0>-<505.0,-185.0>-<518.0,-187.0>>
+
+	* eng (U+014B) contains a short segment B<<350.0,-109.0>-<342.0,-109.0>-<333.5,-107.5>>
+
+	* eng (U+014B) contains a short segment B<<333.5,-107.5>-<325.0,-106.0>-<316.0,-103.0>>
+
+	* OE (U+0152) contains a short segment B<<530.0,0.0>-<517.0,-3.0>-<504.5,-5.0>>
+
+	* OE (U+0152) contains a short segment B<<504.5,-5.0>-<492.0,-7.0>-<478.0,-8.0>>
+
+	* OE (U+0152) contains a short segment B<<478.0,-8.0>-<465.0,-11.0>-<452.0,-12.0>>
+
+	* OE (U+0152) contains a short segment B<<452.0,-12.0>-<439.0,-13.0>-<426.0,-13.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<281.0,501.0>-<274.0,502.0>-<267.5,502.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<267.5,502.0>-<261.0,502.0>-<253.0,501.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<228.0,418.0>-<233.0,419.0>-<238.0,419.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<238.0,419.0>-<243.0,419.0>-<248.0,419.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<31.0,174.0>-<30.0,166.0>-<30.5,159.5>>
+
+	* aeacute (U+01FD) contains a short segment B<<30.5,159.5>-<31.0,153.0>-<32.0,145.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<208.0,-10.0>-<214.0,-11.0>-<221.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<221.0,-11.0>-<228.0,-11.0>-<235.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<628.0,-11.0>-<636.0,-12.0>-<643.0,-12.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<643.0,-12.0>-<650.0,-12.0>-<658.0,-12.0>>
+
+	* aeacute (U+01FD) contains a short segment L<<495.0,254.0>--<492.0,251.0>>
+
+	* Oslashacute (U+01FE) contains a short segment B<<154.0,350.0>-<154.0,351.0>-<154.0,352.0>>
+
+	* Oslashacute (U+01FE) contains a short segment B<<154.0,352.0>-<154.0,353.0>-<154.0,354.0>>
+
+	* minute (U+2032) contains a short segment L<<188.0,707.0>--<188.0,707.0>>
+
+	* second (U+2033) contains a short segment L<<187.0,707.0>--<187.0,707.0>>
+
+	* second (U+2033) contains a short segment L<<379.0,707.0>--<379.0,707.0>>
+
+	* uni2074 (U+2074) contains a short segment B<<199.0,578.0>-<199.0,578.0>-<199.5,578.5>>
+
+	* uni2074 (U+2074) contains a short segment B<<199.5,578.5>-<200.0,579.0>-<200.0,579.0>>
+
+	* Euro (U+20AC) contains a short segment B<<518.0,592.5>-<525.0,599.0>-<532.5,606.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<309.0,56.0>-<305.0,55.0>-<302.0,55.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<302.0,55.0>-<299.0,55.0>-<296.0,56.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<408.0,564.0>-<409.0,569.0>-<408.5,575.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<408.5,575.0>-<408.0,581.0>-<408.0,586.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<296.0,715.0>-<295.0,715.0>-<295.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<295.0,715.0>-<295.0,715.0>-<294.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<162.0,540.0>-<162.0,539.0>-<162.0,538.5>>
+
+	* uni2113 (U+2113) contains a short segment B<<162.0,538.5>-<162.0,538.0>-<162.0,536.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<162.0,141.0>-<162.0,135.0>-<162.0,128.5>> 
+
+	* integral (U+222B) contains a short segment B<<77.5,-146.0>-<72.0,-141.0>-<65.5,-138.0>> [code: found-short-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni04CB (U+04CB): L<<531.0,71.0>--<531.0,71.0>> -> L<<531.0,71.0>--<531.0,71.0>> and uni0524 (U+0524): L<<488.0,90.0>--<488.0,90.0>> -> L<<488.0,90.0>--<488.0,90.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
+
+	* Eng (U+014A): L<<675.0,-27.0>--<675.0,14.0>> -> L<<675.0,14.0>--<675.0,704.0>>
+
+	* Oslash (U+00D8): L<<263.0,134.0>--<443.0,331.0>> -> L<<443.0,331.0>--<621.0,523.0>>
+
+	* Oslashacute (U+01FE): L<<263.0,134.0>--<443.0,331.0>> -> L<<443.0,331.0>--<621.0,523.0>>
+
+	* exclam (U+0021): L<<180.0,207.0>--<204.0,620.0>> -> L<<204.0,620.0>--<207.0,704.0>>
+
+	* exclam (U+0021): L<<90.0,704.0>--<93.0,620.0>> -> L<<93.0,620.0>--<118.0,207.0>>
+
+	* exclamdbl (U+203C): L<<180.0,207.0>--<204.0,620.0>> -> L<<204.0,620.0>--<207.0,704.0>>
+
+	* exclamdbl (U+203C): L<<317.0,704.0>--<320.0,620.0>> -> L<<320.0,620.0>--<345.0,207.0>>
+
+	* exclamdbl (U+203C): L<<407.0,207.0>--<431.0,620.0>> -> L<<431.0,620.0>--<434.0,704.0>>
+
+	* exclamdbl (U+203C): L<<90.0,704.0>--<93.0,620.0>> -> L<<93.0,620.0>--<118.0,207.0>>
+
+	* exclamdown (U+00A1): L<<118.0,319.0>--<95.0,-60.0>> -> L<<95.0,-60.0>--<90.0,-179.0>>
+
+	* exclamdown (U+00A1): L<<208.0,-179.0>--<204.0,-60.0>> -> L<<204.0,-60.0>--<181.0,319.0>>
+
+	* minute (U+2032): L<<115.0,426.0>--<178.0,662.0>> -> L<<178.0,662.0>--<188.0,707.0>>
+
+	* quotedbl (U+0022): L<<136.0,426.0>--<199.0,662.0>> -> L<<199.0,662.0>--<209.0,707.0>>
+
+	* quotedbl (U+0022): L<<328.0,426.0>--<391.0,662.0>> -> L<<391.0,662.0>--<401.0,707.0>>
+
+	* quotesingle (U+0027): L<<137.0,426.0>--<200.0,662.0>> -> L<<200.0,662.0>--<210.0,707.0>>
+
+	* second (U+2033): L<<114.0,426.0>--<177.0,662.0>> -> L<<177.0,662.0>--<187.0,707.0>>
+
+	* second (U+2033): L<<306.0,426.0>--<369.0,662.0>> -> L<<369.0,662.0>--<379.0,707.0>> 
+
+	* thorn (U+00FE): L<<158.0,-243.0>--<158.0,-13.0>> -> L<<158.0,-13.0>--<157.0,61.0>> [code: found-colinear-vectors]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
-* ⚠ **WARN** The following glyphs have jaggy segments:
-	* uni0495 (U+0495): L<<202.0,440.0>--<163.0,254.0>>/L<<163.0,254.0>--<167.0,273.0>> = 0.04658192429955475 [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[11] Rubik-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
+
+	* onehalf (U+00BD): L<<678.0,63.0>--<515.0,62.0>> 
+
+	* uni00B2 (U+00B2): L<<318.0,349.0>--<155.0,348.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[20] Geom-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+* 🔥 **FAIL** In this font fsType is set to 4 meaning that:
+The font may be embedded, and temporarily loaded on the remote system, but documents that use it must not be editable.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright (c) 2022 The Geom Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.sTypoLineGap is "9" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 982 when it should be at least 1200 [code: bad-hhea-range]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Geom-Light.ttf', 'fonts/ttf/Geom-Black.ttf', 'fonts/ttf/Geom-SemiBold.ttf', 'fonts/ttf/Geom-Medium.ttf', 'fonts/ttf/Geom-Regular.ttf', 'fonts/ttf/Geom-Bold.ttf', 'fonts/ttf/Geom-ExtraBold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1056, but got 759 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 278, but got 259 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 sTypoLineGap (9) and hhea lineGap (0) must be equal. [code: lineGap]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: i̇ ǐ i̒ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ j̆ j̇ j̊ j̋ ǰ j̒ j̧̀ j̧́ j̧̃ j̧̄ j̧̆ j̧̇ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Space and non-breaking space have the same width? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_widths">com.google.fonts/check/whitespace_widths</a>)</summary><div>
+
+
+* 🔥 **FAIL** Space and non-breaking space have differing width: The space glyph named space is 280 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has "Sidebearing arithmetic" (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* uni0499
-	* hbar
-	* uni0525
-	* uni04A2
-	* uni049B
-	* uni05D2
-	* uni05EA
-	* uni05DC
-	* uni04B9 and 43 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
 
 
 * ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
 
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+	- f + f
+
+	- f + i
+
+	- i + f
+
+	- f + l
+
+	- l + f 
+
+	- i + l [code: lacks-kern-info]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
+
+	- NULL.1
+
+	- Upsilondieresis_alt
+
+	- f_t
+
+	- i.loclTRK
+
+	- periodcentered.loclCAT
+
+	- periodcentered.loclCAT.case
+
+	- t_t
+
+	- tonos.case
+
+	- uni000D
+
+	- uni004A0301
+
+	- uni006A0301
+
 	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
+
+	- uni0394
+
+	- uni0394.1
+
+	- uni03BC.001
+
+	- uni2126 
+
+	- w_w_w
  [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: uni0493	Contours detected: 2	Expected: 1
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-	- And Glyph name: uni0493	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
 
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
-	* quotedbl (U+0022): X=255.5,Y=702.0 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=405.5,Y=702.0 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=46.5,Y=702.0 (should be at cap-height 700?)
-	* quotedbl (U+0022): X=196.5,Y=702.0 (should be at cap-height 700?)
-	* quotesingle (U+0027): X=46.5,Y=702.0 (should be at cap-height 700?)
-	* quotesingle (U+0027): X=196.5,Y=702.0 (should be at cap-height 700?)
-	* cent (U+00A2): X=221.0,Y=-1.0 (should be at baseline 0?)
-	* cent (U+00A2): X=370.0,Y=-2.0 (should be at baseline 0?)
-	* macron (U+00AF): X=58.0,Y=698.0 (should be at cap-height 700?)
-	* macron (U+00AF): X=382.0,Y=698.0 (should be at cap-height 700?) and 50 more.
+* ⚠ **WARN** The most common width is 662 among a set of 3 math glyphs.
+The following math glyphs have a different width, though:
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
+Width = 644:
+plus
+
+Width = 642:
+greater, less
+
+Width = 625:
+equal
+
+Width = 654:
+logicalnot, notequal
+
+Width = 621:
+plusminus
+
+Width = 679:
+multiply
+
+Width = 658:
+divide
+
+Width = 634:
+approxequal
+ [code: width-outliers]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have segments which seem very short:
+
+	* quotedbl (U+0022) contains a short segment L<<273.0,702.0>--<273.0,703.0>>
+
+	* quotedbl (U+0022) contains a short segment L<<504.0,702.0>--<504.0,703.0>>
+
+	* quotesingle (U+0027) contains a short segment L<<275.0,702.0>--<275.0,703.0>>
+
+	* three (U+0033) contains a short segment B<<211.0,321.0>-<218.0,322.0>-<228.5,322.5>>
+
+	* three (U+0033) contains a short segment B<<273.0,323.5>-<283.0,324.0>-<290.0,324.0>>
+
+	* at (U+0040) contains a short segment B<<730.0,134.0>-<711.0,134.0>-<698.5,142.0>>
+
+	* at (U+0040) contains a short segment B<<698.5,142.0>-<686.0,150.0>-<678.5,163.0>>
+
+	* at (U+0040) contains a short segment B<<678.5,163.0>-<671.0,176.0>-<669.0,193.5>>
+
+	* at (U+0040) contains a short segment B<<669.0,193.5>-<667.0,211.0>-<669.0,230.0>>
+
+	* r (U+0072) contains a short segment B<<388.0,529.0>-<384.0,530.0>-<379.0,530.0>>
+
+	* section (U+00A7) contains a short segment B<<220.5,546.5>-<215.0,555.0>-<215.0,564.0>>
+
+	* onequarter (U+00BC) contains a short segment B<<604.0,299.0>-<605.0,299.0>-<605.5,299.0>>
+
+	* onequarter (U+00BC) contains a short segment B<<605.5,299.0>-<606.0,299.0>-<606.0,299.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<744.0,299.0>-<745.0,299.0>-<745.5,299.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<745.5,299.0>-<746.0,299.0>-<746.0,299.0>>
+
+	* ae (U+00E6) contains a short segment B<<285.0,530.0>-<277.0,530.0>-<269.5,530.0>>
+
+	* ae (U+00E6) contains a short segment B<<269.5,530.0>-<262.0,530.0>-<254.0,529.0>>
+
+	* ae (U+00E6) contains a short segment B<<233.0,410.0>-<235.0,410.0>-<237.0,410.0>>
+
+	* ae (U+00E6) contains a short segment B<<237.0,410.0>-<239.0,410.0>-<241.0,410.0>>
+
+	* ae (U+00E6) contains a short segment B<<29.0,181.0>-<28.0,174.0>-<28.0,167.0>>
+
+	* ae (U+00E6) contains a short segment B<<28.0,167.0>-<28.0,160.0>-<28.0,152.0>>
+
+	* ae (U+00E6) contains a short segment B<<210.0,-11.0>-<218.0,-12.0>-<227.0,-12.0>>
+
+	* ae (U+00E6) contains a short segment B<<227.0,-12.0>-<236.0,-12.0>-<246.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<650.0,-15.0>-<659.0,-15.0>-<668.5,-14.5>>
+
+	* ae (U+00E6) contains a short segment B<<668.5,-14.5>-<678.0,-14.0>-<687.0,-14.0>>
+
+	* ae (U+00E6) contains a short segment L<<535.0,265.0>--<534.0,264.0>>
+
+	* eth (U+00F0) contains a short segment B<<368.0,443.0>-<362.0,447.0>-<352.5,452.0>>
+
+	* thorn (U+00FE) contains a short segment L<<203.0,57.0>--<206.0,57.0>>
+
+	* Eng (U+014A) contains a short segment L<<548.0,16.0>--<548.0,-4.0>>
+
+	* Eng (U+014A) contains a short segment B<<502.0,-62.0>-<494.0,-62.0>-<485.0,-60.5>>
+
+	* Eng (U+014A) contains a short segment B<<485.0,-60.5>-<476.0,-59.0>-<466.0,-55.0>>
+
+	* eng (U+014B) contains a short segment B<<352.0,-62.0>-<344.0,-62.0>-<335.0,-60.5>>
+
+	* OE (U+0152) contains a short segment B<<503.0,-3.0>-<490.0,-7.0>-<477.0,-8.5>>
+
+	* OE (U+0152) contains a short segment B<<477.0,-8.5>-<464.0,-10.0>-<451.0,-11.0>>
+
+	* racute (U+0155) contains a short segment B<<388.0,529.0>-<384.0,530.0>-<379.0,530.0>>
+
+	* uni0157 (U+0157) contains a short segment B<<394.0,529.0>-<390.0,530.0>-<385.0,530.0>>
+
+	* rcaron (U+0159) contains a short segment B<<380.0,529.0>-<376.0,530.0>-<371.0,530.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<285.0,530.0>-<277.0,530.0>-<269.5,530.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<269.5,530.0>-<262.0,530.0>-<254.0,529.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<233.0,410.0>-<235.0,410.0>-<237.0,410.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<237.0,410.0>-<239.0,410.0>-<241.0,410.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<29.0,181.0>-<28.0,174.0>-<28.0,167.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<28.0,167.0>-<28.0,160.0>-<28.0,152.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<210.0,-11.0>-<218.0,-12.0>-<227.0,-12.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<227.0,-12.0>-<236.0,-12.0>-<246.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<650.0,-15.0>-<659.0,-15.0>-<668.5,-14.5>>
+
+	* aeacute (U+01FD) contains a short segment B<<668.5,-14.5>-<678.0,-14.0>-<687.0,-14.0>>
+
+	* aeacute (U+01FD) contains a short segment L<<535.0,265.0>--<534.0,264.0>>
+
+	* Phi (U+03A6) contains a short segment B<<392.0,656.0>-<386.0,656.0>-<379.5,655.5>>
+
+	* Phi (U+03A6) contains a short segment B<<379.5,655.5>-<373.0,655.0>-<367.0,654.0>>
+
+	* Phi (U+03A6) contains a short segment B<<367.0,53.0>-<373.0,53.0>-<379.5,52.5>>
+
+	* Phi (U+03A6) contains a short segment B<<379.5,52.5>-<386.0,52.0>-<392.0,51.0>>
+
+	* Phi (U+03A6) contains a short segment B<<543.0,51.0>-<550.0,52.0>-<556.0,52.5>>
+
+	* Phi (U+03A6) contains a short segment B<<556.0,52.5>-<562.0,53.0>-<568.0,53.0>>
+
+	* Phi (U+03A6) contains a short segment B<<568.0,654.0>-<562.0,655.0>-<556.0,655.5>>
+
+	* Phi (U+03A6) contains a short segment B<<556.0,655.5>-<550.0,656.0>-<543.0,656.0>>
+
+	* xi (U+03BE) contains a short segment B<<297.5,-61.5>-<299.0,-71.0>-<299.0,-77.0>>
+
+	* minute (U+2032) contains a short segment L<<231.0,702.0>--<231.0,703.0>>
+
+	* second (U+2033) contains a short segment L<<229.0,702.0>--<229.0,703.0>>
+
+	* second (U+2033) contains a short segment L<<460.0,702.0>--<460.0,703.0>>
+
+	* uni2074 (U+2074) contains a short segment B<<193.0,585.0>-<194.0,585.0>-<194.5,585.0>>
+
+	* uni2074 (U+2074) contains a short segment B<<194.5,585.0>-<195.0,585.0>-<195.0,585.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<314.0,81.0>-<312.0,80.0>-<309.0,80.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<309.0,80.0>-<306.0,80.0>-<304.0,81.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<265.0,126.0>-<264.0,129.0>-<264.0,131.5>>
+
+	* uni2113 (U+2113) contains a short segment B<<264.0,131.5>-<264.0,134.0>-<264.0,137.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<418.5,575.5>-<418.0,582.0>-<418.0,588.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<306.0,714.0>-<303.0,715.0>-<301.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<301.0,715.0>-<299.0,715.0>-<295.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<155.0,544.0>-<155.0,541.0>-<155.0,538.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<155.0,538.0>-<155.0,535.0>-<155.0,531.0>>
+
+	* integral (U+222B) contains a short segment B<<106.0,-131.0>-<101.0,-127.0>-<96.5,-123.5>>
+
+	* integral (U+222B) contains a short segment B<<96.5,-123.5>-<92.0,-120.0>-<87.0,-117.0>>
+
+	* integral (U+222B) contains a short segment B<<87.0,-117.0>-<82.0,-114.0>-<76.5,-112.0>>
+
+	* integral (U+222B) contains a short segment B<<76.5,-112.0>-<71.0,-110.0>-<64.0,-110.0>>
+
+	* integral (U+222B) contains a short segment B<<238.0,660.0>-<244.0,656.0>-<249.5,652.5>>
+
+	* integral (U+222B) contains a short segment B<<249.5,652.5>-<255.0,649.0>-<260.0,645.5>> 
+
+	* integral (U+222B) contains a short segment B<<260.0,645.5>-<265.0,642.0>-<272.0,640.0>> [code: found-short-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni05DC (U+05DC): L<<195.0,434.0>--<193.0,434.0>> -> L<<193.0,434.0>--<61.0,434.0>>
-	* uni05DC (U+05DC): L<<218.0,434.0>--<195.0,434.0>> -> L<<195.0,434.0>--<193.0,434.0>>
-	* uniFB3C (U+FB3C): L<<195.0,434.0>--<193.0,434.0>> -> L<<193.0,434.0>--<61.0,434.0>> and uniFB3C (U+FB3C): L<<218.0,434.0>--<195.0,434.0>> -> L<<195.0,434.0>--<193.0,434.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
+
+	* Eng (U+014A): L<<701.0,4.0>--<701.0,54.0>> -> L<<701.0,54.0>--<701.0,702.0>>
+
+	* Oslash (U+00D8): L<<347.0,150.0>--<467.0,329.0>> -> L<<467.0,329.0>--<578.0,489.0>>
+
+	* Oslashacute (U+01FE): L<<347.0,150.0>--<467.0,329.0>> -> L<<467.0,329.0>--<578.0,489.0>>
+
+	* exclam (U+0021): L<<204.0,220.0>--<248.0,617.0>> -> L<<248.0,617.0>--<250.0,702.0>>
+
+	* exclamdbl (U+203C): L<<204.0,220.0>--<248.0,617.0>> -> L<<248.0,617.0>--<250.0,702.0>>
+
+	* exclamdbl (U+203C): L<<456.0,220.0>--<500.0,617.0>> -> L<<500.0,617.0>--<502.0,702.0>>
+
+	* exclamdown (U+00A1): L<<119.0,303.0>--<75.0,-80.0>> -> L<<75.0,-80.0>--<73.0,-179.0>>
+
+	* exclamdown (U+00A1): L<<250.0,-179.0>--<248.0,-80.0>> -> L<<248.0,-80.0>--<204.0,303.0>> 
+
+	* thorn (U+00FE): L<<206.0,-232.0>--<206.0,-17.0>> -> L<<206.0,-17.0>--<203.0,57.0>> [code: found-colinear-vectors]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
- * uni0434 (U+0434): L<<249.0,131.0>--<399.0,132.0>>
- * uni0446 (U+0446): L<<568.0,495.0>--<567.0,131.0>>
- * uni0474 (U+0474): L<<702.0,678.0>--<701.0,561.0>>
- * uni05E3 (U+05E3): L<<527.0,315.0>--<528.0,-99.0>>
- * uni05E9 (U+05E9): L<<207.0,547.0>--<208.0,302.0>>
- * uni05EA (U+05EA): L<<275.0,0.0>--<68.0,1.0>>
- * uniFB2A (U+FB2A): L<<207.0,547.0>--<208.0,302.0>>
- * uniFB2B (U+FB2B): L<<207.0,547.0>--<208.0,302.0>>
- * uniFB2C (U+FB2C): L<<207.0,547.0>--<208.0,302.0>>
- * uniFB2D (U+FB2D): L<<207.0,547.0>--<208.0,302.0>> and 3 more.
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[10] Rubik-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+	* Pi (U+03A0): L<<660.0,705.0>--<65.0,702.0>> 
+
+	* brokenbar (U+00A6): L<<400.0,173.0>--<263.0,174.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[20] Geom-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
 
 
-* 🔥 **FAIL** First line in license file does not match expected format: "copyright 20** the my font project authors (https://github.com/googlefonts/googlefonts-project-template)"
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+* 🔥 **FAIL** In this font fsType is set to 4 meaning that:
+The font may be embedded, and temporarily loaded on the remote system, but documents that use it must not be editable.
+
+No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
-* ⚠ **WARN** OS/2 VendorID value 'NONE' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright (c) 2022 The Geom Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.sTypoLineGap is "9" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 982 when it should be at least 1200 [code: bad-hhea-range]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Geom-Light.ttf', 'fonts/ttf/Geom-Black.ttf', 'fonts/ttf/Geom-SemiBold.ttf', 'fonts/ttf/Geom-Medium.ttf', 'fonts/ttf/Geom-Regular.ttf', 'fonts/ttf/Geom-Bold.ttf', 'fonts/ttf/Geom-ExtraBold.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1056, but got 759 instead [code: ascent]
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 278, but got 259 instead. [code: descent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea">com.google.fonts/check/os2_metrics_match_hhea</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 sTypoLineGap (9) and hhea lineGap (0) must be equal. [code: lineGap]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters should disappear in other cases, for example: i̇ ǐ i̒ i̧̇ i̧̊ i̧̋ ǐ̧ i̧̒ j̆ j̇ j̊ j̋ ǰ j̒ j̧̀ j̧́ j̧̃ j̧̄ j̧̆ j̧̇ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Space and non-breaking space have the same width? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_widths">com.google.fonts/check/whitespace_widths</a>)</summary><div>
+
+
+* 🔥 **FAIL** Space and non-breaking space have differing width: The space glyph named space is 280 font units wide, non-breaking space named (uni00A0) is 260 font units wide, and both should be positive and the same. GlyphsApp has "Sidebearing arithmetic" (https://glyphsapp.com/tutorials/spacing) which allows you to set the non-breaking space width to always equal the space width. [code: different-widths]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
  [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* uni04F6
-	* uni04A2
-	* uni05B8
-	* uni04E8
-	* Euro
-	* uni20B4
-	* uni20B9
-	* Hbar
-	* uni20B4.BRACKET.125
-	* yen.BRACKET.125 and 10 more.
-
-Use -F or --full-lists to disable shortening of long lists.
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
 
 
 * ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-	- f + f
-	- f + i
-	- i + f
-	- f + l
-	- l + f
-	- i + l
 
-   [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+	- f + f
+
+	- f + i
+
+	- i + f
+
+	- f + l
+
+	- l + f 
+
+	- i + l [code: lacks-kern-info]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- parenright.denominator
+
+	- NULL.1
+
+	- Upsilondieresis_alt
+
+	- f_t
+
+	- i.loclTRK
+
+	- periodcentered.loclCAT
+
+	- periodcentered.loclCAT.case
+
+	- t_t
+
+	- tonos.case
+
+	- uni000D
+
+	- uni004A0301
+
+	- uni006A0301
+
 	- uni030C.alt
-	- parenleft.denominator
-	- parenleft.numerator
-	- .null
-	- Euro.BRACKET.125
-	- parenright.numerator
-	- uni20B4.BRACKET.125 
-	- And yen.BRACKET.125
+
+	- uni0394
+
+	- uni0394.1
+
+	- uni03BC.001
+
+	- uni2126 
+
+	- w_w_w
  [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
 * ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
 
 The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: uni0493	Contours detected: 2	Expected: 1
-	- Glyph name: ustraitstrokecy	Contours detected: 2	Expected: 1
-	- Glyph name: fi	Contours detected: 1	Expected: 3
-	- Glyph name: fl	Contours detected: 1	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
 	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-	- And Glyph name: uni0493	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
 
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
+
+
+* ⚠ **WARN** The most common width is 677 among a set of 3 math glyphs.
+The following math glyphs have a different width, though:
+
+Width = 659:
+plus
+
+Width = 654:
+less
+
+Width = 639:
+equal
+
+Width = 655:
+greater
+
+Width = 670:
+logicalnot
+
+Width = 629:
+plusminus
+
+Width = 690:
+multiply
+
+Width = 672:
+divide
+
+Width = 634:
+approxequal
+
+Width = 671:
+notequal
+ [code: width-outliers]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 sTypoLineGap is not equal to 0. [code: OS/2]
+</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have segments which seem very short:
+
+	* quotedbl (U+0022) contains a short segment L<<294.0,701.0>--<294.0,701.0>>
+
+	* quotedbl (U+0022) contains a short segment L<<538.0,701.0>--<538.0,701.0>>
+
+	* quotesingle (U+0027) contains a short segment L<<297.0,701.0>--<297.0,701.0>>
+
+	* three (U+0033) contains a short segment B<<214.0,309.0>-<220.0,310.0>-<231.0,310.0>>
+
+	* three (U+0033) contains a short segment B<<277.5,310.0>-<288.0,310.0>-<294.0,310.0>>
+
+	* at (U+0040) contains a short segment B<<740.0,128.0>-<720.0,128.0>-<707.5,136.5>>
+
+	* at (U+0040) contains a short segment B<<707.5,136.5>-<695.0,145.0>-<688.0,159.0>>
+
+	* at (U+0040) contains a short segment B<<688.0,159.0>-<681.0,173.0>-<679.0,191.0>>
+
+	* at (U+0040) contains a short segment B<<679.0,191.0>-<677.0,209.0>-<679.0,227.0>>
+
+	* e (U+0065) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
+
+	* r (U+0072) contains a short segment B<<400.0,539.0>-<397.0,540.0>-<393.0,540.0>>
+
+	* r (U+0072) contains a short segment B<<393.0,540.0>-<389.0,540.0>-<386.0,540.0>>
+
+	* r (U+0072) contains a short segment B<<391.5,361.5>-<397.0,361.0>-<400.0,360.0>>
+
+	* section (U+00A7) contains a short segment B<<231.5,543.5>-<226.0,551.0>-<226.0,559.0>>
+
+	* uni00B3 (U+00B3) contains a short segment B<<159.0,478.0>-<164.0,478.0>-<170.0,478.5>>
+
+	* onequarter (U+00BC) contains a short segment B<<631.0,302.0>-<632.0,301.0>-<632.5,301.0>>
+
+	* onequarter (U+00BC) contains a short segment B<<632.5,301.0>-<633.0,301.0>-<634.0,301.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<180.0,478.0>-<185.0,478.0>-<191.0,478.5>>
+
+	* threequarters (U+00BE) contains a short segment B<<781.0,302.0>-<782.0,301.0>-<782.5,301.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<782.5,301.0>-<783.0,301.0>-<784.0,301.0>>
+
+	* ae (U+00E6) contains a short segment B<<286.0,539.0>-<278.0,540.0>-<270.5,540.0>>
+
+	* ae (U+00E6) contains a short segment B<<270.5,540.0>-<263.0,540.0>-<255.0,539.0>>
+
+	* ae (U+00E6) contains a short segment B<<235.0,407.0>-<236.0,407.0>-<237.0,407.0>>
+
+	* ae (U+00E6) contains a short segment B<<237.0,407.0>-<238.0,407.0>-<239.0,407.0>>
+
+	* ae (U+00E6) contains a short segment B<<29.0,184.0>-<28.0,176.0>-<27.5,169.5>>
+
+	* ae (U+00E6) contains a short segment B<<27.5,169.5>-<27.0,163.0>-<27.0,155.0>>
+
+	* ae (U+00E6) contains a short segment B<<210.0,-12.0>-<219.0,-12.0>-<229.0,-12.0>>
+
+	* ae (U+00E6) contains a short segment B<<229.0,-12.0>-<239.0,-12.0>-<250.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<657.0,-16.0>-<666.0,-16.0>-<676.5,-15.5>>
+
+	* ae (U+00E6) contains a short segment B<<676.5,-15.5>-<687.0,-15.0>-<697.0,-14.0>>
+
+	* ae (U+00E6) contains a short segment L<<549.0,268.0>--<548.0,268.0>>
+
+	* egrave (U+00E8) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
+
+	* eacute (U+00E9) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
+
+	* ecircumflex (U+00EA) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
+
+	* edieresis (U+00EB) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
+
+	* eth (U+00F0) contains a short segment B<<359.0,457.0>-<353.0,459.0>-<344.5,463.0>>
+
+	* thorn (U+00FE) contains a short segment L<<218.0,56.0>--<222.0,56.0>>
+
+	* thorn (U+00FE) contains a short segment L<<217.0,411.0>--<217.0,411.0>>
+
+	* emacron (U+0113) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
+
+	* ebreve (U+0115) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
+
+	* edotaccent (U+0117) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
+
+	* eogonek (U+0119) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
+
+	* ecaron (U+011B) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
+
+	* Eng (U+014A) contains a short segment L<<538.0,21.0>--<538.0,10.0>>
+
+	* Eng (U+014A) contains a short segment B<<494.0,-47.0>-<485.0,-47.0>-<476.5,-45.0>>
+
+	* Eng (U+014A) contains a short segment B<<476.5,-45.0>-<468.0,-43.0>-<457.0,-39.0>>
+
+	* eng (U+014B) contains a short segment B<<353.0,-47.0>-<344.0,-47.0>-<335.5,-45.0>>
+
+	* OE (U+0152) contains a short segment B<<511.0,-2.0>-<499.0,-5.0>-<486.0,-7.0>>
+
+	* OE (U+0152) contains a short segment B<<486.0,-7.0>-<473.0,-9.0>-<460.0,-11.0>>
+
+	* racute (U+0155) contains a short segment B<<400.0,539.0>-<397.0,540.0>-<393.0,540.0>>
+
+	* racute (U+0155) contains a short segment B<<393.0,540.0>-<389.0,540.0>-<386.0,540.0>>
+
+	* racute (U+0155) contains a short segment B<<391.5,361.5>-<397.0,361.0>-<400.0,360.0>>
+
+	* uni0157 (U+0157) contains a short segment B<<407.0,539.0>-<404.0,540.0>-<400.0,540.0>>
+
+	* uni0157 (U+0157) contains a short segment B<<400.0,540.0>-<396.0,540.0>-<393.0,540.0>>
+
+	* uni0157 (U+0157) contains a short segment B<<398.5,361.5>-<404.0,361.0>-<407.0,360.0>>
+
+	* rcaron (U+0159) contains a short segment B<<401.0,539.0>-<398.0,540.0>-<394.0,540.0>>
+
+	* rcaron (U+0159) contains a short segment B<<394.0,540.0>-<390.0,540.0>-<387.0,540.0>>
+
+	* rcaron (U+0159) contains a short segment B<<392.5,361.5>-<398.0,361.0>-<401.0,360.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<286.0,539.0>-<278.0,540.0>-<270.5,540.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<270.5,540.0>-<263.0,540.0>-<255.0,539.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<235.0,407.0>-<236.0,407.0>-<237.0,407.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<237.0,407.0>-<238.0,407.0>-<239.0,407.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<29.0,184.0>-<28.0,176.0>-<27.5,169.5>>
+
+	* aeacute (U+01FD) contains a short segment B<<27.5,169.5>-<27.0,163.0>-<27.0,155.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<210.0,-12.0>-<219.0,-12.0>-<229.0,-12.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<229.0,-12.0>-<239.0,-12.0>-<250.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<657.0,-16.0>-<666.0,-16.0>-<676.5,-15.5>>
+
+	* aeacute (U+01FD) contains a short segment B<<676.5,-15.5>-<687.0,-15.0>-<697.0,-14.0>>
+
+	* aeacute (U+01FD) contains a short segment L<<549.0,268.0>--<548.0,268.0>>
+
+	* Phi (U+03A6) contains a short segment B<<393.0,658.0>-<388.0,658.0>-<383.5,657.5>>
+
+	* Phi (U+03A6) contains a short segment B<<383.5,657.5>-<379.0,657.0>-<374.0,657.0>>
+
+	* Phi (U+03A6) contains a short segment B<<374.0,52.0>-<379.0,52.0>-<383.5,51.5>>
+
+	* Phi (U+03A6) contains a short segment B<<383.5,51.5>-<388.0,51.0>-<393.0,51.0>>
+
+	* Phi (U+03A6) contains a short segment B<<560.0,51.0>-<565.0,51.0>-<569.5,51.5>>
+
+	* Phi (U+03A6) contains a short segment B<<569.5,51.5>-<574.0,52.0>-<578.0,52.0>>
+
+	* Phi (U+03A6) contains a short segment B<<578.0,657.0>-<574.0,657.0>-<569.5,657.5>>
+
+	* Phi (U+03A6) contains a short segment B<<569.5,657.5>-<565.0,658.0>-<560.0,658.0>>
+
+	* xi (U+03BE) contains a short segment B<<294.5,-59.5>-<296.0,-69.0>-<296.0,-74.0>>
+
+	* minute (U+2032) contains a short segment L<<246.0,701.0>--<246.0,701.0>>
+
+	* second (U+2033) contains a short segment L<<243.0,701.0>--<243.0,701.0>>
+
+	* second (U+2033) contains a short segment L<<487.0,701.0>--<487.0,701.0>>
+
+	* uni2074 (U+2074) contains a short segment B<<191.0,588.0>-<192.0,587.0>-<192.5,587.0>>
+
+	* uni2074 (U+2074) contains a short segment B<<192.5,587.0>-<193.0,587.0>-<194.0,587.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<316.0,90.0>-<314.0,89.0>-<311.5,89.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<311.5,89.0>-<309.0,89.0>-<306.0,89.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<271.0,134.0>-<270.0,135.0>-<270.0,136.5>>
+
+	* uni2113 (U+2113) contains a short segment B<<270.0,136.5>-<270.0,138.0>-<270.0,140.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<310.0,714.0>-<305.0,715.0>-<302.5,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<302.5,715.0>-<300.0,715.0>-<296.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<153.0,546.0>-<152.0,541.0>-<152.0,537.5>>
+
+	* uni2113 (U+2113) contains a short segment B<<152.0,537.5>-<152.0,534.0>-<152.0,530.0>>
+
+	* threeeighths (U+215C) contains a short segment B<<180.0,478.0>-<185.0,478.0>-<191.0,478.5>>
+
+	* integral (U+222B) contains a short segment B<<109.0,-119.0>-<104.0,-115.0>-<99.5,-112.0>>
+
+	* integral (U+222B) contains a short segment B<<99.5,-112.0>-<95.0,-109.0>-<90.5,-107.0>>
+
+	* integral (U+222B) contains a short segment B<<90.5,-107.0>-<86.0,-105.0>-<80.5,-103.5>>
+
+	* integral (U+222B) contains a short segment B<<80.5,-103.5>-<75.0,-102.0>-<69.0,-102.0>>
+
+	* integral (U+222B) contains a short segment B<<240.0,647.0>-<246.0,644.0>-<251.0,641.0>>
+
+	* integral (U+222B) contains a short segment B<<251.0,641.0>-<256.0,638.0>-<261.5,635.5>>
+
+	* integral (U+222B) contains a short segment B<<261.5,635.5>-<267.0,633.0>-<273.5,631.0>> 
+
+	* integral (U+222B) contains a short segment B<<273.5,631.0>-<280.0,629.0>-<287.0,629.0>> [code: found-short-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
-	* uni0524 (U+0524): L<<529.0,90.0>--<529.0,90.0>> -> L<<529.0,90.0>--<529.0,90.0>>
-	* uni05DC (U+05DC): L<<180.0,489.0>--<178.0,489.0>> -> L<<178.0,489.0>--<83.0,490.0>>
-	* uni05DC (U+05DC): L<<210.0,489.0>--<180.0,489.0>> -> L<<180.0,489.0>--<178.0,489.0>>
-	* uniFB3C (U+FB3C): L<<180.0,489.0>--<178.0,489.0>> -> L<<178.0,489.0>--<83.0,490.0>> and uniFB3C (U+FB3C): L<<210.0,489.0>--<180.0,489.0>> -> L<<180.0,489.0>--<178.0,489.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
+
+	* Eng (U+014A): L<<710.0,14.0>--<710.0,68.0>> -> L<<710.0,68.0>--<710.0,701.0>>
+
+	* Oslash (U+00D8): L<<375.0,156.0>--<475.0,329.0>> -> L<<475.0,329.0>--<563.0,478.0>>
+
+	* Oslashacute (U+01FE): L<<375.0,156.0>--<475.0,329.0>> -> L<<475.0,329.0>--<563.0,478.0>> 
+
+	* thorn (U+00FE): L<<222.0,-229.0>--<222.0,-19.0>> -> L<<222.0,-19.0>--<218.0,56.0>> [code: found-colinear-vectors]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
- * uni0434 (U+0434): L<<168.0,80.0>--<406.0,82.0>> and uni0446 (U+0446): L<<517.0,497.0>--<516.0,80.0>> [code: found-semi-vertical]
+
+	* Pi (U+03A0): L<<673.0,705.0>--<62.0,701.0>> 
+
+	* brokenbar (U+00A6): L<<418.0,173.0>--<267.0,174.0>> [code: found-semi-vertical]
 </div></details><br></div></details>
+
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 14 | 136 | 1438 | 99 | 1255 | 0 |
-| 0% | 0% | 5% | 49% | 3% | 43% | 0% |
+| 0 | 56 | 83 | 823 | 43 | 615 | 0 |
+| 0% | 3% | 5% | 51% | 3% | 38% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
