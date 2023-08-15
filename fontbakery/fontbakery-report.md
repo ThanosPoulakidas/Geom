@@ -177,7 +177,7 @@ Width = 593:
 greater
 
 Width = 591:
-logicalnot, plusminus
+plusminus, logicalnot
 
 Width = 638:
 multiply
@@ -804,7 +804,7 @@ Width = 645:
 divide
 
 Width = 648:
-greaterequal, minus, lessequal
+lessequal, greaterequal, minus
 
 Width = 634:
 approxequal
