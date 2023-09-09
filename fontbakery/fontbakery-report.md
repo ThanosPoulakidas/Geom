@@ -17,7 +17,7 @@ which does not match the expected format, similar to:
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
-"Copyright 2023 The Geom Project Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+"Copyright 2023 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -158,7 +158,7 @@ Width = 593:
 greater
 
 Width = 591:
-plusminus, logicalnot
+logicalnot, plusminus
 
 Width = 638:
 multiply
@@ -370,7 +370,7 @@ which does not match the expected format, similar to:
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
-"Copyright 2023 The Geom Project Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+"Copyright 2023 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -745,7 +745,7 @@ which does not match the expected format, similar to:
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
-"Copyright 2023 The Geom Project Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+"Copyright 2023 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -893,13 +893,13 @@ Width = 644:
 plus
 
 Width = 642:
-greater, less
+less, greater
 
 Width = 625:
 equal
 
 Width = 654:
-notequal, logicalnot
+logicalnot, notequal
 
 Width = 621:
 plusminus
@@ -1118,7 +1118,7 @@ which does not match the expected format, similar to:
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
-"Copyright 2023 The Geom Project Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+"Copyright 2023 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -1531,7 +1531,7 @@ which does not match the expected format, similar to:
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
-"Copyright 2023 The Geom Project Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+"Copyright 2023 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -1740,7 +1740,7 @@ which does not match the expected format, similar to:
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
-"Copyright 2023 The Geom Project Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+"Copyright 2023 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -2109,7 +2109,7 @@ which does not match the expected format, similar to:
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
 But instead we have got:
-"Copyright 2023 The Geom Project Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+"Copyright 2023 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
