@@ -2,7 +2,17 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[13] Geom-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+<details><summary><b>[14] Geom-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2023 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
@@ -345,7 +355,17 @@ notequal
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* Pi (U+03A0): L<<610.0,705.0>--<80.0,706.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] Geom-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] Geom-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2023 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
@@ -710,7 +730,17 @@ notequal
 	* onehalf (U+00BD): L<<678.0,63.0>--<515.0,62.0>> 
 
 	* uni00B2 (U+00B2): L<<318.0,349.0>--<155.0,348.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] Geom-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] Geom-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2023 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
@@ -1073,7 +1103,17 @@ approxequal
 	* Pi (U+03A0): L<<660.0,705.0>--<65.0,702.0>> 
 
 	* brokenbar (U+00A6): L<<400.0,173.0>--<263.0,174.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] Geom-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] Geom-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2023 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
@@ -1476,7 +1516,17 @@ notequal
 	* Pi (U+03A0): L<<673.0,705.0>--<62.0,701.0>> 
 
 	* brokenbar (U+00A6): L<<418.0,173.0>--<267.0,174.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] Geom-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] Geom-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2023 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
@@ -1675,7 +1725,17 @@ notequal
 	* Pi (U+03A0): L<<685.0,705.0>--<58.0,700.0>> 
 
 	* brokenbar (U+00A6): L<<437.0,173.0>--<270.0,174.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] Geom-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] Geom-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2023 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
@@ -2034,7 +2094,17 @@ notequal
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* Pi (U+03A0): L<<648.0,705.0>--<69.0,703.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[13] Geom-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] Geom-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2023 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
 
 
 * 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
@@ -2417,7 +2487,7 @@ notequal
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 14 | 76 | 823 | 43 | 664 | 0 |
+| 0 | 21 | 76 | 823 | 43 | 657 | 0 |
 | 0% | 1% | 5% | 51% | 3% | 41% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
