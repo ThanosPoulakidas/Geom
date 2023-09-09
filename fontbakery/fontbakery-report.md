@@ -893,13 +893,13 @@ Width = 644:
 plus
 
 Width = 642:
-greater, less
+less, greater
 
 Width = 625:
 equal
 
 Width = 654:
-logicalnot, notequal
+notequal, logicalnot
 
 Width = 621:
 plusminus
@@ -1900,7 +1900,7 @@ Width = 645:
 divide
 
 Width = 648:
-lessequal, minus, greaterequal
+greaterequal, lessequal, minus
 
 Width = 634:
 approxequal
