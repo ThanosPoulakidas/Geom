@@ -54699,7 +54699,7 @@ key = copyrights;
 values = (
 {
 language = ENG;
-value = "Copyright 2023 The Geom Project Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)";
+value = "Copyright 2023 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)";
 }
 );
 },
