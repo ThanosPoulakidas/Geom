@@ -54,7 +54,6 @@ value = (
 {
 name = fsType;
 value = (
-2
 );
 },
 {
@@ -577,6 +576,10 @@ Gdotaccent,
 Cdotaccent,
 icircumflex
 );
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2022-03-05 09:15:28 +0000";
@@ -622,39 +625,35 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 747;
+value = 1015;
 },
 {
 name = typoDescender;
-value = -235;
+value = -315;
 },
 {
 name = typoLineGap;
-value = 9;
-},
-{
-name = winAscent;
-value = 759;
-},
-{
-name = winDescent;
-value = 259;
+value = 0;
 },
 {
 name = hheaAscender;
-value = 747;
+value = 1015;
 },
 {
 name = hheaDescender;
-value = -235;
+value = -315;
 },
 {
-name = strikeoutPosition;
-value = 233;
+name = hheaLineGap;
+value = 0;
 },
 {
-name = strikeoutSize;
-value = 46;
+name = winAscent;
+value = 1116;
+},
+{
+name = winDescent;
+value = 315;
 }
 );
 id = m01;
@@ -685,39 +684,35 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 747;
+value = 1015;
 },
 {
 name = typoDescender;
-value = -235;
+value = -315;
 },
 {
 name = typoLineGap;
-value = 9;
-},
-{
-name = winAscent;
-value = 759;
-},
-{
-name = winDescent;
-value = 259;
+value = 0;
 },
 {
 name = hheaAscender;
-value = 747;
+value = 1015;
 },
 {
 name = hheaDescender;
-value = -235;
+value = -315;
 },
 {
-name = strikeoutPosition;
-value = 233;
+name = hheaLineGap;
+value = 0;
 },
 {
-name = strikeoutSize;
-value = 46;
+name = winAscent;
+value = 1116;
+},
+{
+name = winDescent;
+value = 315;
 }
 );
 id = "45735946-F1C1-40B8-8BE5-3E07C57E9E20";
@@ -748,39 +743,35 @@ axesValues = (
 customParameters = (
 {
 name = typoAscender;
-value = 747;
+value = 1015;
 },
 {
 name = typoDescender;
-value = -235;
+value = -315;
 },
 {
 name = typoLineGap;
-value = 9;
-},
-{
-name = winAscent;
-value = 759;
-},
-{
-name = winDescent;
-value = 259;
+value = 0;
 },
 {
 name = hheaAscender;
-value = 747;
+value = 1015;
 },
 {
 name = hheaDescender;
-value = -235;
+value = -315;
 },
 {
-name = strikeoutPosition;
-value = 233;
+name = hheaLineGap;
+value = 0;
 },
 {
-name = strikeoutSize;
-value = 46;
+name = winAscent;
+value = 1116;
+},
+{
+name = winDescent;
+value = 315;
 }
 );
 id = "3A3847A9-C47D-449F-9BC4-FC5D6C4739D9";
@@ -12160,18 +12151,19 @@ unicode = 126;
 },
 {
 glyphname = uni00A0;
+lastChange = "2023-09-08 17:11:06 +0000";
 layers = (
 {
 layerId = m01;
-width = 260;
+width = 280;
 },
 {
 layerId = "45735946-F1C1-40B8-8BE5-3E07C57E9E20";
-width = 260;
+width = 280;
 },
 {
 layerId = "3A3847A9-C47D-449F-9BC4-FC5D6C4739D9";
-width = 260;
+width = 280;
 }
 );
 note = uni00A0;
@@ -41957,7 +41949,7 @@ note = f_t;
 },
 {
 glyphname = w_w_w;
-lastChange = "2023-04-07 21:33:03 +0000";
+lastChange = "2023-09-09 09:45:39 +0000";
 layers = (
 {
 layerId = m01;
@@ -41967,15 +41959,15 @@ pos = (18,0);
 ref = w;
 },
 {
-pos = (666,0);
+pos = (776,0);
 ref = w;
 },
 {
-pos = (1314,0);
+pos = (1534,0);
 ref = w;
 }
 );
-width = 2077;
+width = 2297;
 },
 {
 layerId = "45735946-F1C1-40B8-8BE5-3E07C57E9E20";
@@ -41985,15 +41977,15 @@ pos = (18,0);
 ref = w;
 },
 {
-pos = (665,0);
+pos = (755,0);
 ref = w;
 },
 {
-pos = (1311,0);
+pos = (1491,0);
 ref = w;
 }
 );
-width = 2060;
+width = 2240;
 },
 {
 layerId = "3A3847A9-C47D-449F-9BC4-FC5D6C4739D9";
@@ -42003,15 +41995,15 @@ pos = (19,0);
 ref = w;
 },
 {
-pos = (673,0);
+pos = (863,0);
 ref = w;
 },
 {
-pos = (1327,0);
+pos = (1707,0);
 ref = w;
 }
 );
-width = 2162;
+width = 2542;
 }
 );
 note = w_w_w;
@@ -54707,7 +54699,7 @@ key = copyrights;
 values = (
 {
 language = ENG;
-value = "Copyright (c) 2022 The Geom Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)";
+value = "Copyright 2023 The Geom Project Thanos Poulakidas. (https://github.com/ThanosPoulakidas/Geom)";
 }
 );
 },
@@ -54740,5 +54732,5 @@ disablesNiceNames = 1;
 };
 unitsPerEm = 1000;
 versionMajor = 1;
-versionMinor = 101;
+versionMinor = 102;
 }
