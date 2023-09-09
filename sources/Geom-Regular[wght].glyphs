@@ -54698,7 +54698,7 @@ properties = (
 key = copyrights;
 values = (
 {
-language = ENG;
+language = dflt;
 value = "Copyright 2023 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)";
 }
 );
@@ -54720,7 +54720,7 @@ value = "https://scripts.sil.org/OFL";
 key = licenses;
 values = (
 {
-language = ENG;
+language = dflt;
 value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
