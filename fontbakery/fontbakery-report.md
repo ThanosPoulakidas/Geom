@@ -2,7 +2,23 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[12] Geom-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+<details><summary><b>[14] Geom-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2022 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2022 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
@@ -30,23 +46,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- Upsilondieresis_alt
 
-	- f_t
-
-	- i.loclTRK
-
-	- periodcentered.loclCAT
-
-	- periodcentered.loclCAT.case
-
-	- t_t
-
-	- tonos.case
-
 	- uni000D
-
-	- uni004A0301
-
-	- uni006A0301
 
 	- uni030C.alt
 
@@ -54,11 +54,9 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- uni0394.1
 
-	- uni03BC.001
+	- uni03BC.001 
 
-	- uni2126 
-
-	- w_w_w
+	- uni2126
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -142,7 +140,7 @@ Width = 593:
 greater
 
 Width = 591:
-plusminus, logicalnot
+logicalnot, plusminus
 
 Width = 638:
 multiply
@@ -339,7 +337,23 @@ notequal
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* Pi (U+03A0): L<<610.0,705.0>--<80.0,706.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] Geom-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] Geom-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2022 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2022 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
@@ -383,23 +397,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- Upsilondieresis_alt
 
-	- f_t
-
-	- i.loclTRK
-
-	- periodcentered.loclCAT
-
-	- periodcentered.loclCAT.case
-
-	- t_t
-
-	- tonos.case
-
 	- uni000D
-
-	- uni004A0301
-
-	- uni006A0301
 
 	- uni030C.alt
 
@@ -407,11 +405,9 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- uni0394.1
 
-	- uni03BC.001
+	- uni03BC.001 
 
-	- uni2126 
-
-	- w_w_w
+	- uni2126
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -698,7 +694,23 @@ notequal
 	* onehalf (U+00BD): L<<678.0,63.0>--<515.0,62.0>> 
 
 	* uni00B2 (U+00B2): L<<318.0,349.0>--<155.0,348.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] Geom-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] Geom-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2022 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2022 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
@@ -742,23 +754,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- Upsilondieresis_alt
 
-	- f_t
-
-	- i.loclTRK
-
-	- periodcentered.loclCAT
-
-	- periodcentered.loclCAT.case
-
-	- t_t
-
-	- tonos.case
-
 	- uni000D
-
-	- uni004A0301
-
-	- uni006A0301
 
 	- uni030C.alt
 
@@ -766,11 +762,9 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- uni0394.1
 
-	- uni03BC.001
+	- uni03BC.001 
 
-	- uni2126 
-
-	- w_w_w
+	- uni2126
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -845,7 +839,7 @@ Width = 644:
 plus
 
 Width = 642:
-greater, less
+less, greater
 
 Width = 625:
 equal
@@ -1055,7 +1049,23 @@ approxequal
 	* Pi (U+03A0): L<<660.0,705.0>--<65.0,702.0>> 
 
 	* brokenbar (U+00A6): L<<400.0,173.0>--<263.0,174.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] Geom-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] Geom-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2022 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2022 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
@@ -1099,23 +1109,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- Upsilondieresis_alt
 
-	- f_t
-
-	- i.loclTRK
-
-	- periodcentered.loclCAT
-
-	- periodcentered.loclCAT.case
-
-	- t_t
-
-	- tonos.case
-
 	- uni000D
-
-	- uni004A0301
-
-	- uni006A0301
 
 	- uni030C.alt
 
@@ -1123,11 +1117,9 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- uni0394.1
 
-	- uni03BC.001
+	- uni03BC.001 
 
-	- uni2126 
-
-	- w_w_w
+	- uni2126
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -1452,7 +1444,23 @@ notequal
 	* Pi (U+03A0): L<<673.0,705.0>--<62.0,701.0>> 
 
 	* brokenbar (U+00A6): L<<418.0,173.0>--<267.0,174.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] Geom-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] Geom-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2022 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2022 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
@@ -1480,23 +1488,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- Upsilondieresis_alt
 
-	- f_t
-
-	- i.loclTRK
-
-	- periodcentered.loclCAT
-
-	- periodcentered.loclCAT.case
-
-	- t_t
-
-	- tonos.case
-
 	- uni000D
-
-	- uni004A0301
-
-	- uni006A0301
 
 	- uni030C.alt
 
@@ -1504,11 +1496,9 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- uni0394.1
 
-	- uni03BC.001
+	- uni03BC.001 
 
-	- uni2126 
-
-	- w_w_w
+	- uni2126
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -1645,7 +1635,23 @@ notequal
 	* Pi (U+03A0): L<<685.0,705.0>--<58.0,700.0>> 
 
 	* brokenbar (U+00A6): L<<437.0,173.0>--<270.0,174.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] Geom-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] Geom-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2022 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2022 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
@@ -1689,23 +1695,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- Upsilondieresis_alt
 
-	- f_t
-
-	- i.loclTRK
-
-	- periodcentered.loclCAT
-
-	- periodcentered.loclCAT.case
-
-	- t_t
-
-	- tonos.case
-
 	- uni000D
-
-	- uni004A0301
-
-	- uni006A0301
 
 	- uni030C.alt
 
@@ -1713,11 +1703,9 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- uni0394.1
 
-	- uni03BC.001
+	- uni03BC.001 
 
-	- uni2126 
-
-	- w_w_w
+	- uni2126
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -1804,7 +1792,7 @@ Width = 645:
 divide
 
 Width = 648:
-greaterequal, minus, lessequal
+lessequal, greaterequal, minus
 
 Width = 634:
 approxequal
@@ -1998,7 +1986,23 @@ notequal
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* Pi (U+03A0): L<<648.0,705.0>--<69.0,703.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] Geom-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] Geom-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check license file has good copyright string. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/license/OFL_copyright">com.google.fonts/check/license/OFL_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** First line in license file is:
+
+"copyright 2022 the geom project thanos poulakidas (https://github.com/thanospoulakidas/geom)"
+
+which does not match the expected format, similar to:
+
+"Copyright 2022 The Familyname Project Authors (git url)" [code: bad-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2022 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)" [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
@@ -2042,23 +2046,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- Upsilondieresis_alt
 
-	- f_t
-
-	- i.loclTRK
-
-	- periodcentered.loclCAT
-
-	- periodcentered.loclCAT.case
-
-	- t_t
-
-	- tonos.case
-
 	- uni000D
-
-	- uni004A0301
-
-	- uni006A0301
 
 	- uni030C.alt
 
@@ -2066,11 +2054,9 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 	- uni0394.1
 
-	- uni03BC.001
+	- uni03BC.001 
 
-	- uni2126 
-
-	- w_w_w
+	- uni2126
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -2375,8 +2361,8 @@ notequal
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 7 | 76 | 823 | 43 | 671 | 0 |
-| 0% | 0% | 5% | 51% | 3% | 41% | 0% |
+| 0 | 21 | 76 | 823 | 43 | 657 | 0 |
+| 0% | 1% | 5% | 51% | 3% | 41% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
