@@ -1900,7 +1900,7 @@ Width = 645:
 divide
 
 Width = 648:
-lessequal, minus, greaterequal
+greaterequal, minus, lessequal
 
 Width = 634:
 approxequal
