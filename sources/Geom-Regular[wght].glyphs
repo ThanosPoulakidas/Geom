@@ -584,35 +584,130 @@ value = 1;
 );
 date = "2022-03-05 09:15:28 +0000";
 familyName = Geom;
+featurePrefixes = (
+{
+automatic = 1;
+code = "languagesystem DFLT dflt;
+
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn KAZ;
+languagesystem latn TAT;
+languagesystem latn TRK;
+languagesystem latn CAT;
+languagesystem latn NLD;
+";
+name = Languagesystems;
+}
+);
 features = (
 {
-code = "script latn;
-language MOL;
-lookup SUB_0 {
-	sub uni021A by uni0162;
-	sub uni021B by uni0163;
-	sub uni0218 by Scedilla;
-	sub uni0219 by scedilla;
-} SUB_0;
-language ROM;
-lookup SUB_0;
+automatic = 1;
+code = "feature locl;
+feature sups;
+feature frac;
+feature ordn;
+feature case;
+";
+tag = aalt;
+},
+{
+automatic = 1;
+code = "lookup ccmp_latn_1 {
+	sub fi by f i;
+	sub fl by f l;
+	sub Ldot by L periodcentered.loclCAT.case;
+} ccmp_latn_1;
+
+script latn;
+lookup ccmp_latn_1;
+";
+tag = ccmp;
+},
+{
+automatic = 1;
+code = "lookup locl_latn_0 {
+	script latn;
+	language AZE;
+	sub i by idotaccent;
+	language CRT;
+	sub i by idotaccent;
+	language KAZ;
+	sub i by idotaccent;
+	language TAT;
+	sub i by idotaccent;
+	language TRK;
+	sub i by idotaccent;
+} locl_latn_0;
+
+lookup locl_latn_1 {
+	script latn;
+	language CAT;
+	sub l periodcentered' l by periodcentered.loclCAT;
+	sub L periodcentered' L by periodcentered.loclCAT.case;
+} locl_latn_1;
+
+lookup locl_latn_2 {
+	script latn;
+	language NLD;
+	sub iacute j' by jacute;
+	sub Iacute J' by Jacute;
+} locl_latn_2;
 ";
 tag = locl;
 },
 {
-code = "script latn;
-language dflt;
-lookup SUB_1 {
-	sub f f i by f_f_i;
-	sub f f l by f_f_l;
-	sub f f by f_f;
-	sub f i by fi;
-	sub f l by fl;
-} SUB_1;
-language MOL;
-lookup SUB_1;
-language ROM;
-lookup SUB_1;
+automatic = 1;
+code = "sub two by twosuperior;
+sub three by threesuperior;
+sub one by onesuperior;
+";
+tag = sups;
+},
+{
+automatic = 1;
+code = "sub one slash eight by oneeighth;
+sub one slash four by onequarter;
+sub three slash eight by threeeighths;
+sub one slash two by onehalf;
+sub five slash eight by fiveeighths;
+sub three slash four by threequarters;
+sub seven slash eight by seveneighths;
+";
+tag = frac;
+},
+{
+automatic = 1;
+code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+";
+tag = ordn;
+},
+{
+automatic = 1;
+code = "sub periodcentered.loclCAT by periodcentered.loclCAT.case;
+sub tonos by tonos.case;
+";
+tag = case;
+},
+{
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub w w w by w_w_w;
+sub f t by f_t;
+sub t t by t_t;
+";
+tag = dlig;
+},
+{
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub f f i by f_f_i;
+sub f f l by f_f_l;
+sub f f by f_f;
+sub f i by fi;
+sub f l by fl;
 ";
 tag = liga;
 }
@@ -54699,7 +54794,7 @@ key = copyrights;
 values = (
 {
 language = ENG;
-value = "Copyright 2022 The Geom Project Authors (https://github.com/ThanosPoulakidas/Geom)";
+value = "Copyright 2022 The Geom Project Thanos Poulakidas (https://github.com/ThanosPoulakidas/Geom)";
 }
 );
 },
