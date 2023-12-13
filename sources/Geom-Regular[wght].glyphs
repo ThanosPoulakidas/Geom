@@ -31215,7 +31215,7 @@ unicode = 942;
 },
 {
 glyphname = iotatonos;
-lastChange = "2023-04-07 20:36:25 +0000";
+lastChange = "2023-12-13 15:20:17 +0000";
 layers = (
 {
 layerId = m01;
@@ -31228,7 +31228,7 @@ pos = (-19,0);
 ref = tonos;
 }
 );
-width = 325;
+width = 224;
 },
 {
 layerId = "45735946-F1C1-40B8-8BE5-3E07C57E9E20";
@@ -31241,7 +31241,7 @@ pos = (-21,0);
 ref = tonos;
 }
 );
-width = 306;
+width = 208;
 },
 {
 layerId = "3A3847A9-C47D-449F-9BC4-FC5D6C4739D9";
@@ -31254,7 +31254,7 @@ pos = (-10,0);
 ref = tonos;
 }
 );
-width = 422;
+width = 289;
 }
 );
 note = iotatonos;
@@ -32566,6 +32566,7 @@ unicode = 952;
 },
 {
 glyphname = iota;
+lastChange = "2023-12-13 15:18:48 +0000";
 layers = (
 {
 layerId = m01;
@@ -32580,7 +32581,7 @@ nodes = (
 );
 }
 );
-width = 178;
+width = 224;
 },
 {
 layerId = "45735946-F1C1-40B8-8BE5-3E07C57E9E20";
@@ -32595,7 +32596,7 @@ nodes = (
 );
 }
 );
-width = 163;
+width = 208;
 },
 {
 layerId = "3A3847A9-C47D-449F-9BC4-FC5D6C4739D9";
@@ -32610,7 +32611,7 @@ nodes = (
 );
 }
 );
-width = 250;
+width = 289;
 }
 );
 note = iota;
@@ -33241,7 +33242,7 @@ unicode = 959;
 },
 {
 glyphname = pi;
-lastChange = "2023-04-07 20:38:03 +0000";
+lastChange = "2023-12-13 15:21:29 +0000";
 layers = (
 {
 layerId = m01;
@@ -33249,18 +33250,18 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(439,0,l),
-(339,0,l),
-(339,410,l),
-(114,410,l),
-(114,0,l),
-(14,0,l),
-(14,492,l),
-(439,492,l)
+(489,0,l),
+(389,0,l),
+(389,410,l),
+(164,410,l),
+(164,0,l),
+(64,0,l),
+(64,492,l),
+(489,492,l)
 );
 }
 );
-width = 453;
+width = 548;
 },
 {
 layerId = "45735946-F1C1-40B8-8BE5-3E07C57E9E20";
@@ -33268,18 +33269,18 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(419,0,l),
-(337,0,l),
-(337,414,l),
-(97,414,l),
-(97,0,l),
-(15,0,l),
-(15,482,l),
-(419,482,l)
+(471,0,l),
+(389,0,l),
+(389,414,l),
+(149,414,l),
+(149,0,l),
+(67,0,l),
+(67,482,l),
+(471,482,l)
 );
 }
 );
-width = 434;
+width = 532;
 },
 {
 layerId = "3A3847A9-C47D-449F-9BC4-FC5D6C4739D9";
@@ -33287,18 +33288,18 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(536,0,l),
-(346,0,l),
-(346,390,l),
-(200,390,l),
-(200,0,l),
-(10,0,l),
-(10,541,l),
-(536,541,l)
+(577,0,l),
+(387,0,l),
+(387,390,l),
+(241,390,l),
+(241,0,l),
+(51,0,l),
+(51,541,l),
+(577,541,l)
 );
 }
 );
-width = 546;
+width = 625;
 }
 );
 note = pi;
@@ -48155,13 +48156,13 @@ comma = -95;
 d = -28;
 dcaron = -28;
 dcroat = -28;
-idotless = -28;
 e = -28;
 ellipsis = -95;
 eng = -28;
 eogonek = -28;
 g = -28;
 hyphen = -3;
+idotless = -28;
 kgreenlandic = -28;
 m = -28;
 n = -28;
@@ -49221,7 +49222,6 @@ comma = -111;
 d = -37;
 dcaron = -37;
 dcroat = -37;
-idotless = -28;
 e = -37;
 eacute = -28;
 ebreve = -28;
@@ -49237,6 +49237,7 @@ eogonek = -37;
 g = -37;
 hyphen = -17;
 idieresis = 22;
+idotless = -28;
 kgreenlandic = -28;
 m = -28;
 n = -28;
@@ -49715,7 +49716,6 @@ copyright = -19;
 d = -55;
 dcaron = -55;
 dcroat = -55;
-idotless = -22;
 e = -55;
 eacute = -47;
 ebreve = -47;
@@ -49734,6 +49734,7 @@ i = 29;
 iacute = 29;
 ibreve = 29;
 idieresis = 29;
+idotless = -22;
 igrave = 29;
 ij = 29;
 imacron = 29;
@@ -49898,7 +49899,6 @@ copyright = -19;
 d = -55;
 dcaron = -55;
 dcroat = -55;
-idotless = -22;
 e = -55;
 eacute = -47;
 ebreve = -47;
@@ -49917,6 +49917,7 @@ i = 29;
 iacute = 29;
 ibreve = 29;
 idieresis = 29;
+idotless = -22;
 igrave = 29;
 ij = 29;
 imacron = 29;
@@ -50028,7 +50029,6 @@ copyright = -19;
 d = -55;
 dcaron = -55;
 dcroat = -55;
-idotless = -22;
 e = -55;
 eacute = -47;
 ebreve = -47;
@@ -50047,6 +50047,7 @@ i = 29;
 iacute = 29;
 ibreve = 29;
 idieresis = 29;
+idotless = -22;
 igrave = 29;
 ij = 29;
 imacron = 29;
@@ -50413,7 +50414,6 @@ copyright = -39;
 d = -62;
 dcaron = -62;
 dcroat = -62;
-idotless = -26;
 e = -62;
 eacute = -47;
 ebreve = -47;
@@ -50428,6 +50428,7 @@ eng = -26;
 eogonek = -62;
 g = -62;
 hyphen = -16;
+idotless = -26;
 kgreenlandic = -26;
 m = -26;
 n = -26;
@@ -50541,7 +50542,6 @@ copyright = -35;
 d = -57;
 dcaron = -57;
 dcroat = -57;
-idotless = -28;
 e = -57;
 eacute = -6;
 ebreve = -6;
@@ -50562,6 +50562,7 @@ i = 5;
 iacute = 5;
 ibreve = 5;
 idieresis = 5;
+idotless = -28;
 igrave = 5;
 ij = 5;
 imacron = 5;
@@ -50682,7 +50683,6 @@ copyright = -35;
 d = -57;
 dcaron = -57;
 dcroat = -57;
-idotless = -28;
 e = -57;
 eacute = -6;
 ebreve = -6;
@@ -50703,6 +50703,7 @@ i = 5;
 iacute = 5;
 ibreve = 5;
 idieresis = 5;
+idotless = -28;
 igrave = 5;
 ij = 5;
 imacron = 5;
@@ -50823,7 +50824,6 @@ copyright = -35;
 d = -57;
 dcaron = -57;
 dcroat = -57;
-idotless = -28;
 e = -57;
 eacute = -6;
 ebreve = -6;
@@ -50844,6 +50844,7 @@ i = 5;
 iacute = 5;
 ibreve = 5;
 idieresis = 5;
+idotless = -28;
 igrave = 5;
 ij = 5;
 imacron = 5;
@@ -50964,7 +50965,6 @@ copyright = -35;
 d = -57;
 dcaron = -57;
 dcroat = -57;
-idotless = -28;
 e = -57;
 eacute = -6;
 ebreve = -6;
@@ -50985,6 +50985,7 @@ i = 5;
 iacute = 5;
 ibreve = 5;
 idieresis = 5;
+idotless = -28;
 igrave = 5;
 ij = 5;
 imacron = 5;
@@ -51105,7 +51106,6 @@ copyright = -35;
 d = -57;
 dcaron = -57;
 dcroat = -57;
-idotless = -28;
 e = -57;
 eacute = -6;
 ebreve = -6;
@@ -51126,6 +51126,7 @@ i = 5;
 iacute = 5;
 ibreve = 5;
 idieresis = 5;
+idotless = -28;
 igrave = 5;
 ij = 5;
 imacron = 5;
@@ -51325,7 +51326,6 @@ copyright = -50;
 d = -93;
 dcaron = -93;
 dcroat = -93;
-idotless = -45;
 e = -93;
 eacute = -46;
 ebreve = -46;
@@ -51347,6 +51347,7 @@ guilsinglleft = -5;
 guilsinglright = -5;
 hyphen = -49;
 idieresis = 28;
+idotless = -45;
 kgreenlandic = -45;
 m = -45;
 n = -45;
@@ -51447,7 +51448,6 @@ copyright = -50;
 d = -93;
 dcaron = -93;
 dcroat = -93;
-idotless = -45;
 e = -93;
 eacute = -46;
 ebreve = -46;
@@ -51469,6 +51469,7 @@ guilsinglleft = -5;
 guilsinglright = -5;
 hyphen = -49;
 idieresis = 28;
+idotless = -45;
 kgreenlandic = -45;
 m = -45;
 n = -45;
@@ -51569,7 +51570,6 @@ copyright = -50;
 d = -93;
 dcaron = -93;
 dcroat = -93;
-idotless = -45;
 e = -93;
 eacute = -46;
 ebreve = -46;
@@ -51591,6 +51591,7 @@ guilsinglleft = -5;
 guilsinglright = -5;
 hyphen = -49;
 idieresis = 28;
+idotless = -45;
 kgreenlandic = -45;
 m = -45;
 n = -45;
@@ -51691,7 +51692,6 @@ copyright = -50;
 d = -93;
 dcaron = -93;
 dcroat = -93;
-idotless = -45;
 e = -93;
 eacute = -46;
 ebreve = -46;
@@ -51713,6 +51713,7 @@ guilsinglleft = -5;
 guilsinglright = -5;
 hyphen = -49;
 idieresis = 28;
+idotless = -45;
 kgreenlandic = -45;
 m = -45;
 n = -45;
@@ -51813,7 +51814,6 @@ copyright = -50;
 d = -93;
 dcaron = -93;
 dcroat = -93;
-idotless = -45;
 e = -93;
 eacute = -46;
 ebreve = -46;
@@ -51835,6 +51835,7 @@ guilsinglleft = -5;
 guilsinglright = -5;
 hyphen = -49;
 idieresis = 28;
+idotless = -45;
 kgreenlandic = -45;
 m = -45;
 n = -45;
@@ -53247,7 +53248,6 @@ copyright = -38;
 d = -79;
 dcaron = -79;
 dcroat = -79;
-idotless = -75;
 e = -79;
 eacute = -5;
 ebreve = -5;
@@ -53261,6 +53261,7 @@ emacron = -5;
 eng = -75;
 eogonek = -79;
 g = -79;
+idotless = -75;
 kgreenlandic = -75;
 m = -75;
 n = -75;
@@ -53435,7 +53436,6 @@ copyright = -38;
 d = -79;
 dcaron = -79;
 dcroat = -79;
-idotless = -75;
 e = -79;
 eacute = -5;
 ebreve = -5;
@@ -53449,6 +53449,7 @@ emacron = -5;
 eng = -75;
 eogonek = -79;
 g = -79;
+idotless = -75;
 kgreenlandic = -75;
 m = -75;
 n = -75;
@@ -53565,7 +53566,6 @@ copyright = -38;
 d = -79;
 dcaron = -79;
 dcroat = -79;
-idotless = -75;
 e = -79;
 eacute = -5;
 ebreve = -5;
@@ -53579,6 +53579,7 @@ emacron = -5;
 eng = -75;
 eogonek = -79;
 g = -79;
+idotless = -75;
 kgreenlandic = -75;
 m = -75;
 n = -75;
@@ -53695,7 +53696,6 @@ copyright = -38;
 d = -79;
 dcaron = -79;
 dcroat = -79;
-idotless = -75;
 e = -79;
 eacute = -5;
 ebreve = -5;
@@ -53709,6 +53709,7 @@ emacron = -5;
 eng = -75;
 eogonek = -79;
 g = -79;
+idotless = -75;
 kgreenlandic = -75;
 m = -75;
 n = -75;
@@ -53825,7 +53826,6 @@ copyright = -38;
 d = -79;
 dcaron = -79;
 dcroat = -79;
-idotless = -75;
 e = -79;
 eacute = -5;
 ebreve = -5;
@@ -53839,6 +53839,7 @@ emacron = -5;
 eng = -75;
 eogonek = -79;
 g = -79;
+idotless = -75;
 kgreenlandic = -75;
 m = -75;
 n = -75;
@@ -53955,7 +53956,6 @@ copyright = -38;
 d = -79;
 dcaron = -79;
 dcroat = -79;
-idotless = -75;
 e = -79;
 eacute = -5;
 ebreve = -5;
@@ -53969,6 +53969,7 @@ emacron = -5;
 eng = -75;
 eogonek = -79;
 g = -79;
+idotless = -75;
 kgreenlandic = -75;
 m = -75;
 n = -75;
@@ -54143,7 +54144,6 @@ copyright = -38;
 d = -79;
 dcaron = -79;
 dcroat = -79;
-idotless = -75;
 e = -79;
 eacute = -5;
 ebreve = -5;
@@ -54157,6 +54157,7 @@ emacron = -5;
 eng = -75;
 eogonek = -79;
 g = -79;
+idotless = -75;
 kgreenlandic = -75;
 m = -75;
 n = -75;
