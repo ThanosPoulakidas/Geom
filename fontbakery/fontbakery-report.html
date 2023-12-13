@@ -94,6 +94,9 @@
 <h3>Checking OS/2 achVendID.</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/vendor_id&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+[code: unknown]</p>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
 [code: unknown]</p>
 </span></li></ul></div></details>
@@ -112,12 +115,11 @@
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
 [code: unknown]</p>
 </span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
-[code: unknown]</p>
-</span></li></ul></div></details>
 <h3>Are there caret positions declared for every ligature?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/ligature_carets&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]</p>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]</p>
 </span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]</p>
@@ -130,11 +132,23 @@
 </span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]</p>
 </span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]</p>
-</span></li></ul></div></details>
 <h3>Is there kerning info for non-ligated sequences?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/kerning_for_non_ligated_sequences&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning info for the following non-ligated sequences:</p>
+<pre><code>- f + f
+
+- f + i
+
+- i + f
+
+- f + l
+
+- l + f 
+
+- i + l [code: lacks-kern-info]
+</code></pre>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning info for the following non-ligated sequences:</p>
 <pre><code>- f + f
 
@@ -191,23 +205,11 @@
 - i + l [code: lacks-kern-info]
 </code></pre>
 </span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning info for the following non-ligated sequences:</p>
-<pre><code>- f + f
-
-- f + i
-
-- i + f
-
-- f + l
-
-- l + f 
-
-- i + l [code: lacks-kern-info]
-</code></pre>
-</span></li></ul></div></details>
 <h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/meta/script_lang_tags&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
 </span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
@@ -220,29 +222,46 @@
 </span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
 </span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
-</span></li></ul></div></details>
 <h2>&lt;Section: Universal&gt; 🔥🔥🔥🔥🔥🔥🔥⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
 <h3>Do we have the latest version of FontBakery installed?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/fontbakery_version&gt;</div>
 
-<details><summary>🔥 <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
+<details><summary>🔥 <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
 </span></li></ul></div></details>
-<details><summary>🔥 <strong>fonts/ttf/Geom-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
+<details><summary>🔥 <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
 </span></li></ul></div></details>
-<details><summary>🔥 <strong>fonts/ttf/Geom-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
+<details><summary>🔥 <strong>fonts/ttf/Geom-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
 </span></li></ul></div></details>
-<details><summary>🔥 <strong>fonts/ttf/Geom-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
+<details><summary>🔥 <strong>fonts/ttf/Geom-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
 </span></li></ul></div></details>
-<details><summary>🔥 <strong>fonts/ttf/Geom-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
+<details><summary>🔥 <strong>fonts/ttf/Geom-ExtraBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
 </span></li></ul></div></details>
-<details><summary>🔥 <strong>fonts/ttf/Geom-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
+<details><summary>🔥 <strong>fonts/ttf/Geom-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
 </span></li></ul></div></details>
-<details><summary>🔥 <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
+<details><summary>🔥 <strong>fonts/ttf/Geom-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]</p>
 </span></li></ul></div></details>
 <h3>Check font contains no unreachable glyphs</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:</p>
+<pre><code>- NULL.1
+
+- Upsilondieresis_alt
+
+- uni000D
+
+- uni030C.alt
+
+- uni0394
+
+- uni0394.1
+
+- uni03BC.001 
+
+- uni2126
+</code></pre>
+<p>[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:</p>
 <pre><code>- NULL.1
 
@@ -357,28 +376,65 @@
 </code></pre>
 <p>[code: unreachable-glyphs]</p>
 </span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:</p>
-<pre><code>- NULL.1
-
-- Upsilondieresis_alt
-
-- uni000D
-
-- uni030C.alt
-
-- uni0394
-
-- uni0394.1
-
-- uni03BC.001 
-
-- uni2126
-</code></pre>
-<p>[code: unreachable-glyphs]</p>
-</span></li></ul></div></details>
 <h3>Check if each glyph has the recommended amount of contours.</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/contour_count&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+
+- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+- Glyph name: tbar	Contours detected: 2	Expected: 1
+
+- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+- Glyph name: tbar	Contours detected: 2	Expected: 1
+
+- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+
+- Glyph name: uogonek	Contours detected: 2	Expected: 1
+</code></pre>
+<p>[code: contour-count]</p>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
 <p>The following glyphs do not have the recommended number of contours:</p>
 <pre><code>- Glyph name: uni00AD	Contours detected: 1	Expected: 0
@@ -715,65 +771,11 @@
 </code></pre>
 <p>[code: contour-count]</p>
 </span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
-<p>The following glyphs do not have the recommended number of contours:</p>
-<pre><code>- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-- Glyph name: Eth	Contours detected: 3	Expected: 2
-
-- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-- Glyph name: Dcroat	Contours detected: 3	Expected: 2
-
-- Glyph name: dcroat	Contours detected: 3	Expected: 2
-
-- Glyph name: eogonek	Contours detected: 3	Expected: 2
-
-- Glyph name: hbar	Contours detected: 2	Expected: 1
-
-- Glyph name: Lslash	Contours detected: 2	Expected: 1
-
-- Glyph name: lslash	Contours detected: 2	Expected: 1
-
-- Glyph name: Tbar	Contours detected: 2	Expected: 1
-
-- Glyph name: tbar	Contours detected: 2	Expected: 1
-
-- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-- Glyph name: Dcroat	Contours detected: 3	Expected: 2
-
-- Glyph name: Eth	Contours detected: 3	Expected: 2
-
-- Glyph name: Lslash	Contours detected: 2	Expected: 1
-
-- Glyph name: Tbar	Contours detected: 2	Expected: 1
-
-- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-- Glyph name: dcroat	Contours detected: 3	Expected: 2
-
-- Glyph name: eogonek	Contours detected: 3	Expected: 2
-
-- Glyph name: hbar	Contours detected: 2	Expected: 1
-
-- Glyph name: lslash	Contours detected: 2	Expected: 1
-
-- Glyph name: tbar	Contours detected: 2	Expected: 1
-
-- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-- Glyph name: uogonek	Contours detected: 2	Expected: 1
-</code></pre>
-<p>[code: contour-count]</p>
-</span></li></ul></div></details>
 <h3>Does the font contain a soft hyphen?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/soft_hyphen&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character. [code: softhyphen]</p>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character. [code: softhyphen]</p>
 </span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character. [code: softhyphen]</p>
@@ -786,11 +788,29 @@
 </span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character. [code: softhyphen]</p>
 </span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character. [code: softhyphen]</p>
-</span></li></ul></div></details>
 <h3>Check math signs have the same width.</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/math_signs_width&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The most common width is 630 among a set of 3 math glyphs.
+The following math glyphs have a different width, though:</p>
+<p>Width = 610:
+equal</p>
+<p>Width = 639:
+logicalnot</p>
+<p>Width = 614:
+plusminus</p>
+<p>Width = 669:
+multiply</p>
+<p>Width = 645:
+divide</p>
+<p>Width = 648:
+lessequal, minus, greaterequal</p>
+<p>Width = 634:
+approxequal</p>
+<p>Width = 637:
+notequal
+[code: width-outliers]</p>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The most common width is 691 among a set of 3 math glyphs.
 The following math glyphs have a different width, though:</p>
 <p>Width = 674:
@@ -918,32 +938,12 @@ equal</p>
 <p>Width = 593:
 greater</p>
 <p>Width = 591:
-logicalnot, plusminus</p>
+plusminus, logicalnot</p>
 <p>Width = 638:
 multiply</p>
 <p>Width = 634:
 approxequal</p>
 <p>Width = 586:
-notequal
-[code: width-outliers]</p>
-</span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The most common width is 630 among a set of 3 math glyphs.
-The following math glyphs have a different width, though:</p>
-<p>Width = 610:
-equal</p>
-<p>Width = 639:
-logicalnot</p>
-<p>Width = 614:
-plusminus</p>
-<p>Width = 669:
-multiply</p>
-<p>Width = 645:
-divide</p>
-<p>Width = 648:
-minus, lessequal, greaterequal</p>
-<p>Width = 634:
-approxequal</p>
-<p>Width = 637:
 notequal
 [code: width-outliers]</p>
 </span></li></ul></div></details>
@@ -959,6 +959,144 @@ notequal
 <h3>Are any segments inordinately short?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:</p>
+<pre><code>* quotedbl (U+0022) contains a short segment L&lt;&lt;251.0,704.0&gt;--&lt;251.0,704.0&gt;&gt;
+
+* quotedbl (U+0022) contains a short segment L&lt;&lt;469.0,704.0&gt;--&lt;469.0,704.0&gt;&gt;
+
+* quotesingle (U+0027) contains a short segment L&lt;&lt;254.0,704.0&gt;--&lt;254.0,704.0&gt;&gt;
+
+* three (U+0033) contains a short segment B&lt;&lt;209.0,334.0&gt;-&lt;216.0,335.0&gt;-&lt;226.5,335.5&gt;&gt;
+
+* three (U+0033) contains a short segment B&lt;&lt;268.5,337.0&gt;-&lt;279.0,337.0&gt;-&lt;285.0,337.0&gt;&gt;
+
+* at (U+0040) contains a short segment B&lt;&lt;719.0,140.0&gt;-&lt;701.0,140.0&gt;-&lt;688.5,147.5&gt;&gt;
+
+* at (U+0040) contains a short segment B&lt;&lt;688.5,147.5&gt;-&lt;676.0,155.0&gt;-&lt;669.0,167.5&gt;&gt;
+
+* at (U+0040) contains a short segment B&lt;&lt;669.0,167.5&gt;-&lt;662.0,180.0&gt;-&lt;659.0,197.0&gt;&gt;
+
+* at (U+0040) contains a short segment B&lt;&lt;659.0,197.0&gt;-&lt;656.0,214.0&gt;-&lt;658.0,232.0&gt;&gt;
+
+* onequarter (U+00BC) contains a short segment B&lt;&lt;577.0,297.0&gt;-&lt;577.0,296.0&gt;-&lt;577.5,296.5&gt;&gt;
+
+* onequarter (U+00BC) contains a short segment B&lt;&lt;577.5,296.5&gt;-&lt;578.0,297.0&gt;-&lt;579.0,297.0&gt;&gt;
+
+* threequarters (U+00BE) contains a short segment B&lt;&lt;706.0,297.0&gt;-&lt;706.0,296.0&gt;-&lt;706.5,296.5&gt;&gt;
+
+* threequarters (U+00BE) contains a short segment B&lt;&lt;706.5,296.5&gt;-&lt;707.0,297.0&gt;-&lt;708.0,297.0&gt;&gt;
+
+* Oslash (U+00D8) contains a short segment B&lt;&lt;185.0,342.0&gt;-&lt;185.0,345.0&gt;-&lt;185.0,348.0&gt;&gt;
+
+* Oslash (U+00D8) contains a short segment B&lt;&lt;185.0,348.0&gt;-&lt;185.0,351.0&gt;-&lt;185.0,353.0&gt;&gt;
+
+* ae (U+00E6) contains a short segment B&lt;&lt;283.0,520.0&gt;-&lt;276.0,521.0&gt;-&lt;269.0,521.0&gt;&gt;
+
+* ae (U+00E6) contains a short segment B&lt;&lt;269.0,521.0&gt;-&lt;262.0,521.0&gt;-&lt;254.0,520.0&gt;&gt;
+
+* ae (U+00E6) contains a short segment B&lt;&lt;232.0,412.0&gt;-&lt;235.0,413.0&gt;-&lt;238.0,413.0&gt;&gt;
+
+* ae (U+00E6) contains a short segment B&lt;&lt;238.0,413.0&gt;-&lt;241.0,413.0&gt;-&lt;244.0,413.0&gt;&gt;
+
+* ae (U+00E6) contains a short segment B&lt;&lt;30.0,179.0&gt;-&lt;29.0,171.0&gt;-&lt;29.0,164.5&gt;&gt;
+
+* ae (U+00E6) contains a short segment B&lt;&lt;29.0,164.5&gt;-&lt;29.0,158.0&gt;-&lt;30.0,150.0&gt;&gt;
+
+* ae (U+00E6) contains a short segment B&lt;&lt;209.0,-11.0&gt;-&lt;216.0,-11.0&gt;-&lt;225.0,-11.0&gt;&gt;
+
+* ae (U+00E6) contains a short segment B&lt;&lt;225.0,-11.0&gt;-&lt;234.0,-11.0&gt;-&lt;243.0,-11.0&gt;&gt;
+
+* ae (U+00E6) contains a short segment B&lt;&lt;642.0,-13.0&gt;-&lt;651.0,-14.0&gt;-&lt;659.5,-14.0&gt;&gt;
+
+* ae (U+00E6) contains a short segment B&lt;&lt;659.5,-14.0&gt;-&lt;668.0,-14.0&gt;-&lt;678.0,-13.0&gt;&gt;
+
+* ae (U+00E6) contains a short segment L&lt;&lt;522.0,261.0&gt;--&lt;520.0,259.0&gt;&gt;
+
+* thorn (U+00FE) contains a short segment L&lt;&lt;187.0,59.0&gt;--&lt;191.0,59.0&gt;&gt;
+
+* Eng (U+014A) contains a short segment B&lt;&lt;511.0,-78.0&gt;-&lt;502.0,-78.0&gt;-&lt;493.5,-76.0&gt;&gt;
+
+* Eng (U+014A) contains a short segment B&lt;&lt;493.5,-76.0&gt;-&lt;485.0,-74.0&gt;-&lt;475.0,-71.0&gt;&gt;
+
+* eng (U+014B) contains a short segment B&lt;&lt;352.0,-78.0&gt;-&lt;343.0,-78.0&gt;-&lt;334.5,-76.0&gt;&gt;
+
+* OE (U+0152) contains a short segment B&lt;&lt;494.0,-5.0&gt;-&lt;482.0,-8.0&gt;-&lt;469.0,-9.5&gt;&gt;
+
+* OE (U+0152) contains a short segment B&lt;&lt;469.0,-9.5&gt;-&lt;456.0,-11.0&gt;-&lt;443.0,-12.0&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment B&lt;&lt;283.0,520.0&gt;-&lt;276.0,521.0&gt;-&lt;269.0,521.0&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment B&lt;&lt;269.0,521.0&gt;-&lt;262.0,521.0&gt;-&lt;254.0,520.0&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment B&lt;&lt;232.0,412.0&gt;-&lt;235.0,413.0&gt;-&lt;238.0,413.0&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment B&lt;&lt;238.0,413.0&gt;-&lt;241.0,413.0&gt;-&lt;244.0,413.0&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment B&lt;&lt;30.0,179.0&gt;-&lt;29.0,171.0&gt;-&lt;29.0,164.5&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment B&lt;&lt;29.0,164.5&gt;-&lt;29.0,158.0&gt;-&lt;30.0,150.0&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment B&lt;&lt;209.0,-11.0&gt;-&lt;216.0,-11.0&gt;-&lt;225.0,-11.0&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment B&lt;&lt;225.0,-11.0&gt;-&lt;234.0,-11.0&gt;-&lt;243.0,-11.0&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment B&lt;&lt;642.0,-13.0&gt;-&lt;651.0,-14.0&gt;-&lt;659.5,-14.0&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment B&lt;&lt;659.5,-14.0&gt;-&lt;668.0,-14.0&gt;-&lt;678.0,-13.0&gt;&gt;
+
+* aeacute (U+01FD) contains a short segment L&lt;&lt;522.0,261.0&gt;--&lt;520.0,259.0&gt;&gt;
+
+* Oslashacute (U+01FE) contains a short segment B&lt;&lt;185.0,342.0&gt;-&lt;185.0,345.0&gt;-&lt;185.0,348.0&gt;&gt;
+
+* Oslashacute (U+01FE) contains a short segment B&lt;&lt;185.0,348.0&gt;-&lt;185.0,351.0&gt;-&lt;185.0,353.0&gt;&gt;
+
+* xi (U+03BE) contains a short segment B&lt;&lt;301.5,-63.5&gt;-&lt;303.0,-74.0&gt;-&lt;303.0,-81.0&gt;&gt;
+
+* minute (U+2032) contains a short segment L&lt;&lt;218.0,704.0&gt;--&lt;218.0,704.0&gt;&gt;
+
+* second (U+2033) contains a short segment L&lt;&lt;215.0,704.0&gt;--&lt;215.0,704.0&gt;&gt;
+
+* second (U+2033) contains a short segment L&lt;&lt;433.0,704.0&gt;--&lt;433.0,704.0&gt;&gt;
+
+* uni2074 (U+2074) contains a short segment B&lt;&lt;195.0,583.0&gt;-&lt;195.0,582.0&gt;-&lt;195.5,582.5&gt;&gt;
+
+* uni2074 (U+2074) contains a short segment B&lt;&lt;195.5,582.5&gt;-&lt;196.0,583.0&gt;-&lt;197.0,583.0&gt;&gt;
+
+* uni2113 (U+2113) contains a short segment B&lt;&lt;313.0,73.0&gt;-&lt;309.0,72.0&gt;-&lt;306.5,72.0&gt;&gt;
+
+* uni2113 (U+2113) contains a short segment B&lt;&lt;306.5,72.0&gt;-&lt;304.0,72.0&gt;-&lt;301.0,72.0&gt;&gt;
+
+* uni2113 (U+2113) contains a short segment B&lt;&lt;260.0,118.0&gt;-&lt;259.0,122.0&gt;-&lt;258.5,126.0&gt;&gt;
+
+* uni2113 (U+2113) contains a short segment B&lt;&lt;258.5,126.0&gt;-&lt;258.0,130.0&gt;-&lt;258.0,135.0&gt;&gt;
+
+* uni2113 (U+2113) contains a short segment B&lt;&lt;415.0,563.0&gt;-&lt;416.0,569.0&gt;-&lt;415.5,575.5&gt;&gt;
+
+* uni2113 (U+2113) contains a short segment B&lt;&lt;415.5,575.5&gt;-&lt;415.0,582.0&gt;-&lt;414.0,588.0&gt;&gt;
+
+* uni2113 (U+2113) contains a short segment B&lt;&lt;303.0,715.0&gt;-&lt;300.0,715.0&gt;-&lt;298.5,715.0&gt;&gt;
+
+* uni2113 (U+2113) contains a short segment B&lt;&lt;298.5,715.0&gt;-&lt;297.0,715.0&gt;-&lt;295.0,715.0&gt;&gt;
+
+* uni2113 (U+2113) contains a short segment B&lt;&lt;158.0,543.0&gt;-&lt;157.0,540.0&gt;-&lt;157.0,538.0&gt;&gt;
+
+* uni2113 (U+2113) contains a short segment B&lt;&lt;157.0,538.0&gt;-&lt;157.0,536.0&gt;-&lt;157.0,533.0&gt;&gt;
+
+* integral (U+222B) contains a short segment B&lt;&lt;104.0,-144.0&gt;-&lt;99.0,-139.0&gt;-&lt;94.0,-134.5&gt;&gt;
+
+* integral (U+222B) contains a short segment B&lt;&lt;94.0,-134.5&gt;-&lt;89.0,-130.0&gt;-&lt;84.0,-126.5&gt;&gt;
+
+* integral (U+222B) contains a short segment B&lt;&lt;84.0,-126.5&gt;-&lt;79.0,-123.0&gt;-&lt;73.0,-121.0&gt;&gt;
+
+* integral (U+222B) contains a short segment B&lt;&lt;73.0,-121.0&gt;-&lt;67.0,-119.0&gt;-&lt;59.0,-119.0&gt;&gt;
+
+* integral (U+222B) contains a short segment B&lt;&lt;236.0,672.0&gt;-&lt;243.0,669.0&gt;-&lt;248.0,664.0&gt;&gt;
+
+* integral (U+222B) contains a short segment B&lt;&lt;248.0,664.0&gt;-&lt;253.0,659.0&gt;-&lt;258.5,655.5&gt;&gt; 
+
+* integral (U+222B) contains a short segment B&lt;&lt;258.5,655.5&gt;-&lt;264.0,652.0&gt;-&lt;270.5,649.0&gt;&gt; [code: found-short-segments]
+</code></pre>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Medium.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:</p>
 <pre><code>* quotedbl (U+0022) contains a short segment L&lt;&lt;230.0,705.0&gt;--&lt;230.0,706.0&gt;&gt;
 
@@ -1739,147 +1877,47 @@ notequal
 * uni2113 (U+2113) contains a short segment B&lt;&lt;164.0,130.5&gt;-&lt;164.0,124.0&gt;-&lt;164.0,118.0&gt;&gt; [code: found-short-segments]
 </code></pre>
 </span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have segments which seem very short:</p>
-<pre><code>* quotedbl (U+0022) contains a short segment L&lt;&lt;251.0,704.0&gt;--&lt;251.0,704.0&gt;&gt;
-
-* quotedbl (U+0022) contains a short segment L&lt;&lt;469.0,704.0&gt;--&lt;469.0,704.0&gt;&gt;
-
-* quotesingle (U+0027) contains a short segment L&lt;&lt;254.0,704.0&gt;--&lt;254.0,704.0&gt;&gt;
-
-* three (U+0033) contains a short segment B&lt;&lt;209.0,334.0&gt;-&lt;216.0,335.0&gt;-&lt;226.5,335.5&gt;&gt;
-
-* three (U+0033) contains a short segment B&lt;&lt;268.5,337.0&gt;-&lt;279.0,337.0&gt;-&lt;285.0,337.0&gt;&gt;
-
-* at (U+0040) contains a short segment B&lt;&lt;719.0,140.0&gt;-&lt;701.0,140.0&gt;-&lt;688.5,147.5&gt;&gt;
-
-* at (U+0040) contains a short segment B&lt;&lt;688.5,147.5&gt;-&lt;676.0,155.0&gt;-&lt;669.0,167.5&gt;&gt;
-
-* at (U+0040) contains a short segment B&lt;&lt;669.0,167.5&gt;-&lt;662.0,180.0&gt;-&lt;659.0,197.0&gt;&gt;
-
-* at (U+0040) contains a short segment B&lt;&lt;659.0,197.0&gt;-&lt;656.0,214.0&gt;-&lt;658.0,232.0&gt;&gt;
-
-* onequarter (U+00BC) contains a short segment B&lt;&lt;577.0,297.0&gt;-&lt;577.0,296.0&gt;-&lt;577.5,296.5&gt;&gt;
-
-* onequarter (U+00BC) contains a short segment B&lt;&lt;577.5,296.5&gt;-&lt;578.0,297.0&gt;-&lt;579.0,297.0&gt;&gt;
-
-* threequarters (U+00BE) contains a short segment B&lt;&lt;706.0,297.0&gt;-&lt;706.0,296.0&gt;-&lt;706.5,296.5&gt;&gt;
-
-* threequarters (U+00BE) contains a short segment B&lt;&lt;706.5,296.5&gt;-&lt;707.0,297.0&gt;-&lt;708.0,297.0&gt;&gt;
-
-* Oslash (U+00D8) contains a short segment B&lt;&lt;185.0,342.0&gt;-&lt;185.0,345.0&gt;-&lt;185.0,348.0&gt;&gt;
-
-* Oslash (U+00D8) contains a short segment B&lt;&lt;185.0,348.0&gt;-&lt;185.0,351.0&gt;-&lt;185.0,353.0&gt;&gt;
-
-* ae (U+00E6) contains a short segment B&lt;&lt;283.0,520.0&gt;-&lt;276.0,521.0&gt;-&lt;269.0,521.0&gt;&gt;
-
-* ae (U+00E6) contains a short segment B&lt;&lt;269.0,521.0&gt;-&lt;262.0,521.0&gt;-&lt;254.0,520.0&gt;&gt;
-
-* ae (U+00E6) contains a short segment B&lt;&lt;232.0,412.0&gt;-&lt;235.0,413.0&gt;-&lt;238.0,413.0&gt;&gt;
-
-* ae (U+00E6) contains a short segment B&lt;&lt;238.0,413.0&gt;-&lt;241.0,413.0&gt;-&lt;244.0,413.0&gt;&gt;
-
-* ae (U+00E6) contains a short segment B&lt;&lt;30.0,179.0&gt;-&lt;29.0,171.0&gt;-&lt;29.0,164.5&gt;&gt;
-
-* ae (U+00E6) contains a short segment B&lt;&lt;29.0,164.5&gt;-&lt;29.0,158.0&gt;-&lt;30.0,150.0&gt;&gt;
-
-* ae (U+00E6) contains a short segment B&lt;&lt;209.0,-11.0&gt;-&lt;216.0,-11.0&gt;-&lt;225.0,-11.0&gt;&gt;
-
-* ae (U+00E6) contains a short segment B&lt;&lt;225.0,-11.0&gt;-&lt;234.0,-11.0&gt;-&lt;243.0,-11.0&gt;&gt;
-
-* ae (U+00E6) contains a short segment B&lt;&lt;642.0,-13.0&gt;-&lt;651.0,-14.0&gt;-&lt;659.5,-14.0&gt;&gt;
-
-* ae (U+00E6) contains a short segment B&lt;&lt;659.5,-14.0&gt;-&lt;668.0,-14.0&gt;-&lt;678.0,-13.0&gt;&gt;
-
-* ae (U+00E6) contains a short segment L&lt;&lt;522.0,261.0&gt;--&lt;520.0,259.0&gt;&gt;
-
-* thorn (U+00FE) contains a short segment L&lt;&lt;187.0,59.0&gt;--&lt;191.0,59.0&gt;&gt;
-
-* Eng (U+014A) contains a short segment B&lt;&lt;511.0,-78.0&gt;-&lt;502.0,-78.0&gt;-&lt;493.5,-76.0&gt;&gt;
-
-* Eng (U+014A) contains a short segment B&lt;&lt;493.5,-76.0&gt;-&lt;485.0,-74.0&gt;-&lt;475.0,-71.0&gt;&gt;
-
-* eng (U+014B) contains a short segment B&lt;&lt;352.0,-78.0&gt;-&lt;343.0,-78.0&gt;-&lt;334.5,-76.0&gt;&gt;
-
-* OE (U+0152) contains a short segment B&lt;&lt;494.0,-5.0&gt;-&lt;482.0,-8.0&gt;-&lt;469.0,-9.5&gt;&gt;
-
-* OE (U+0152) contains a short segment B&lt;&lt;469.0,-9.5&gt;-&lt;456.0,-11.0&gt;-&lt;443.0,-12.0&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment B&lt;&lt;283.0,520.0&gt;-&lt;276.0,521.0&gt;-&lt;269.0,521.0&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment B&lt;&lt;269.0,521.0&gt;-&lt;262.0,521.0&gt;-&lt;254.0,520.0&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment B&lt;&lt;232.0,412.0&gt;-&lt;235.0,413.0&gt;-&lt;238.0,413.0&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment B&lt;&lt;238.0,413.0&gt;-&lt;241.0,413.0&gt;-&lt;244.0,413.0&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment B&lt;&lt;30.0,179.0&gt;-&lt;29.0,171.0&gt;-&lt;29.0,164.5&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment B&lt;&lt;29.0,164.5&gt;-&lt;29.0,158.0&gt;-&lt;30.0,150.0&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment B&lt;&lt;209.0,-11.0&gt;-&lt;216.0,-11.0&gt;-&lt;225.0,-11.0&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment B&lt;&lt;225.0,-11.0&gt;-&lt;234.0,-11.0&gt;-&lt;243.0,-11.0&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment B&lt;&lt;642.0,-13.0&gt;-&lt;651.0,-14.0&gt;-&lt;659.5,-14.0&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment B&lt;&lt;659.5,-14.0&gt;-&lt;668.0,-14.0&gt;-&lt;678.0,-13.0&gt;&gt;
-
-* aeacute (U+01FD) contains a short segment L&lt;&lt;522.0,261.0&gt;--&lt;520.0,259.0&gt;&gt;
-
-* Oslashacute (U+01FE) contains a short segment B&lt;&lt;185.0,342.0&gt;-&lt;185.0,345.0&gt;-&lt;185.0,348.0&gt;&gt;
-
-* Oslashacute (U+01FE) contains a short segment B&lt;&lt;185.0,348.0&gt;-&lt;185.0,351.0&gt;-&lt;185.0,353.0&gt;&gt;
-
-* xi (U+03BE) contains a short segment B&lt;&lt;301.5,-63.5&gt;-&lt;303.0,-74.0&gt;-&lt;303.0,-81.0&gt;&gt;
-
-* minute (U+2032) contains a short segment L&lt;&lt;218.0,704.0&gt;--&lt;218.0,704.0&gt;&gt;
-
-* second (U+2033) contains a short segment L&lt;&lt;215.0,704.0&gt;--&lt;215.0,704.0&gt;&gt;
-
-* second (U+2033) contains a short segment L&lt;&lt;433.0,704.0&gt;--&lt;433.0,704.0&gt;&gt;
-
-* uni2074 (U+2074) contains a short segment B&lt;&lt;195.0,583.0&gt;-&lt;195.0,582.0&gt;-&lt;195.5,582.5&gt;&gt;
-
-* uni2074 (U+2074) contains a short segment B&lt;&lt;195.5,582.5&gt;-&lt;196.0,583.0&gt;-&lt;197.0,583.0&gt;&gt;
-
-* uni2113 (U+2113) contains a short segment B&lt;&lt;313.0,73.0&gt;-&lt;309.0,72.0&gt;-&lt;306.5,72.0&gt;&gt;
-
-* uni2113 (U+2113) contains a short segment B&lt;&lt;306.5,72.0&gt;-&lt;304.0,72.0&gt;-&lt;301.0,72.0&gt;&gt;
-
-* uni2113 (U+2113) contains a short segment B&lt;&lt;260.0,118.0&gt;-&lt;259.0,122.0&gt;-&lt;258.5,126.0&gt;&gt;
-
-* uni2113 (U+2113) contains a short segment B&lt;&lt;258.5,126.0&gt;-&lt;258.0,130.0&gt;-&lt;258.0,135.0&gt;&gt;
-
-* uni2113 (U+2113) contains a short segment B&lt;&lt;415.0,563.0&gt;-&lt;416.0,569.0&gt;-&lt;415.5,575.5&gt;&gt;
-
-* uni2113 (U+2113) contains a short segment B&lt;&lt;415.5,575.5&gt;-&lt;415.0,582.0&gt;-&lt;414.0,588.0&gt;&gt;
-
-* uni2113 (U+2113) contains a short segment B&lt;&lt;303.0,715.0&gt;-&lt;300.0,715.0&gt;-&lt;298.5,715.0&gt;&gt;
-
-* uni2113 (U+2113) contains a short segment B&lt;&lt;298.5,715.0&gt;-&lt;297.0,715.0&gt;-&lt;295.0,715.0&gt;&gt;
-
-* uni2113 (U+2113) contains a short segment B&lt;&lt;158.0,543.0&gt;-&lt;157.0,540.0&gt;-&lt;157.0,538.0&gt;&gt;
-
-* uni2113 (U+2113) contains a short segment B&lt;&lt;157.0,538.0&gt;-&lt;157.0,536.0&gt;-&lt;157.0,533.0&gt;&gt;
-
-* integral (U+222B) contains a short segment B&lt;&lt;104.0,-144.0&gt;-&lt;99.0,-139.0&gt;-&lt;94.0,-134.5&gt;&gt;
-
-* integral (U+222B) contains a short segment B&lt;&lt;94.0,-134.5&gt;-&lt;89.0,-130.0&gt;-&lt;84.0,-126.5&gt;&gt;
-
-* integral (U+222B) contains a short segment B&lt;&lt;84.0,-126.5&gt;-&lt;79.0,-123.0&gt;-&lt;73.0,-121.0&gt;&gt;
-
-* integral (U+222B) contains a short segment B&lt;&lt;73.0,-121.0&gt;-&lt;67.0,-119.0&gt;-&lt;59.0,-119.0&gt;&gt;
-
-* integral (U+222B) contains a short segment B&lt;&lt;236.0,672.0&gt;-&lt;243.0,669.0&gt;-&lt;248.0,664.0&gt;&gt;
-
-* integral (U+222B) contains a short segment B&lt;&lt;248.0,664.0&gt;-&lt;253.0,659.0&gt;-&lt;258.5,655.5&gt;&gt; 
-
-* integral (U+222B) contains a short segment B&lt;&lt;258.5,655.5&gt;-&lt;264.0,652.0&gt;-&lt;270.5,649.0&gt;&gt; [code: found-short-segments]
-</code></pre>
-</span></li></ul></div></details>
 <h3>Do any segments have colinear vectors?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:</p>
+<pre><code>* Eng (U+014A): L&lt;&lt;693.0,-7.0&gt;--&lt;693.0,41.0&gt;&gt; -&gt; L&lt;&lt;693.0,41.0&gt;--&lt;693.0,702.0&gt;&gt;
+
+* Oslash (U+00D8): L&lt;&lt;319.0,145.0&gt;--&lt;459.0,330.0&gt;&gt; -&gt; L&lt;&lt;459.0,330.0&gt;--&lt;592.0,501.0&gt;&gt;
+
+* Oslashacute (U+01FE): L&lt;&lt;319.0,145.0&gt;--&lt;459.0,330.0&gt;&gt; -&gt; L&lt;&lt;459.0,330.0&gt;--&lt;592.0,501.0&gt;&gt;
+
+* exclam (U+0021): L&lt;&lt;196.0,215.0&gt;--&lt;234.0,618.0&gt;&gt; -&gt; L&lt;&lt;234.0,618.0&gt;--&lt;235.0,702.0&gt;&gt;
+
+* exclam (U+0021): L&lt;&lt;79.0,702.0&gt;--&lt;81.0,618.0&gt;&gt; -&gt; L&lt;&lt;81.0,618.0&gt;--&lt;119.0,215.0&gt;&gt;
+
+* exclamdbl (U+203C): L&lt;&lt;196.0,215.0&gt;--&lt;234.0,618.0&gt;&gt; -&gt; L&lt;&lt;234.0,618.0&gt;--&lt;235.0,702.0&gt;&gt;
+
+* exclamdbl (U+203C): L&lt;&lt;323.0,702.0&gt;--&lt;325.0,618.0&gt;&gt; -&gt; L&lt;&lt;325.0,618.0&gt;--&lt;363.0,215.0&gt;&gt;
+
+* exclamdbl (U+203C): L&lt;&lt;440.0,215.0&gt;--&lt;478.0,618.0&gt;&gt; -&gt; L&lt;&lt;478.0,618.0&gt;--&lt;479.0,702.0&gt;&gt;
+
+* exclamdbl (U+203C): L&lt;&lt;79.0,702.0&gt;--&lt;81.0,618.0&gt;&gt; -&gt; L&lt;&lt;81.0,618.0&gt;--&lt;119.0,215.0&gt;&gt;
+
+* exclamdown (U+00A1): L&lt;&lt;119.0,309.0&gt;--&lt;82.0,-74.0&gt;&gt; -&gt; L&lt;&lt;82.0,-74.0&gt;--&lt;79.0,-179.0&gt;&gt;
+
+* exclamdown (U+00A1): L&lt;&lt;236.0,-179.0&gt;--&lt;234.0,-74.0&gt;&gt; -&gt; L&lt;&lt;234.0,-74.0&gt;--&lt;197.0,309.0&gt;&gt;
+
+* minute (U+2032): L&lt;&lt;123.0,392.0&gt;--&lt;212.0,676.0&gt;&gt; -&gt; L&lt;&lt;212.0,676.0&gt;--&lt;218.0,704.0&gt;&gt;
+
+* quotedbl (U+0022): L&lt;&lt;157.0,392.0&gt;--&lt;245.0,676.0&gt;&gt; -&gt; L&lt;&lt;245.0,676.0&gt;--&lt;251.0,704.0&gt;&gt;
+
+* quotedbl (U+0022): L&lt;&lt;375.0,392.0&gt;--&lt;463.0,676.0&gt;&gt; -&gt; L&lt;&lt;463.0,676.0&gt;--&lt;469.0,704.0&gt;&gt;
+
+* quotesingle (U+0027): L&lt;&lt;159.0,392.0&gt;--&lt;248.0,676.0&gt;&gt; -&gt; L&lt;&lt;248.0,676.0&gt;--&lt;254.0,704.0&gt;&gt;
+
+* second (U+2033): L&lt;&lt;121.0,392.0&gt;--&lt;209.0,676.0&gt;&gt; -&gt; L&lt;&lt;209.0,676.0&gt;--&lt;215.0,704.0&gt;&gt;
+
+* second (U+2033): L&lt;&lt;339.0,392.0&gt;--&lt;427.0,676.0&gt;&gt; -&gt; L&lt;&lt;427.0,676.0&gt;--&lt;433.0,704.0&gt;&gt; 
+
+* thorn (U+00FE): L&lt;&lt;190.0,-236.0&gt;--&lt;190.0,-16.0&gt;&gt; -&gt; L&lt;&lt;190.0,-16.0&gt;--&lt;187.0,59.0&gt;&gt; [code: found-colinear-vectors]
+</code></pre>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:</p>
 <pre><code>* Eng (U+014A): L&lt;&lt;719.0,24.0&gt;--&lt;719.0,81.0&gt;&gt; -&gt; L&lt;&lt;719.0,81.0&gt;--&lt;719.0,700.0&gt;&gt;
 
@@ -2046,47 +2084,13 @@ notequal
 * thorn (U+00FE): L&lt;&lt;142.0,-247.0&gt;--&lt;142.0,-12.0&gt;&gt; -&gt; L&lt;&lt;142.0,-12.0&gt;--&lt;142.0,62.0&gt;&gt; [code: found-colinear-vectors]
 </code></pre>
 </span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:</p>
-<pre><code>* Eng (U+014A): L&lt;&lt;693.0,-7.0&gt;--&lt;693.0,41.0&gt;&gt; -&gt; L&lt;&lt;693.0,41.0&gt;--&lt;693.0,702.0&gt;&gt;
-
-* Oslash (U+00D8): L&lt;&lt;319.0,145.0&gt;--&lt;459.0,330.0&gt;&gt; -&gt; L&lt;&lt;459.0,330.0&gt;--&lt;592.0,501.0&gt;&gt;
-
-* Oslashacute (U+01FE): L&lt;&lt;319.0,145.0&gt;--&lt;459.0,330.0&gt;&gt; -&gt; L&lt;&lt;459.0,330.0&gt;--&lt;592.0,501.0&gt;&gt;
-
-* exclam (U+0021): L&lt;&lt;196.0,215.0&gt;--&lt;234.0,618.0&gt;&gt; -&gt; L&lt;&lt;234.0,618.0&gt;--&lt;235.0,702.0&gt;&gt;
-
-* exclam (U+0021): L&lt;&lt;79.0,702.0&gt;--&lt;81.0,618.0&gt;&gt; -&gt; L&lt;&lt;81.0,618.0&gt;--&lt;119.0,215.0&gt;&gt;
-
-* exclamdbl (U+203C): L&lt;&lt;196.0,215.0&gt;--&lt;234.0,618.0&gt;&gt; -&gt; L&lt;&lt;234.0,618.0&gt;--&lt;235.0,702.0&gt;&gt;
-
-* exclamdbl (U+203C): L&lt;&lt;323.0,702.0&gt;--&lt;325.0,618.0&gt;&gt; -&gt; L&lt;&lt;325.0,618.0&gt;--&lt;363.0,215.0&gt;&gt;
-
-* exclamdbl (U+203C): L&lt;&lt;440.0,215.0&gt;--&lt;478.0,618.0&gt;&gt; -&gt; L&lt;&lt;478.0,618.0&gt;--&lt;479.0,702.0&gt;&gt;
-
-* exclamdbl (U+203C): L&lt;&lt;79.0,702.0&gt;--&lt;81.0,618.0&gt;&gt; -&gt; L&lt;&lt;81.0,618.0&gt;--&lt;119.0,215.0&gt;&gt;
-
-* exclamdown (U+00A1): L&lt;&lt;119.0,309.0&gt;--&lt;82.0,-74.0&gt;&gt; -&gt; L&lt;&lt;82.0,-74.0&gt;--&lt;79.0,-179.0&gt;&gt;
-
-* exclamdown (U+00A1): L&lt;&lt;236.0,-179.0&gt;--&lt;234.0,-74.0&gt;&gt; -&gt; L&lt;&lt;234.0,-74.0&gt;--&lt;197.0,309.0&gt;&gt;
-
-* minute (U+2032): L&lt;&lt;123.0,392.0&gt;--&lt;212.0,676.0&gt;&gt; -&gt; L&lt;&lt;212.0,676.0&gt;--&lt;218.0,704.0&gt;&gt;
-
-* quotedbl (U+0022): L&lt;&lt;157.0,392.0&gt;--&lt;245.0,676.0&gt;&gt; -&gt; L&lt;&lt;245.0,676.0&gt;--&lt;251.0,704.0&gt;&gt;
-
-* quotedbl (U+0022): L&lt;&lt;375.0,392.0&gt;--&lt;463.0,676.0&gt;&gt; -&gt; L&lt;&lt;463.0,676.0&gt;--&lt;469.0,704.0&gt;&gt;
-
-* quotesingle (U+0027): L&lt;&lt;159.0,392.0&gt;--&lt;248.0,676.0&gt;&gt; -&gt; L&lt;&lt;248.0,676.0&gt;--&lt;254.0,704.0&gt;&gt;
-
-* second (U+2033): L&lt;&lt;121.0,392.0&gt;--&lt;209.0,676.0&gt;&gt; -&gt; L&lt;&lt;209.0,676.0&gt;--&lt;215.0,704.0&gt;&gt;
-
-* second (U+2033): L&lt;&lt;339.0,392.0&gt;--&lt;427.0,676.0&gt;&gt; -&gt; L&lt;&lt;427.0,676.0&gt;--&lt;433.0,704.0&gt;&gt; 
-
-* thorn (U+00FE): L&lt;&lt;190.0,-236.0&gt;--&lt;190.0,-16.0&gt;&gt; -&gt; L&lt;&lt;190.0,-16.0&gt;--&lt;187.0,59.0&gt;&gt; [code: found-colinear-vectors]
-</code></pre>
-</span></li></ul></div></details>
 <h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
 
+<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<pre><code>* Pi (U+03A0): L&lt;&lt;648.0,705.0&gt;--&lt;69.0,703.0&gt;&gt; [code: found-semi-vertical]
+</code></pre>
+</span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Black.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
 <pre><code>* Pi (U+03A0): L&lt;&lt;685.0,705.0&gt;--&lt;58.0,700.0&gt;&gt; 
 
@@ -2117,10 +2121,6 @@ notequal
 </span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/Geom-Light.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
 <pre><code>* Pi (U+03A0): L&lt;&lt;610.0,705.0&gt;--&lt;80.0,706.0&gt;&gt; [code: found-semi-vertical]
-</code></pre>
-</span></li></ul></div></details>
-<details><summary>⚠️ <strong>fonts/ttf/Geom-SemiBold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
-<pre><code>* Pi (U+03A0): L&lt;&lt;648.0,705.0&gt;--&lt;69.0,703.0&gt;&gt; [code: found-semi-vertical]
 </code></pre>
 </span></li></ul></div></details>
                     </body>

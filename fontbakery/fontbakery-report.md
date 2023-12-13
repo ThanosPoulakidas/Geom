@@ -2,10 +2,343 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[11] Geom-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
+<details><summary><b>[12] Geom-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
-* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
+* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+
+
+* ⚠ **WARN** OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+ [code: unknown]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
+
+
+* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
+</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
+
+
+* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
+
+	- f + f
+
+	- f + i
+
+	- i + f
+
+	- f + l
+
+	- l + f 
+
+	- i + l [code: lacks-kern-info]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+
+
+* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+
+	- NULL.1
+
+	- Upsilondieresis_alt
+
+	- uni000D
+
+	- uni030C.alt
+
+	- uni0394
+
+	- uni0394.1
+
+	- uni03BC.001 
+
+	- uni2126
+ [code: unreachable-glyphs]
+</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+
+
+* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
+
+The following glyphs do not have the recommended number of contours:
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: Eth	Contours detected: 3	Expected: 2
+
+	- Glyph name: Lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: Tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: dcroat	Contours detected: 3	Expected: 2
+
+	- Glyph name: eogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: hbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: lslash	Contours detected: 2	Expected: 1
+
+	- Glyph name: tbar	Contours detected: 2	Expected: 1
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
+ [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
+
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
+
+
+* ⚠ **WARN** The most common width is 630 among a set of 3 math glyphs.
+The following math glyphs have a different width, though:
+
+Width = 610:
+equal
+
+Width = 639:
+logicalnot
+
+Width = 614:
+plusminus
+
+Width = 669:
+multiply
+
+Width = 645:
+divide
+
+Width = 648:
+lessequal, minus, greaterequal
+
+Width = 634:
+approxequal
+
+Width = 637:
+notequal
+ [code: width-outliers]
+</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have segments which seem very short:
+
+	* quotedbl (U+0022) contains a short segment L<<251.0,704.0>--<251.0,704.0>>
+
+	* quotedbl (U+0022) contains a short segment L<<469.0,704.0>--<469.0,704.0>>
+
+	* quotesingle (U+0027) contains a short segment L<<254.0,704.0>--<254.0,704.0>>
+
+	* three (U+0033) contains a short segment B<<209.0,334.0>-<216.0,335.0>-<226.5,335.5>>
+
+	* three (U+0033) contains a short segment B<<268.5,337.0>-<279.0,337.0>-<285.0,337.0>>
+
+	* at (U+0040) contains a short segment B<<719.0,140.0>-<701.0,140.0>-<688.5,147.5>>
+
+	* at (U+0040) contains a short segment B<<688.5,147.5>-<676.0,155.0>-<669.0,167.5>>
+
+	* at (U+0040) contains a short segment B<<669.0,167.5>-<662.0,180.0>-<659.0,197.0>>
+
+	* at (U+0040) contains a short segment B<<659.0,197.0>-<656.0,214.0>-<658.0,232.0>>
+
+	* onequarter (U+00BC) contains a short segment B<<577.0,297.0>-<577.0,296.0>-<577.5,296.5>>
+
+	* onequarter (U+00BC) contains a short segment B<<577.5,296.5>-<578.0,297.0>-<579.0,297.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<706.0,297.0>-<706.0,296.0>-<706.5,296.5>>
+
+	* threequarters (U+00BE) contains a short segment B<<706.5,296.5>-<707.0,297.0>-<708.0,297.0>>
+
+	* Oslash (U+00D8) contains a short segment B<<185.0,342.0>-<185.0,345.0>-<185.0,348.0>>
+
+	* Oslash (U+00D8) contains a short segment B<<185.0,348.0>-<185.0,351.0>-<185.0,353.0>>
+
+	* ae (U+00E6) contains a short segment B<<283.0,520.0>-<276.0,521.0>-<269.0,521.0>>
+
+	* ae (U+00E6) contains a short segment B<<269.0,521.0>-<262.0,521.0>-<254.0,520.0>>
+
+	* ae (U+00E6) contains a short segment B<<232.0,412.0>-<235.0,413.0>-<238.0,413.0>>
+
+	* ae (U+00E6) contains a short segment B<<238.0,413.0>-<241.0,413.0>-<244.0,413.0>>
+
+	* ae (U+00E6) contains a short segment B<<30.0,179.0>-<29.0,171.0>-<29.0,164.5>>
+
+	* ae (U+00E6) contains a short segment B<<29.0,164.5>-<29.0,158.0>-<30.0,150.0>>
+
+	* ae (U+00E6) contains a short segment B<<209.0,-11.0>-<216.0,-11.0>-<225.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<225.0,-11.0>-<234.0,-11.0>-<243.0,-11.0>>
+
+	* ae (U+00E6) contains a short segment B<<642.0,-13.0>-<651.0,-14.0>-<659.5,-14.0>>
+
+	* ae (U+00E6) contains a short segment B<<659.5,-14.0>-<668.0,-14.0>-<678.0,-13.0>>
+
+	* ae (U+00E6) contains a short segment L<<522.0,261.0>--<520.0,259.0>>
+
+	* thorn (U+00FE) contains a short segment L<<187.0,59.0>--<191.0,59.0>>
+
+	* Eng (U+014A) contains a short segment B<<511.0,-78.0>-<502.0,-78.0>-<493.5,-76.0>>
+
+	* Eng (U+014A) contains a short segment B<<493.5,-76.0>-<485.0,-74.0>-<475.0,-71.0>>
+
+	* eng (U+014B) contains a short segment B<<352.0,-78.0>-<343.0,-78.0>-<334.5,-76.0>>
+
+	* OE (U+0152) contains a short segment B<<494.0,-5.0>-<482.0,-8.0>-<469.0,-9.5>>
+
+	* OE (U+0152) contains a short segment B<<469.0,-9.5>-<456.0,-11.0>-<443.0,-12.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<283.0,520.0>-<276.0,521.0>-<269.0,521.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<269.0,521.0>-<262.0,521.0>-<254.0,520.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<232.0,412.0>-<235.0,413.0>-<238.0,413.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<238.0,413.0>-<241.0,413.0>-<244.0,413.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<30.0,179.0>-<29.0,171.0>-<29.0,164.5>>
+
+	* aeacute (U+01FD) contains a short segment B<<29.0,164.5>-<29.0,158.0>-<30.0,150.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<209.0,-11.0>-<216.0,-11.0>-<225.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<225.0,-11.0>-<234.0,-11.0>-<243.0,-11.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<642.0,-13.0>-<651.0,-14.0>-<659.5,-14.0>>
+
+	* aeacute (U+01FD) contains a short segment B<<659.5,-14.0>-<668.0,-14.0>-<678.0,-13.0>>
+
+	* aeacute (U+01FD) contains a short segment L<<522.0,261.0>--<520.0,259.0>>
+
+	* Oslashacute (U+01FE) contains a short segment B<<185.0,342.0>-<185.0,345.0>-<185.0,348.0>>
+
+	* Oslashacute (U+01FE) contains a short segment B<<185.0,348.0>-<185.0,351.0>-<185.0,353.0>>
+
+	* xi (U+03BE) contains a short segment B<<301.5,-63.5>-<303.0,-74.0>-<303.0,-81.0>>
+
+	* minute (U+2032) contains a short segment L<<218.0,704.0>--<218.0,704.0>>
+
+	* second (U+2033) contains a short segment L<<215.0,704.0>--<215.0,704.0>>
+
+	* second (U+2033) contains a short segment L<<433.0,704.0>--<433.0,704.0>>
+
+	* uni2074 (U+2074) contains a short segment B<<195.0,583.0>-<195.0,582.0>-<195.5,582.5>>
+
+	* uni2074 (U+2074) contains a short segment B<<195.5,582.5>-<196.0,583.0>-<197.0,583.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<313.0,73.0>-<309.0,72.0>-<306.5,72.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<306.5,72.0>-<304.0,72.0>-<301.0,72.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<260.0,118.0>-<259.0,122.0>-<258.5,126.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<258.5,126.0>-<258.0,130.0>-<258.0,135.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<415.0,563.0>-<416.0,569.0>-<415.5,575.5>>
+
+	* uni2113 (U+2113) contains a short segment B<<415.5,575.5>-<415.0,582.0>-<414.0,588.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<303.0,715.0>-<300.0,715.0>-<298.5,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<298.5,715.0>-<297.0,715.0>-<295.0,715.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<158.0,543.0>-<157.0,540.0>-<157.0,538.0>>
+
+	* uni2113 (U+2113) contains a short segment B<<157.0,538.0>-<157.0,536.0>-<157.0,533.0>>
+
+	* integral (U+222B) contains a short segment B<<104.0,-144.0>-<99.0,-139.0>-<94.0,-134.5>>
+
+	* integral (U+222B) contains a short segment B<<94.0,-134.5>-<89.0,-130.0>-<84.0,-126.5>>
+
+	* integral (U+222B) contains a short segment B<<84.0,-126.5>-<79.0,-123.0>-<73.0,-121.0>>
+
+	* integral (U+222B) contains a short segment B<<73.0,-121.0>-<67.0,-119.0>-<59.0,-119.0>>
+
+	* integral (U+222B) contains a short segment B<<236.0,672.0>-<243.0,669.0>-<248.0,664.0>>
+
+	* integral (U+222B) contains a short segment B<<248.0,664.0>-<253.0,659.0>-<258.5,655.5>> 
+
+	* integral (U+222B) contains a short segment B<<258.5,655.5>-<264.0,652.0>-<270.5,649.0>> [code: found-short-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have colinear vectors:
+
+	* Eng (U+014A): L<<693.0,-7.0>--<693.0,41.0>> -> L<<693.0,41.0>--<693.0,702.0>>
+
+	* Oslash (U+00D8): L<<319.0,145.0>--<459.0,330.0>> -> L<<459.0,330.0>--<592.0,501.0>>
+
+	* Oslashacute (U+01FE): L<<319.0,145.0>--<459.0,330.0>> -> L<<459.0,330.0>--<592.0,501.0>>
+
+	* exclam (U+0021): L<<196.0,215.0>--<234.0,618.0>> -> L<<234.0,618.0>--<235.0,702.0>>
+
+	* exclam (U+0021): L<<79.0,702.0>--<81.0,618.0>> -> L<<81.0,618.0>--<119.0,215.0>>
+
+	* exclamdbl (U+203C): L<<196.0,215.0>--<234.0,618.0>> -> L<<234.0,618.0>--<235.0,702.0>>
+
+	* exclamdbl (U+203C): L<<323.0,702.0>--<325.0,618.0>> -> L<<325.0,618.0>--<363.0,215.0>>
+
+	* exclamdbl (U+203C): L<<440.0,215.0>--<478.0,618.0>> -> L<<478.0,618.0>--<479.0,702.0>>
+
+	* exclamdbl (U+203C): L<<79.0,702.0>--<81.0,618.0>> -> L<<81.0,618.0>--<119.0,215.0>>
+
+	* exclamdown (U+00A1): L<<119.0,309.0>--<82.0,-74.0>> -> L<<82.0,-74.0>--<79.0,-179.0>>
+
+	* exclamdown (U+00A1): L<<236.0,-179.0>--<234.0,-74.0>> -> L<<234.0,-74.0>--<197.0,309.0>>
+
+	* minute (U+2032): L<<123.0,392.0>--<212.0,676.0>> -> L<<212.0,676.0>--<218.0,704.0>>
+
+	* quotedbl (U+0022): L<<157.0,392.0>--<245.0,676.0>> -> L<<245.0,676.0>--<251.0,704.0>>
+
+	* quotedbl (U+0022): L<<375.0,392.0>--<463.0,676.0>> -> L<<463.0,676.0>--<469.0,704.0>>
+
+	* quotesingle (U+0027): L<<159.0,392.0>--<248.0,676.0>> -> L<<248.0,676.0>--<254.0,704.0>>
+
+	* second (U+2033): L<<121.0,392.0>--<209.0,676.0>> -> L<<209.0,676.0>--<215.0,704.0>>
+
+	* second (U+2033): L<<339.0,392.0>--<427.0,676.0>> -> L<<427.0,676.0>--<433.0,704.0>> 
+
+	* thorn (U+00FE): L<<190.0,-236.0>--<190.0,-16.0>> -> L<<190.0,-16.0>--<187.0,59.0>> [code: found-colinear-vectors]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
+
+	* Pi (U+03A0): L<<648.0,705.0>--<69.0,703.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[11] Geom-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
+
+
+* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
@@ -178,7 +511,7 @@ notequal
 </div></details><br></div></details><details><summary><b>[12] Geom-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
-* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
+* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
@@ -529,7 +862,7 @@ notequal
 </div></details><br></div></details><details><summary><b>[12] Geom-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
-* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
+* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
@@ -868,7 +1201,7 @@ notequal
 </div></details><br></div></details><details><summary><b>[12] Geom-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
-* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
+* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
@@ -1245,7 +1578,7 @@ notequal
 </div></details><br></div></details><details><summary><b>[12] Geom-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
-* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
+* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
@@ -1582,7 +1915,7 @@ approxequal
 </div></details><br></div></details><details><summary><b>[12] Geom-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
-* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
+* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.10.7 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
 </div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
 
 
@@ -1699,7 +2032,7 @@ Width = 593:
 greater
 
 Width = 591:
-logicalnot, plusminus
+plusminus, logicalnot
 
 Width = 638:
 multiply
@@ -1896,339 +2229,6 @@ notequal
 * ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
 
 	* Pi (U+03A0): L<<610.0,705.0>--<80.0,706.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] Geom-SemiBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
-
-
-* 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.9.0 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
-</div></details><details><summary>⚠ <b>WARN:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
-
-
-* ⚠ **WARN** OS/2 VendorID value '    ' is not yet recognized. If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
- [code: unknown]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
-
-
-* ⚠ **WARN** This font lacks caret position values for ligature glyphs on its GDEF table. [code: lacks-caret-pos]
-</div></details><details><summary>⚠ <b>WARN:</b> Is there kerning info for non-ligated sequences? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/kerning_for_non_ligated_sequences">com.google.fonts/check/kerning_for_non_ligated_sequences</a>)</summary><div>
-
-
-* ⚠ **WARN** GPOS table lacks kerning info for the following non-ligated sequences:
-
-	- f + f
-
-	- f + i
-
-	- i + f
-
-	- f + l
-
-	- l + f 
-
-	- i + l [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
-
-
-* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- NULL.1
-
-	- Upsilondieresis_alt
-
-	- uni000D
-
-	- uni030C.alt
-
-	- uni0394
-
-	- uni0394.1
-
-	- uni03BC.001 
-
-	- uni2126
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
-
-
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-
-	- Glyph name: Eth	Contours detected: 3	Expected: 2
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
-
-	- Glyph name: dcroat	Contours detected: 3	Expected: 2
-
-	- Glyph name: eogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: hbar	Contours detected: 2	Expected: 1
-
-	- Glyph name: Lslash	Contours detected: 2	Expected: 1
-
-	- Glyph name: lslash	Contours detected: 2	Expected: 1
-
-	- Glyph name: Tbar	Contours detected: 2	Expected: 1
-
-	- Glyph name: tbar	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: Dcroat	Contours detected: 3	Expected: 2
-
-	- Glyph name: Eth	Contours detected: 3	Expected: 2
-
-	- Glyph name: Lslash	Contours detected: 2	Expected: 1
-
-	- Glyph name: Tbar	Contours detected: 2	Expected: 1
-
-	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
-
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: dcroat	Contours detected: 3	Expected: 2
-
-	- Glyph name: eogonek	Contours detected: 3	Expected: 2
-
-	- Glyph name: hbar	Contours detected: 2	Expected: 1
-
-	- Glyph name: lslash	Contours detected: 2	Expected: 1
-
-	- Glyph name: tbar	Contours detected: 2	Expected: 1
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0 
-
-	- Glyph name: uogonek	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain a soft hyphen? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_hyphen">com.google.fonts/check/soft_hyphen</a>)</summary><div>
-
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character. [code: softhyphen]
-</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
-
-
-* ⚠ **WARN** The most common width is 630 among a set of 3 math glyphs.
-The following math glyphs have a different width, though:
-
-Width = 610:
-equal
-
-Width = 639:
-logicalnot
-
-Width = 614:
-plusminus
-
-Width = 669:
-multiply
-
-Width = 645:
-divide
-
-Width = 648:
-minus, lessequal, greaterequal
-
-Width = 634:
-approxequal
-
-Width = 637:
-notequal
- [code: width-outliers]
-</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have segments which seem very short:
-
-	* quotedbl (U+0022) contains a short segment L<<251.0,704.0>--<251.0,704.0>>
-
-	* quotedbl (U+0022) contains a short segment L<<469.0,704.0>--<469.0,704.0>>
-
-	* quotesingle (U+0027) contains a short segment L<<254.0,704.0>--<254.0,704.0>>
-
-	* three (U+0033) contains a short segment B<<209.0,334.0>-<216.0,335.0>-<226.5,335.5>>
-
-	* three (U+0033) contains a short segment B<<268.5,337.0>-<279.0,337.0>-<285.0,337.0>>
-
-	* at (U+0040) contains a short segment B<<719.0,140.0>-<701.0,140.0>-<688.5,147.5>>
-
-	* at (U+0040) contains a short segment B<<688.5,147.5>-<676.0,155.0>-<669.0,167.5>>
-
-	* at (U+0040) contains a short segment B<<669.0,167.5>-<662.0,180.0>-<659.0,197.0>>
-
-	* at (U+0040) contains a short segment B<<659.0,197.0>-<656.0,214.0>-<658.0,232.0>>
-
-	* onequarter (U+00BC) contains a short segment B<<577.0,297.0>-<577.0,296.0>-<577.5,296.5>>
-
-	* onequarter (U+00BC) contains a short segment B<<577.5,296.5>-<578.0,297.0>-<579.0,297.0>>
-
-	* threequarters (U+00BE) contains a short segment B<<706.0,297.0>-<706.0,296.0>-<706.5,296.5>>
-
-	* threequarters (U+00BE) contains a short segment B<<706.5,296.5>-<707.0,297.0>-<708.0,297.0>>
-
-	* Oslash (U+00D8) contains a short segment B<<185.0,342.0>-<185.0,345.0>-<185.0,348.0>>
-
-	* Oslash (U+00D8) contains a short segment B<<185.0,348.0>-<185.0,351.0>-<185.0,353.0>>
-
-	* ae (U+00E6) contains a short segment B<<283.0,520.0>-<276.0,521.0>-<269.0,521.0>>
-
-	* ae (U+00E6) contains a short segment B<<269.0,521.0>-<262.0,521.0>-<254.0,520.0>>
-
-	* ae (U+00E6) contains a short segment B<<232.0,412.0>-<235.0,413.0>-<238.0,413.0>>
-
-	* ae (U+00E6) contains a short segment B<<238.0,413.0>-<241.0,413.0>-<244.0,413.0>>
-
-	* ae (U+00E6) contains a short segment B<<30.0,179.0>-<29.0,171.0>-<29.0,164.5>>
-
-	* ae (U+00E6) contains a short segment B<<29.0,164.5>-<29.0,158.0>-<30.0,150.0>>
-
-	* ae (U+00E6) contains a short segment B<<209.0,-11.0>-<216.0,-11.0>-<225.0,-11.0>>
-
-	* ae (U+00E6) contains a short segment B<<225.0,-11.0>-<234.0,-11.0>-<243.0,-11.0>>
-
-	* ae (U+00E6) contains a short segment B<<642.0,-13.0>-<651.0,-14.0>-<659.5,-14.0>>
-
-	* ae (U+00E6) contains a short segment B<<659.5,-14.0>-<668.0,-14.0>-<678.0,-13.0>>
-
-	* ae (U+00E6) contains a short segment L<<522.0,261.0>--<520.0,259.0>>
-
-	* thorn (U+00FE) contains a short segment L<<187.0,59.0>--<191.0,59.0>>
-
-	* Eng (U+014A) contains a short segment B<<511.0,-78.0>-<502.0,-78.0>-<493.5,-76.0>>
-
-	* Eng (U+014A) contains a short segment B<<493.5,-76.0>-<485.0,-74.0>-<475.0,-71.0>>
-
-	* eng (U+014B) contains a short segment B<<352.0,-78.0>-<343.0,-78.0>-<334.5,-76.0>>
-
-	* OE (U+0152) contains a short segment B<<494.0,-5.0>-<482.0,-8.0>-<469.0,-9.5>>
-
-	* OE (U+0152) contains a short segment B<<469.0,-9.5>-<456.0,-11.0>-<443.0,-12.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<283.0,520.0>-<276.0,521.0>-<269.0,521.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<269.0,521.0>-<262.0,521.0>-<254.0,520.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<232.0,412.0>-<235.0,413.0>-<238.0,413.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<238.0,413.0>-<241.0,413.0>-<244.0,413.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<30.0,179.0>-<29.0,171.0>-<29.0,164.5>>
-
-	* aeacute (U+01FD) contains a short segment B<<29.0,164.5>-<29.0,158.0>-<30.0,150.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<209.0,-11.0>-<216.0,-11.0>-<225.0,-11.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<225.0,-11.0>-<234.0,-11.0>-<243.0,-11.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<642.0,-13.0>-<651.0,-14.0>-<659.5,-14.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<659.5,-14.0>-<668.0,-14.0>-<678.0,-13.0>>
-
-	* aeacute (U+01FD) contains a short segment L<<522.0,261.0>--<520.0,259.0>>
-
-	* Oslashacute (U+01FE) contains a short segment B<<185.0,342.0>-<185.0,345.0>-<185.0,348.0>>
-
-	* Oslashacute (U+01FE) contains a short segment B<<185.0,348.0>-<185.0,351.0>-<185.0,353.0>>
-
-	* xi (U+03BE) contains a short segment B<<301.5,-63.5>-<303.0,-74.0>-<303.0,-81.0>>
-
-	* minute (U+2032) contains a short segment L<<218.0,704.0>--<218.0,704.0>>
-
-	* second (U+2033) contains a short segment L<<215.0,704.0>--<215.0,704.0>>
-
-	* second (U+2033) contains a short segment L<<433.0,704.0>--<433.0,704.0>>
-
-	* uni2074 (U+2074) contains a short segment B<<195.0,583.0>-<195.0,582.0>-<195.5,582.5>>
-
-	* uni2074 (U+2074) contains a short segment B<<195.5,582.5>-<196.0,583.0>-<197.0,583.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<313.0,73.0>-<309.0,72.0>-<306.5,72.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<306.5,72.0>-<304.0,72.0>-<301.0,72.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<260.0,118.0>-<259.0,122.0>-<258.5,126.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<258.5,126.0>-<258.0,130.0>-<258.0,135.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<415.0,563.0>-<416.0,569.0>-<415.5,575.5>>
-
-	* uni2113 (U+2113) contains a short segment B<<415.5,575.5>-<415.0,582.0>-<414.0,588.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<303.0,715.0>-<300.0,715.0>-<298.5,715.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<298.5,715.0>-<297.0,715.0>-<295.0,715.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<158.0,543.0>-<157.0,540.0>-<157.0,538.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<157.0,538.0>-<157.0,536.0>-<157.0,533.0>>
-
-	* integral (U+222B) contains a short segment B<<104.0,-144.0>-<99.0,-139.0>-<94.0,-134.5>>
-
-	* integral (U+222B) contains a short segment B<<94.0,-134.5>-<89.0,-130.0>-<84.0,-126.5>>
-
-	* integral (U+222B) contains a short segment B<<84.0,-126.5>-<79.0,-123.0>-<73.0,-121.0>>
-
-	* integral (U+222B) contains a short segment B<<73.0,-121.0>-<67.0,-119.0>-<59.0,-119.0>>
-
-	* integral (U+222B) contains a short segment B<<236.0,672.0>-<243.0,669.0>-<248.0,664.0>>
-
-	* integral (U+222B) contains a short segment B<<248.0,664.0>-<253.0,659.0>-<258.5,655.5>> 
-
-	* integral (U+222B) contains a short segment B<<258.5,655.5>-<264.0,652.0>-<270.5,649.0>> [code: found-short-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have colinear vectors:
-
-	* Eng (U+014A): L<<693.0,-7.0>--<693.0,41.0>> -> L<<693.0,41.0>--<693.0,702.0>>
-
-	* Oslash (U+00D8): L<<319.0,145.0>--<459.0,330.0>> -> L<<459.0,330.0>--<592.0,501.0>>
-
-	* Oslashacute (U+01FE): L<<319.0,145.0>--<459.0,330.0>> -> L<<459.0,330.0>--<592.0,501.0>>
-
-	* exclam (U+0021): L<<196.0,215.0>--<234.0,618.0>> -> L<<234.0,618.0>--<235.0,702.0>>
-
-	* exclam (U+0021): L<<79.0,702.0>--<81.0,618.0>> -> L<<81.0,618.0>--<119.0,215.0>>
-
-	* exclamdbl (U+203C): L<<196.0,215.0>--<234.0,618.0>> -> L<<234.0,618.0>--<235.0,702.0>>
-
-	* exclamdbl (U+203C): L<<323.0,702.0>--<325.0,618.0>> -> L<<325.0,618.0>--<363.0,215.0>>
-
-	* exclamdbl (U+203C): L<<440.0,215.0>--<478.0,618.0>> -> L<<478.0,618.0>--<479.0,702.0>>
-
-	* exclamdbl (U+203C): L<<79.0,702.0>--<81.0,618.0>> -> L<<81.0,618.0>--<119.0,215.0>>
-
-	* exclamdown (U+00A1): L<<119.0,309.0>--<82.0,-74.0>> -> L<<82.0,-74.0>--<79.0,-179.0>>
-
-	* exclamdown (U+00A1): L<<236.0,-179.0>--<234.0,-74.0>> -> L<<234.0,-74.0>--<197.0,309.0>>
-
-	* minute (U+2032): L<<123.0,392.0>--<212.0,676.0>> -> L<<212.0,676.0>--<218.0,704.0>>
-
-	* quotedbl (U+0022): L<<157.0,392.0>--<245.0,676.0>> -> L<<245.0,676.0>--<251.0,704.0>>
-
-	* quotedbl (U+0022): L<<375.0,392.0>--<463.0,676.0>> -> L<<463.0,676.0>--<469.0,704.0>>
-
-	* quotesingle (U+0027): L<<159.0,392.0>--<248.0,676.0>> -> L<<248.0,676.0>--<254.0,704.0>>
-
-	* second (U+2033): L<<121.0,392.0>--<209.0,676.0>> -> L<<209.0,676.0>--<215.0,704.0>>
-
-	* second (U+2033): L<<339.0,392.0>--<427.0,676.0>> -> L<<427.0,676.0>--<433.0,704.0>> 
-
-	* thorn (U+00FE): L<<190.0,-236.0>--<190.0,-16.0>> -> L<<190.0,-16.0>--<187.0,59.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* Pi (U+03A0): L<<648.0,705.0>--<69.0,703.0>> [code: found-semi-vertical]
 </div></details><br></div></details>
 
 ### Summary
