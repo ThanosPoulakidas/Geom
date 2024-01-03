@@ -141,7 +141,7 @@ Width = 645:
 divide
 
 Width = 648:
-minus, greaterequal, lessequal
+greaterequal, minus, lessequal
 
 Width = 634:
 approxequal
@@ -172,17 +172,21 @@ notequal
 
 	* at (U+0040) contains a short segment B<<659.0,197.0>-<656.0,214.0>-<658.0,232.0>>
 
+	* uni00B3 (U+00B3) contains a short segment B<<127.0,486.0>-<131.0,486.0>-<138.5,486.0>>
+
 	* onequarter (U+00BC) contains a short segment B<<577.0,297.0>-<577.0,296.0>-<577.5,296.5>>
 
 	* onequarter (U+00BC) contains a short segment B<<577.5,296.5>-<578.0,297.0>-<579.0,297.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<153.0,486.0>-<157.0,486.0>-<164.5,486.0>>
 
 	* threequarters (U+00BE) contains a short segment B<<706.0,297.0>-<706.0,296.0>-<706.5,296.5>>
 
 	* threequarters (U+00BE) contains a short segment B<<706.5,296.5>-<707.0,297.0>-<708.0,297.0>>
 
-	* Oslash (U+00D8) contains a short segment B<<185.0,342.0>-<185.0,345.0>-<185.0,348.0>>
+	* Oslash (U+00D8) contains a short segment B<<176.0,345.0>-<175.0,347.0>-<175.0,349.0>>
 
-	* Oslash (U+00D8) contains a short segment B<<185.0,348.0>-<185.0,351.0>-<185.0,353.0>>
+	* Oslash (U+00D8) contains a short segment B<<175.0,349.0>-<175.0,351.0>-<175.0,353.0>>
 
 	* ae (U+00E6) contains a short segment B<<283.0,520.0>-<276.0,521.0>-<269.0,521.0>>
 
@@ -240,9 +244,9 @@ notequal
 
 	* aeacute (U+01FD) contains a short segment L<<522.0,261.0>--<520.0,259.0>>
 
-	* Oslashacute (U+01FE) contains a short segment B<<185.0,342.0>-<185.0,345.0>-<185.0,348.0>>
+	* Oslashacute (U+01FE) contains a short segment B<<176.0,345.0>-<175.0,347.0>-<175.0,349.0>>
 
-	* Oslashacute (U+01FE) contains a short segment B<<185.0,348.0>-<185.0,351.0>-<185.0,353.0>>
+	* Oslashacute (U+01FE) contains a short segment B<<175.0,349.0>-<175.0,351.0>-<175.0,353.0>>
 
 	* xi (U+03BE) contains a short segment B<<301.5,-63.5>-<303.0,-74.0>-<303.0,-81.0>>
 
@@ -276,6 +280,8 @@ notequal
 
 	* uni2113 (U+2113) contains a short segment B<<157.0,538.0>-<157.0,536.0>-<157.0,533.0>>
 
+	* threeeighths (U+215C) contains a short segment B<<153.0,486.0>-<157.0,486.0>-<164.5,486.0>>
+
 	* integral (U+222B) contains a short segment B<<104.0,-144.0>-<99.0,-139.0>-<94.0,-134.5>>
 
 	* integral (U+222B) contains a short segment B<<94.0,-134.5>-<89.0,-130.0>-<84.0,-126.5>>
@@ -296,9 +302,9 @@ notequal
 
 	* Eng (U+014A): L<<693.0,-7.0>--<693.0,41.0>> -> L<<693.0,41.0>--<693.0,702.0>>
 
-	* Oslash (U+00D8): L<<319.0,145.0>--<459.0,330.0>> -> L<<459.0,330.0>--<592.0,501.0>>
+	* Oslash (U+00D8): L<<302.0,142.0>--<454.0,330.0>> -> L<<454.0,330.0>--<601.0,507.0>>
 
-	* Oslashacute (U+01FE): L<<319.0,145.0>--<459.0,330.0>> -> L<<459.0,330.0>--<592.0,501.0>>
+	* Oslashacute (U+01FE): L<<302.0,142.0>--<454.0,330.0>> -> L<<454.0,330.0>--<601.0,507.0>>
 
 	* exclam (U+0021): L<<196.0,215.0>--<234.0,618.0>> -> L<<234.0,618.0>--<235.0,702.0>>
 
@@ -700,9 +706,9 @@ notequal
 
 	* threequarters (U+00BE) contains a short segment B<<669.5,294.5>-<670.0,295.0>-<670.0,295.0>>
 
-	* Oslash (U+00D8) contains a short segment B<<170.0,346.0>-<169.0,348.0>-<169.0,350.0>>
+	* Oslash (U+00D8) contains a short segment B<<157.0,349.0>-<157.0,350.0>-<157.0,351.5>>
 
-	* Oslash (U+00D8) contains a short segment B<<169.0,350.0>-<169.0,352.0>-<169.0,354.0>>
+	* Oslash (U+00D8) contains a short segment B<<157.0,351.5>-<157.0,353.0>-<157.0,354.0>>
 
 	* ae (U+00E6) contains a short segment B<<282.0,511.0>-<275.0,511.0>-<268.0,511.0>>
 
@@ -764,9 +770,9 @@ notequal
 
 	* aeacute (U+01FD) contains a short segment L<<508.0,258.0>--<506.0,255.0>>
 
-	* Oslashacute (U+01FE) contains a short segment B<<170.0,346.0>-<169.0,348.0>-<169.0,350.0>>
+	* Oslashacute (U+01FE) contains a short segment B<<157.0,349.0>-<157.0,350.0>-<157.0,351.5>>
 
-	* Oslashacute (U+01FE) contains a short segment B<<169.0,350.0>-<169.0,352.0>-<169.0,354.0>>
+	* Oslashacute (U+01FE) contains a short segment B<<157.0,351.5>-<157.0,353.0>-<157.0,354.0>>
 
 	* xi (U+03BE) contains a short segment B<<304.5,-65.5>-<306.0,-76.0>-<306.0,-84.0>>
 
@@ -820,9 +826,9 @@ notequal
 
 	* Eng (U+014A): L<<684.0,-17.0>--<684.0,27.0>> -> L<<684.0,27.0>--<684.0,703.0>>
 
-	* Oslash (U+00D8): L<<291.0,139.0>--<451.0,330.0>> -> L<<451.0,330.0>--<607.0,512.0>>
+	* Oslash (U+00D8): L<<269.0,135.0>--<445.0,331.0>> -> L<<445.0,331.0>--<618.0,521.0>>
 
-	* Oslashacute (U+01FE): L<<291.0,139.0>--<451.0,330.0>> -> L<<451.0,330.0>--<607.0,512.0>>
+	* Oslashacute (U+01FE): L<<269.0,135.0>--<445.0,331.0>> -> L<<445.0,331.0>--<618.0,521.0>>
 
 	* exclam (U+0021): L<<188.0,211.0>--<219.0,619.0>> -> L<<219.0,619.0>--<221.0,703.0>>
 
@@ -1047,9 +1053,9 @@ notequal
 
 	* threequarters (U+00BE) contains a short segment B<<632.5,292.5>-<633.0,293.0>-<633.0,293.0>>
 
-	* Oslash (U+00D8) contains a short segment B<<154.0,350.0>-<154.0,351.0>-<154.0,352.0>>
+	* Oslash (U+00D8) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
 
-	* Oslash (U+00D8) contains a short segment B<<154.0,352.0>-<154.0,353.0>-<154.0,354.0>>
+	* Oslash (U+00D8) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
 
 	* ae (U+00E6) contains a short segment B<<281.0,501.0>-<274.0,502.0>-<267.5,502.0>>
 
@@ -1115,9 +1121,9 @@ notequal
 
 	* aeacute (U+01FD) contains a short segment L<<495.0,254.0>--<492.0,251.0>>
 
-	* Oslashacute (U+01FE) contains a short segment B<<154.0,350.0>-<154.0,351.0>-<154.0,352.0>>
+	* Oslashacute (U+01FE) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
 
-	* Oslashacute (U+01FE) contains a short segment B<<154.0,352.0>-<154.0,353.0>-<154.0,354.0>>
+	* Oslashacute (U+01FE) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
 
 	* minute (U+2032) contains a short segment L<<188.0,707.0>--<188.0,707.0>>
 
@@ -1157,9 +1163,9 @@ notequal
 
 	* Eng (U+014A): L<<675.0,-27.0>--<675.0,14.0>> -> L<<675.0,14.0>--<675.0,704.0>>
 
-	* Oslash (U+00D8): L<<263.0,134.0>--<443.0,331.0>> -> L<<443.0,331.0>--<621.0,523.0>>
+	* Oslash (U+00D8): L<<235.0,129.0>--<435.0,332.0>> -> L<<435.0,332.0>--<635.0,534.0>>
 
-	* Oslashacute (U+01FE): L<<263.0,134.0>--<443.0,331.0>> -> L<<443.0,331.0>--<621.0,523.0>>
+	* Oslashacute (U+01FE): L<<235.0,129.0>--<435.0,332.0>> -> L<<435.0,332.0>--<635.0,534.0>>
 
 	* exclam (U+0021): L<<180.0,207.0>--<204.0,620.0>> -> L<<204.0,620.0>--<207.0,704.0>>
 
@@ -1198,7 +1204,7 @@ notequal
 	* onehalf (U+00BD): L<<678.0,63.0>--<515.0,62.0>> 
 
 	* uni00B2 (U+00B2): L<<318.0,349.0>--<155.0,348.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] Geom-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] Geom-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Do we have the latest version of FontBakery installed? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version">com.google.fonts/check/fontbakery_version</a>)</summary><div>
 
 
 * 🔥 **FAIL** Current Font Bakery version is 0.8.13, while a newer 0.10.8 is already available. Please upgrade it with 'pip install -U fontbakery' [code: outdated-fontbakery]
@@ -1351,210 +1357,6 @@ approxequal
 Width = 671:
 notequal
  [code: width-outliers]
-</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have segments which seem very short:
-
-	* quotedbl (U+0022) contains a short segment L<<294.0,701.0>--<294.0,701.0>>
-
-	* quotedbl (U+0022) contains a short segment L<<538.0,701.0>--<538.0,701.0>>
-
-	* quotesingle (U+0027) contains a short segment L<<297.0,701.0>--<297.0,701.0>>
-
-	* three (U+0033) contains a short segment B<<214.0,309.0>-<220.0,310.0>-<231.0,310.0>>
-
-	* three (U+0033) contains a short segment B<<277.5,310.0>-<288.0,310.0>-<294.0,310.0>>
-
-	* at (U+0040) contains a short segment B<<740.0,128.0>-<720.0,128.0>-<707.5,136.5>>
-
-	* at (U+0040) contains a short segment B<<707.5,136.5>-<695.0,145.0>-<688.0,159.0>>
-
-	* at (U+0040) contains a short segment B<<688.0,159.0>-<681.0,173.0>-<679.0,191.0>>
-
-	* at (U+0040) contains a short segment B<<679.0,191.0>-<677.0,209.0>-<679.0,227.0>>
-
-	* e (U+0065) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
-
-	* r (U+0072) contains a short segment B<<400.0,539.0>-<397.0,540.0>-<393.0,540.0>>
-
-	* r (U+0072) contains a short segment B<<393.0,540.0>-<389.0,540.0>-<386.0,540.0>>
-
-	* r (U+0072) contains a short segment B<<391.5,361.5>-<397.0,361.0>-<400.0,360.0>>
-
-	* section (U+00A7) contains a short segment B<<231.5,543.5>-<226.0,551.0>-<226.0,559.0>>
-
-	* uni00B3 (U+00B3) contains a short segment B<<159.0,478.0>-<164.0,478.0>-<170.0,478.5>>
-
-	* onequarter (U+00BC) contains a short segment B<<631.0,302.0>-<632.0,301.0>-<632.5,301.0>>
-
-	* onequarter (U+00BC) contains a short segment B<<632.5,301.0>-<633.0,301.0>-<634.0,301.0>>
-
-	* threequarters (U+00BE) contains a short segment B<<180.0,478.0>-<185.0,478.0>-<191.0,478.5>>
-
-	* threequarters (U+00BE) contains a short segment B<<781.0,302.0>-<782.0,301.0>-<782.5,301.0>>
-
-	* threequarters (U+00BE) contains a short segment B<<782.5,301.0>-<783.0,301.0>-<784.0,301.0>>
-
-	* ae (U+00E6) contains a short segment B<<286.0,539.0>-<278.0,540.0>-<270.5,540.0>>
-
-	* ae (U+00E6) contains a short segment B<<270.5,540.0>-<263.0,540.0>-<255.0,539.0>>
-
-	* ae (U+00E6) contains a short segment B<<235.0,407.0>-<236.0,407.0>-<237.0,407.0>>
-
-	* ae (U+00E6) contains a short segment B<<237.0,407.0>-<238.0,407.0>-<239.0,407.0>>
-
-	* ae (U+00E6) contains a short segment B<<29.0,184.0>-<28.0,176.0>-<27.5,169.5>>
-
-	* ae (U+00E6) contains a short segment B<<27.5,169.5>-<27.0,163.0>-<27.0,155.0>>
-
-	* ae (U+00E6) contains a short segment B<<210.0,-12.0>-<219.0,-12.0>-<229.0,-12.0>>
-
-	* ae (U+00E6) contains a short segment B<<229.0,-12.0>-<239.0,-12.0>-<250.0,-11.0>>
-
-	* ae (U+00E6) contains a short segment B<<657.0,-16.0>-<666.0,-16.0>-<676.5,-15.5>>
-
-	* ae (U+00E6) contains a short segment B<<676.5,-15.5>-<687.0,-15.0>-<697.0,-14.0>>
-
-	* ae (U+00E6) contains a short segment L<<549.0,268.0>--<548.0,268.0>>
-
-	* egrave (U+00E8) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
-
-	* eacute (U+00E9) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
-
-	* ecircumflex (U+00EA) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
-
-	* edieresis (U+00EB) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
-
-	* eth (U+00F0) contains a short segment B<<359.0,457.0>-<353.0,459.0>-<344.5,463.0>>
-
-	* thorn (U+00FE) contains a short segment L<<218.0,56.0>--<222.0,56.0>>
-
-	* thorn (U+00FE) contains a short segment L<<217.0,411.0>--<217.0,411.0>>
-
-	* emacron (U+0113) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
-
-	* ebreve (U+0115) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
-
-	* edotaccent (U+0117) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
-
-	* eogonek (U+0119) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
-
-	* ecaron (U+011B) contains a short segment L<<195.0,267.0>--<194.0,270.0>>
-
-	* Eng (U+014A) contains a short segment L<<538.0,21.0>--<538.0,10.0>>
-
-	* Eng (U+014A) contains a short segment B<<494.0,-47.0>-<485.0,-47.0>-<476.5,-45.0>>
-
-	* Eng (U+014A) contains a short segment B<<476.5,-45.0>-<468.0,-43.0>-<457.0,-39.0>>
-
-	* eng (U+014B) contains a short segment B<<353.0,-47.0>-<344.0,-47.0>-<335.5,-45.0>>
-
-	* OE (U+0152) contains a short segment B<<511.0,-2.0>-<499.0,-5.0>-<486.0,-7.0>>
-
-	* OE (U+0152) contains a short segment B<<486.0,-7.0>-<473.0,-9.0>-<460.0,-11.0>>
-
-	* racute (U+0155) contains a short segment B<<400.0,539.0>-<397.0,540.0>-<393.0,540.0>>
-
-	* racute (U+0155) contains a short segment B<<393.0,540.0>-<389.0,540.0>-<386.0,540.0>>
-
-	* racute (U+0155) contains a short segment B<<391.5,361.5>-<397.0,361.0>-<400.0,360.0>>
-
-	* uni0157 (U+0157) contains a short segment B<<407.0,539.0>-<404.0,540.0>-<400.0,540.0>>
-
-	* uni0157 (U+0157) contains a short segment B<<400.0,540.0>-<396.0,540.0>-<393.0,540.0>>
-
-	* uni0157 (U+0157) contains a short segment B<<398.5,361.5>-<404.0,361.0>-<407.0,360.0>>
-
-	* rcaron (U+0159) contains a short segment B<<401.0,539.0>-<398.0,540.0>-<394.0,540.0>>
-
-	* rcaron (U+0159) contains a short segment B<<394.0,540.0>-<390.0,540.0>-<387.0,540.0>>
-
-	* rcaron (U+0159) contains a short segment B<<392.5,361.5>-<398.0,361.0>-<401.0,360.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<286.0,539.0>-<278.0,540.0>-<270.5,540.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<270.5,540.0>-<263.0,540.0>-<255.0,539.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<235.0,407.0>-<236.0,407.0>-<237.0,407.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<237.0,407.0>-<238.0,407.0>-<239.0,407.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<29.0,184.0>-<28.0,176.0>-<27.5,169.5>>
-
-	* aeacute (U+01FD) contains a short segment B<<27.5,169.5>-<27.0,163.0>-<27.0,155.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<210.0,-12.0>-<219.0,-12.0>-<229.0,-12.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<229.0,-12.0>-<239.0,-12.0>-<250.0,-11.0>>
-
-	* aeacute (U+01FD) contains a short segment B<<657.0,-16.0>-<666.0,-16.0>-<676.5,-15.5>>
-
-	* aeacute (U+01FD) contains a short segment B<<676.5,-15.5>-<687.0,-15.0>-<697.0,-14.0>>
-
-	* aeacute (U+01FD) contains a short segment L<<549.0,268.0>--<548.0,268.0>>
-
-	* Phi (U+03A6) contains a short segment B<<393.0,658.0>-<388.0,658.0>-<383.5,657.5>>
-
-	* Phi (U+03A6) contains a short segment B<<383.5,657.5>-<379.0,657.0>-<374.0,657.0>>
-
-	* Phi (U+03A6) contains a short segment B<<374.0,52.0>-<379.0,52.0>-<383.5,51.5>>
-
-	* Phi (U+03A6) contains a short segment B<<383.5,51.5>-<388.0,51.0>-<393.0,51.0>>
-
-	* Phi (U+03A6) contains a short segment B<<560.0,51.0>-<565.0,51.0>-<569.5,51.5>>
-
-	* Phi (U+03A6) contains a short segment B<<569.5,51.5>-<574.0,52.0>-<578.0,52.0>>
-
-	* Phi (U+03A6) contains a short segment B<<578.0,657.0>-<574.0,657.0>-<569.5,657.5>>
-
-	* Phi (U+03A6) contains a short segment B<<569.5,657.5>-<565.0,658.0>-<560.0,658.0>>
-
-	* xi (U+03BE) contains a short segment B<<294.5,-59.5>-<296.0,-69.0>-<296.0,-74.0>>
-
-	* minute (U+2032) contains a short segment L<<246.0,701.0>--<246.0,701.0>>
-
-	* second (U+2033) contains a short segment L<<243.0,701.0>--<243.0,701.0>>
-
-	* second (U+2033) contains a short segment L<<487.0,701.0>--<487.0,701.0>>
-
-	* uni2074 (U+2074) contains a short segment B<<191.0,588.0>-<192.0,587.0>-<192.5,587.0>>
-
-	* uni2074 (U+2074) contains a short segment B<<192.5,587.0>-<193.0,587.0>-<194.0,587.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<316.0,90.0>-<314.0,89.0>-<311.5,89.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<311.5,89.0>-<309.0,89.0>-<306.0,89.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<271.0,134.0>-<270.0,135.0>-<270.0,136.5>>
-
-	* uni2113 (U+2113) contains a short segment B<<270.0,136.5>-<270.0,138.0>-<270.0,140.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<310.0,714.0>-<305.0,715.0>-<302.5,715.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<302.5,715.0>-<300.0,715.0>-<296.0,715.0>>
-
-	* uni2113 (U+2113) contains a short segment B<<153.0,546.0>-<152.0,541.0>-<152.0,537.5>>
-
-	* uni2113 (U+2113) contains a short segment B<<152.0,537.5>-<152.0,534.0>-<152.0,530.0>>
-
-	* threeeighths (U+215C) contains a short segment B<<180.0,478.0>-<185.0,478.0>-<191.0,478.5>>
-
-	* integral (U+222B) contains a short segment B<<109.0,-119.0>-<104.0,-115.0>-<99.5,-112.0>>
-
-	* integral (U+222B) contains a short segment B<<99.5,-112.0>-<95.0,-109.0>-<90.5,-107.0>>
-
-	* integral (U+222B) contains a short segment B<<90.5,-107.0>-<86.0,-105.0>-<80.5,-103.5>>
-
-	* integral (U+222B) contains a short segment B<<80.5,-103.5>-<75.0,-102.0>-<69.0,-102.0>>
-
-	* integral (U+222B) contains a short segment B<<240.0,647.0>-<246.0,644.0>-<251.0,641.0>>
-
-	* integral (U+222B) contains a short segment B<<251.0,641.0>-<256.0,638.0>-<261.5,635.5>>
-
-	* integral (U+222B) contains a short segment B<<261.5,635.5>-<267.0,633.0>-<273.5,631.0>> 
-
-	* integral (U+222B) contains a short segment B<<273.5,631.0>-<280.0,629.0>-<287.0,629.0>> [code: found-short-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -1562,9 +1364,9 @@ notequal
 
 	* Eng (U+014A): L<<710.0,14.0>--<710.0,68.0>> -> L<<710.0,68.0>--<710.0,701.0>>
 
-	* Oslash (U+00D8): L<<375.0,156.0>--<475.0,329.0>> -> L<<475.0,329.0>--<563.0,478.0>>
+	* Oslash (U+00D8): L<<369.0,155.0>--<473.0,329.0>> -> L<<473.0,329.0>--<566.0,480.0>>
 
-	* Oslashacute (U+01FE): L<<375.0,156.0>--<475.0,329.0>> -> L<<475.0,329.0>--<563.0,478.0>> 
+	* Oslashacute (U+01FE): L<<369.0,155.0>--<473.0,329.0>> -> L<<473.0,329.0>--<566.0,480.0>> 
 
 	* thorn (U+00FE): L<<222.0,-229.0>--<222.0,-19.0>> -> L<<222.0,-19.0>--<218.0,56.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -1702,7 +1504,7 @@ Width = 644:
 plus
 
 Width = 642:
-less, greater
+greater, less
 
 Width = 625:
 equal
@@ -1749,9 +1551,13 @@ approxequal
 
 	* section (U+00A7) contains a short segment B<<220.5,546.5>-<215.0,555.0>-<215.0,564.0>>
 
+	* uni00B3 (U+00B3) contains a short segment B<<155.0,482.5>-<162.0,483.0>-<166.0,483.0>>
+
 	* onequarter (U+00BC) contains a short segment B<<604.0,299.0>-<605.0,299.0>-<605.5,299.0>>
 
 	* onequarter (U+00BC) contains a short segment B<<605.5,299.0>-<606.0,299.0>-<606.0,299.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<178.0,482.5>-<185.0,483.0>-<189.0,483.0>>
 
 	* threequarters (U+00BE) contains a short segment B<<744.0,299.0>-<745.0,299.0>-<745.5,299.0>>
 
@@ -1869,6 +1675,8 @@ approxequal
 
 	* uni2113 (U+2113) contains a short segment B<<155.0,538.0>-<155.0,535.0>-<155.0,531.0>>
 
+	* threeeighths (U+215C) contains a short segment B<<178.0,482.5>-<185.0,483.0>-<189.0,483.0>>
+
 	* integral (U+222B) contains a short segment B<<106.0,-131.0>-<101.0,-127.0>-<96.5,-123.5>>
 
 	* integral (U+222B) contains a short segment B<<96.5,-123.5>-<92.0,-120.0>-<87.0,-117.0>>
@@ -1889,9 +1697,9 @@ approxequal
 
 	* Eng (U+014A): L<<701.0,4.0>--<701.0,54.0>> -> L<<701.0,54.0>--<701.0,702.0>>
 
-	* Oslash (U+00D8): L<<347.0,150.0>--<467.0,329.0>> -> L<<467.0,329.0>--<578.0,489.0>>
+	* Oslash (U+00D8): L<<336.0,148.0>--<464.0,330.0>> -> L<<464.0,330.0>--<583.0,494.0>>
 
-	* Oslashacute (U+01FE): L<<347.0,150.0>--<467.0,329.0>> -> L<<467.0,329.0>--<578.0,489.0>>
+	* Oslashacute (U+01FE): L<<336.0,148.0>--<464.0,330.0>> -> L<<464.0,330.0>--<583.0,494.0>>
 
 	* exclam (U+0021): L<<204.0,220.0>--<248.0,617.0>> -> L<<248.0,617.0>--<250.0,702.0>>
 
@@ -2032,7 +1840,7 @@ Width = 593:
 greater
 
 Width = 591:
-plusminus, logicalnot
+logicalnot, plusminus
 
 Width = 638:
 multiply
@@ -2074,17 +1882,25 @@ notequal
 
 	* at (U+0040) contains a short segment B<<630.0,206.0>-<626.0,221.0>-<626.0,239.0>>
 
+	* uni00B3 (U+00B3) contains a short segment B<<111.0,487.0>-<114.0,487.0>-<122.5,487.5>>
+
+	* uni00B3 (U+00B3) contains a short segment B<<122.5,487.5>-<131.0,488.0>-<134.0,488.0>>
+
 	* onequarter (U+00BC) contains a short segment B<<496.0,289.0>-<496.0,290.0>-<496.5,290.5>>
 
 	* onequarter (U+00BC) contains a short segment B<<496.5,290.5>-<497.0,291.0>-<497.0,291.0>>
+
+	* threequarters (U+00BE) contains a short segment B<<144.0,487.0>-<147.0,487.0>-<155.5,487.5>>
+
+	* threequarters (U+00BE) contains a short segment B<<155.5,487.5>-<164.0,488.0>-<167.0,488.0>>
 
 	* threequarters (U+00BE) contains a short segment B<<595.0,289.0>-<595.0,290.0>-<595.5,290.5>>
 
 	* threequarters (U+00BE) contains a short segment B<<595.5,290.5>-<596.0,291.0>-<596.0,291.0>>
 
-	* Oslash (U+00D8) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
+	* Oslash (U+00D8) contains a short segment B<<154.0,350.0>-<154.0,351.0>-<154.0,352.0>>
 
-	* Oslash (U+00D8) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
+	* Oslash (U+00D8) contains a short segment B<<154.0,352.0>-<154.0,353.0>-<154.0,354.0>>
 
 	* ae (U+00E6) contains a short segment B<<280.0,491.0>-<273.0,492.0>-<266.5,492.0>>
 
@@ -2146,9 +1962,9 @@ notequal
 
 	* aeacute (U+01FD) contains a short segment B<<634.5,-11.0>-<641.0,-11.0>-<648.0,-11.0>>
 
-	* Oslashacute (U+01FE) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
+	* Oslashacute (U+01FE) contains a short segment B<<154.0,350.0>-<154.0,351.0>-<154.0,352.0>>
 
-	* Oslashacute (U+01FE) contains a short segment B<<138.0,354.0>-<138.0,354.0>-<138.0,354.0>>
+	* Oslashacute (U+01FE) contains a short segment B<<154.0,352.0>-<154.0,353.0>-<154.0,354.0>>
 
 	* minute (U+2032) contains a short segment L<<147.0,708.0>--<147.0,708.0>>
 
@@ -2180,9 +1996,13 @@ notequal
 
 	* uni2113 (U+2113) contains a short segment B<<164.0,538.0>-<164.0,538.0>-<164.0,538.0>>
 
-	* uni2113 (U+2113) contains a short segment B<<164.0,143.0>-<164.0,137.0>-<164.0,130.5>> 
+	* uni2113 (U+2113) contains a short segment B<<164.0,143.0>-<164.0,137.0>-<164.0,130.5>>
 
-	* uni2113 (U+2113) contains a short segment B<<164.0,130.5>-<164.0,124.0>-<164.0,118.0>> [code: found-short-segments]
+	* uni2113 (U+2113) contains a short segment B<<164.0,130.5>-<164.0,124.0>-<164.0,118.0>>
+
+	* threeeighths (U+215C) contains a short segment B<<144.0,487.0>-<147.0,487.0>-<155.5,487.5>> 
+
+	* threeeighths (U+215C) contains a short segment B<<155.5,487.5>-<164.0,488.0>-<167.0,488.0>> [code: found-short-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -2190,9 +2010,9 @@ notequal
 
 	* Eng (U+014A): L<<666.0,-37.0>--<666.0,0.0>> -> L<<666.0,0.0>--<666.0,705.0>>
 
-	* Oslash (U+00D8): L<<235.0,129.0>--<435.0,332.0>> -> L<<435.0,332.0>--<635.0,534.0>>
+	* Oslash (U+00D8): L<<263.0,134.0>--<443.0,331.0>> -> L<<443.0,331.0>--<621.0,523.0>>
 
-	* Oslashacute (U+01FE): L<<235.0,129.0>--<435.0,332.0>> -> L<<435.0,332.0>--<635.0,534.0>>
+	* Oslashacute (U+01FE): L<<263.0,134.0>--<443.0,331.0>> -> L<<443.0,331.0>--<621.0,523.0>>
 
 	* exclam (U+0021): L<<172.0,203.0>--<189.0,621.0>> -> L<<189.0,621.0>--<193.0,705.0>>
 
@@ -2235,7 +2055,7 @@ notequal
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 7 | 76 | 823 | 43 | 671 | 0 |
+| 0 | 7 | 75 | 823 | 43 | 672 | 0 |
 | 0% | 0% | 5% | 51% | 3% | 41% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
