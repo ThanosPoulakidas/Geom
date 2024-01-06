@@ -1,5 +1,6 @@
 sources:
   - Geom-Regular[wght].glyphs
+  - Geom-Italic[wght].glyphs
 axisOrder:
   - wght
 familyName: Geom
