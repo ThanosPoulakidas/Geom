@@ -596,7 +596,6 @@ languagesystem latn KAZ;
 languagesystem latn TAT;
 languagesystem latn TRK;
 languagesystem latn CAT;
-languagesystem latn NLD;
 ";
 name = Languagesystems;
 }
@@ -604,254 +603,105 @@ name = Languagesystems;
 features = (
 {
 automatic = 1;
-code = "";
+code = "feature locl;
+feature frac;
+feature ordn;
+feature case;
+";
 tag = aalt;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup SUB_2 {
-	@SUB_2_0_LA_0 = [acutecomb gravecomb tildecomb uni0308 uni0307 uni030B uni0302 uni030C uni0306 uni030A uni0304 uni030F uni0311 uni0312];
-	sub i' lookup SUB_13 @SUB_2_0_LA_0;
-	@SUB_2_1_LA_0 = [acutecomb gravecomb tildecomb uni0308 uni0307 uni030B uni0302 uni030C uni0306 uni030A uni0304 uni030F uni0311 uni0312];
-	sub j' lookup SUB_13 @SUB_2_1_LA_0;
-	@SUB_2_2_LA_0 = [acutecomb gravecomb tildecomb uni0308 uni0307 uni030B uni0302 uni030C uni0306 uni030A uni0304 uni030F uni0311 uni0312];
-	sub iogonek' lookup SUB_14 @SUB_2_2_LA_0;
-} SUB_2;
-lookup SUB_3 {
+code = "lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+	sub iogonek' @CombiningTopAccents by idotless ogonekcomb;
+} ccmp_Other_1;
+
+lookup ccmp_latn_1 {
 	sub fi by f i;
 	sub fl by f l;
-} SUB_3;
+} ccmp_latn_1;
+
 script latn;
-language dflt;
-lookup SUB_2;
-lookup SUB_3;
-language AZE;
-lookup SUB_2;
-lookup SUB_3;
-language CAT;
-lookup SUB_2;
-lookup SUB_3;
-language CRT;
-lookup SUB_2;
-lookup SUB_3;
-language KAZ;
-lookup SUB_2;
-lookup SUB_3;
-language NLD;
-lookup SUB_2;
-lookup SUB_3;
-language TAT;
-lookup SUB_2;
-lookup SUB_3;
-language TRK;
-lookup SUB_2;
-lookup SUB_3;
+lookup ccmp_latn_1;
 ";
 tag = ccmp;
 },
 {
-code = "script latn;
-language AZE;
-lookup SUB_4 {
+automatic = 1;
+code = "lookup locl_latn_0 {
+	script latn;
+	language AZE;
 	sub i by i.loclTRK;
+	language CRT;
 	sub i by i.loclTRK;
+	language KAZ;
 	sub i by i.loclTRK;
+	language TAT;
 	sub i by i.loclTRK;
+	language TRK;
 	sub i by i.loclTRK;
-} SUB_4;
-language CRT;
-lookup SUB_4;
-language KAZ;
-lookup SUB_4;
-language TAT;
-lookup SUB_4;
-language TRK;
-lookup SUB_4;
-language CAT;
-lookup SUB_5 {
-	sub L periodcentered' lookup SUB_16 L;
-	sub l periodcentered' lookup SUB_15 l;
-} SUB_5;
-language NLD;
-lookup SUB_6 {
-	sub Iacute J' lookup SUB_16;
-	sub iacute j' lookup SUB_16;
-} SUB_6;
+} locl_latn_0;
+
+lookup locl_latn_1 {
+	script latn;
+	language CAT;
+	sub l periodcentered' l by periodcentered.loclCAT;
+	sub L periodcentered' L by periodcentered.loclCAT.case;
+} locl_latn_1;
 ";
 tag = locl;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup SUB_7 {
-	sub one by uni00B9;
-	sub two by uni00B2;
-	sub three by uni00B3;
-} SUB_7;
-script latn;
-language dflt;
-lookup SUB_7;
-language AZE;
-lookup SUB_7;
-language CAT;
-lookup SUB_7;
-language CRT;
-lookup SUB_7;
-language KAZ;
-lookup SUB_7;
-language NLD;
-lookup SUB_7;
-language TAT;
-lookup SUB_7;
-language TRK;
-lookup SUB_7;
-";
+automatic = 1;
+code = "";
 tag = sups;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup SUB_8 {
-	sub one slash two by onehalf;
-	sub one slash four by onequarter;
-	sub one slash eight by oneeighth;
-	sub three slash four by threequarters;
-	sub three slash eight by threeeighths;
-	sub five slash eight by fiveeighths;
-	sub seven slash eight by seveneighths;
-} SUB_8;
-script latn;
-language dflt;
-lookup SUB_8;
-language AZE;
-lookup SUB_8;
-language CAT;
-lookup SUB_8;
-language CRT;
-lookup SUB_8;
-language KAZ;
-lookup SUB_8;
-language NLD;
-lookup SUB_8;
-language TAT;
-lookup SUB_8;
-language TRK;
-lookup SUB_8;
+automatic = 1;
+code = "sub one slash eight by oneeighth;
+sub one slash four by onequarter;
+sub three slash eight by threeeighths;
+sub one slash two by onehalf;
+sub five slash eight by fiveeighths;
+sub three slash four by threequarters;
+sub seven slash eight by seveneighths;
 ";
 tag = frac;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup SUB_9 {
-	@SUB_9_0_BT_0 = [zero one two three four five six seven eight nine];
-	sub @SUB_9_0_BT_0 [A a]' lookup SUB_17;
-	@SUB_9_1_BT_0 = [zero one two three four five six seven eight nine];
-	sub @SUB_9_1_BT_0 [O o]' lookup SUB_17;
-} SUB_9;
-script latn;
-language dflt;
-lookup SUB_9;
-language AZE;
-lookup SUB_9;
-language CAT;
-lookup SUB_9;
-language CRT;
-lookup SUB_9;
-language KAZ;
-lookup SUB_9;
-language NLD;
-lookup SUB_9;
-language TAT;
-lookup SUB_9;
-language TRK;
-lookup SUB_9;
+automatic = 1;
+code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
 ";
 tag = ordn;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup SUB_10 {
-	sub tonos by tonos.case;
-	sub periodcentered.loclCAT by periodcentered.loclCAT.case;
-} SUB_10;
-script latn;
-language dflt;
-lookup SUB_10;
-language AZE;
-lookup SUB_10;
-language CAT;
-lookup SUB_10;
-language CRT;
-lookup SUB_10;
-language KAZ;
-lookup SUB_10;
-language NLD;
-lookup SUB_10;
-language TAT;
-lookup SUB_10;
-language TRK;
-lookup SUB_10;
+automatic = 1;
+code = "sub periodcentered.loclCAT by periodcentered.loclCAT.case;
+sub tonos by tonos.case;
 ";
 tag = case;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup SUB_11 {
-	sub f t by f_t;
-	sub t t by t_t;
-	sub w w w by w_w_w;
-} SUB_11;
-script latn;
-language dflt;
-lookup SUB_11;
-language AZE;
-lookup SUB_11;
-language CAT;
-lookup SUB_11;
-language CRT;
-lookup SUB_11;
-language KAZ;
-lookup SUB_11;
-language NLD;
-lookup SUB_11;
-language TAT;
-lookup SUB_11;
-language TRK;
-lookup SUB_11;
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub w w w by w_w_w;
+sub f t by f_t;
+sub t t by t_t;
 ";
 tag = dlig;
 },
 {
-code = "script DFLT;
-language dflt;
-lookup SUB_12 {
-	sub f f i by f_f_i;
-	sub f f l by f_f_l;
-	sub f f by f_f;
-	sub f i by fi;
-	sub f l by fl;
-} SUB_12;
-script latn;
-language dflt;
-lookup SUB_12;
-language AZE;
-lookup SUB_12;
-language CAT;
-lookup SUB_12;
-language CRT;
-lookup SUB_12;
-language KAZ;
-lookup SUB_12;
-language NLD;
-lookup SUB_12;
-language TAT;
-lookup SUB_12;
-language TRK;
-lookup SUB_12;
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub f f i by f_f_i;
+sub f f l by f_f_l;
+sub f f by f_f;
+sub f i by fi;
+sub f l by fl;
 ";
 tag = liga;
 }
