@@ -43439,6 +43439,7 @@ isBold = 1;
 isItalic = 1;
 linkStyle = "Semi Bold";
 name = "Semi Bold Italic";
+weightClass = 600;
 },
 {
 axesValues = (
@@ -43466,6 +43467,7 @@ isBold = 1;
 isItalic = 1;
 linkStyle = "Extra Bold";
 name = "Extra Bold Italic";
+weightClass = 800;
 },
 {
 axesValues = (

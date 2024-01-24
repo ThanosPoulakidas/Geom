@@ -43404,6 +43404,7 @@ instanceInterpolations = {
 };
 isBold = 1;
 name = "Semi Bold";
+weightClass = 600;
 },
 {
 axesValues = (
@@ -43427,6 +43428,7 @@ instanceInterpolations = {
 };
 isBold = 1;
 name = "Extra Bold";
+weightClass = 800;
 },
 {
 axesValues = (
