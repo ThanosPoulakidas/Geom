@@ -830,6 +830,9 @@ pos = 10;
 },
 {
 pos = 536;
+},
+{
+pos = 10;
 }
 );
 name = "Light Italic";
@@ -925,6 +928,7 @@ guides = (
 pos = (0,250);
 }
 );
+iconName = Bold_SemiExtended;
 id = "179DD43A-A894-42A9-B4B6-A7F9368B08A7";
 metricValues = (
 {
@@ -941,6 +945,9 @@ pos = 10;
 },
 {
 pos = 536;
+},
+{
+pos = 10;
 }
 );
 name = Italic;
@@ -1053,6 +1060,9 @@ pos = 10;
 },
 {
 pos = 536;
+},
+{
+pos = 10;
 }
 );
 name = "Black Italic";
@@ -54868,6 +54878,9 @@ type = "italic angle";
 },
 {
 type = "x-height";
+},
+{
+type = "italic angle";
 }
 );
 properties = (
