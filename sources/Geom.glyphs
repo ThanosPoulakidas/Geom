@@ -2,7 +2,7 @@
 .appVersion = "3428";
 .formatVersion = 3;
 DisplayStrings = (
-"◌΅̈̋¨˝”„“”‘’‛\"„¦:;"
+"◌̨΅̈̋¨˝”„“”‘’‛\"„¦:;"
 );
 axes = (
 {
@@ -40384,13 +40384,17 @@ unicode = 8240;
 },
 {
 glyphname = dottedCircle;
-lastChange = "2025-10-31 13:53:13 +0000";
+lastChange = "2025-10-31 13:59:58 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
 pos = (453,0);
+},
+{
+name = ogonek;
+pos = (604,0);
 },
 {
 name = top;
@@ -40613,6 +40617,10 @@ name = bottom;
 pos = (439,0);
 },
 {
+name = ogonek;
+pos = (604,0);
+},
+{
 name = top;
 pos = (439,747);
 }
@@ -40831,6 +40839,10 @@ anchors = (
 {
 name = bottom;
 pos = (436,0);
+},
+{
+name = ogonek;
+pos = (604,0);
 },
 {
 name = top;
