@@ -6,6 +6,7 @@ axisOrder:
   - ital
 familyName: Geom
 removeOutlineOverlaps: false
+cleanUp: true
 stat:
   Geom[wght].ttf:
   - name: Weight
