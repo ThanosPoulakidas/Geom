@@ -25767,8 +25767,9 @@ width = 567;
 unicode = 975;
 },
 {
+export = 0;
 glyphname = Upsilondieresis_alt;
-lastChange = "2024-01-25 14:19:30 +0000";
+lastChange = "2025-10-31 11:35:29 +0000";
 layers = (
 {
 layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
@@ -29564,8 +29565,9 @@ width = 454;
 unicode = 983;
 },
 {
+export = 0;
 glyphname = mu.001;
-lastChange = "2024-01-25 14:19:30 +0000";
+lastChange = "2025-10-31 11:36:43 +0000";
 layers = (
 {
 layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
@@ -32942,8 +32944,9 @@ width = 515;
 );
 },
 {
+export = 0;
 glyphname = .null;
-lastChange = "2024-01-25 14:19:30 +0000";
+lastChange = "2025-10-31 11:35:29 +0000";
 layers = (
 {
 layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
@@ -32979,8 +32982,9 @@ width = 510;
 unicode = 13;
 },
 {
+export = 0;
 glyphname = NULL.1;
-lastChange = "2024-01-25 14:19:30 +0000";
+lastChange = "2025-10-31 11:35:29 +0000";
 layers = (
 {
 layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
