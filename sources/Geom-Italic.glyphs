@@ -5708,7 +5708,7 @@ unicode = 319;
 },
 {
 glyphname = Lslash;
-lastChange = "2024-01-25 17:03:50 +0000";
+lastChange = "2025-10-31 11:43:10 +0000";
 layers = (
 {
 layerId = "EE0A04B7-467B-4BD9-A2DD-E8921F00673F";
@@ -5719,9 +5719,13 @@ pos = (-4,0);
 ref = L;
 },
 {
-alignment = -1;
-pos = (7,17);
-ref = endash;
+closed = 1;
+nodes = (
+(368,358,l),
+(397,521,l),
+(26,401,l),
+(-3,238,l)
+);
 }
 );
 width = 590;
@@ -5735,9 +5739,13 @@ pos = (2,0);
 ref = L;
 },
 {
-alignment = -1;
-pos = (3,-37);
-ref = endash;
+closed = 1;
+nodes = (
+(337,396,l),
+(353,486,l),
+(15,316,l),
+(-1,226,l)
+);
 }
 );
 width = 541;
@@ -5751,9 +5759,13 @@ pos = (4,0);
 ref = L;
 },
 {
-alignment = -1;
-pos = (6,-38);
-ref = endash;
+closed = 1;
+nodes = (
+(295,381,l),
+(308,457,l),
+(20,297,l),
+(7,221,l)
+);
 }
 );
 width = 522;
