@@ -33192,43 +33192,6 @@ width = 333;
 unicode = 45;
 },
 {
-glyphname = softhyphen;
-lastChange = "2024-01-25 17:03:50 +0000";
-layers = (
-{
-layerId = "EE0A04B7-467B-4BD9-A2DD-E8921F00673F";
-shapes = (
-{
-alignment = -1;
-ref = hyphen;
-}
-);
-width = 371;
-},
-{
-layerId = "179DD43A-A894-42A9-B4B6-A7F9368B08A7";
-shapes = (
-{
-alignment = -1;
-ref = hyphen;
-}
-);
-width = 339;
-},
-{
-layerId = "7F84CDEE-FC45-41A5-88A7-11DFAD5E6C3A";
-shapes = (
-{
-alignment = -1;
-ref = hyphen;
-}
-);
-width = 333;
-}
-);
-unicode = 173;
-},
-{
 glyphname = endash;
 lastChange = "2024-01-25 17:03:50 +0000";
 layers = (
