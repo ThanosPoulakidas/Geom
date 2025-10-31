@@ -1,6 +1,9 @@
 {
 .appVersion = "3428";
 .formatVersion = 3;
+DisplayStrings = (
+"Ł"
+);
 axes = (
 {
 name = Weight;
@@ -5693,7 +5696,7 @@ unicode = 319;
 },
 {
 glyphname = Lslash;
-lastChange = "2024-01-25 14:19:30 +0000";
+lastChange = "2025-10-31 11:44:05 +0000";
 layers = (
 {
 layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
@@ -5704,9 +5707,13 @@ pos = (-4,0);
 ref = L;
 },
 {
-alignment = -1;
-pos = (-7,7);
-ref = endash;
+closed = 1;
+nodes = (
+(-8,208,l),
+(-8,371,l),
+(380,561,l),
+(380,398,l)
+);
 }
 );
 width = 590;
@@ -5720,9 +5727,13 @@ pos = (2,0);
 ref = L;
 },
 {
-alignment = -1;
-pos = (10,-37);
-ref = endash;
+closed = 1;
+nodes = (
+(8,186,l),
+(8,276,l),
+(298,476,l),
+(298,386,l)
+);
 }
 );
 width = 541;
@@ -5736,9 +5747,13 @@ pos = (4,0);
 ref = L;
 },
 {
-alignment = -1;
-pos = (13,-38);
-ref = endash;
+closed = 1;
+nodes = (
+(11,189,l),
+(11,265,l),
+(319,475,l),
+(319,399,l)
+);
 }
 );
 width = 522;
