@@ -32982,6 +32982,42 @@ width = 510;
 unicode = 13;
 },
 {
+glyphname = lineseparator;
+layers = (
+{
+layerId = "F1A19D98-9E48-4F05-B6A0-CD51606DBCB8";
+width = 600;
+},
+{
+layerId = "8AF3DB8E-7EC5-4D7D-A87A-6DF3FCB8CADF";
+width = 600;
+},
+{
+layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
+width = 600;
+}
+);
+unicode = 8232;
+},
+{
+glyphname = paragraphseparator;
+layers = (
+{
+layerId = "F1A19D98-9E48-4F05-B6A0-CD51606DBCB8";
+width = 600;
+},
+{
+layerId = "8AF3DB8E-7EC5-4D7D-A87A-6DF3FCB8CADF";
+width = 600;
+},
+{
+layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
+width = 600;
+}
+);
+unicode = 8233;
+},
+{
 export = 0;
 glyphname = NULL.1;
 lastChange = "2025-10-31 11:35:29 +0000";
