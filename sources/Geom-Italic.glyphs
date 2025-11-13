@@ -2,7 +2,7 @@
 .appVersion = "3428";
 .formatVersion = 3;
 DisplayStrings = (
-"̏"
+"Ω"
 );
 axes = (
 {
@@ -39378,14 +39378,14 @@ unicode = 8747;
 },
 {
 glyphname = Ohm;
-lastChange = "2024-01-25 17:03:50 +0000";
+lastChange = "2025-11-13 10:42:27 +0000";
 layers = (
 {
 layerId = "EE0A04B7-467B-4BD9-A2DD-E8921F00673F";
 shapes = (
 {
 alignment = -1;
-pos = (-47,0);
+pos = (-14,0);
 ref = Omega;
 }
 );
@@ -39407,7 +39407,7 @@ layerId = "7F84CDEE-FC45-41A5-88A7-11DFAD5E6C3A";
 shapes = (
 {
 alignment = -1;
-pos = (-72,0);
+pos = (-38,0);
 ref = Omega;
 }
 );
