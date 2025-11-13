@@ -2,7 +2,7 @@
 .appVersion = "3428";
 .formatVersion = 3;
 DisplayStrings = (
-"Ω"
+"ỲÀÈÌÒÙẀ"
 );
 axes = (
 {
@@ -856,6 +856,7 @@ pos = 536;
 }
 );
 name = Light;
+visible = 1;
 },
 {
 axesValues = (
@@ -966,6 +967,7 @@ pos = 536;
 }
 );
 name = Regular;
+visible = 1;
 },
 {
 axesValues = (
@@ -1077,6 +1079,7 @@ pos = 536;
 }
 );
 name = Black;
+visible = 1;
 }
 );
 glyphs = (
@@ -1473,7 +1476,7 @@ unicode = 196;
 },
 {
 glyphname = Agrave;
-lastChange = "2024-01-25 14:19:30 +0000";
+lastChange = "2025-11-13 10:36:34 +0000";
 layers = (
 {
 layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
@@ -4802,7 +4805,7 @@ unicode = 304;
 },
 {
 glyphname = Igrave;
-lastChange = "2024-01-25 14:19:30 +0000";
+lastChange = "2025-11-13 10:36:41 +0000";
 layers = (
 {
 layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
@@ -4826,7 +4829,7 @@ ref = I;
 },
 {
 alignment = -1;
-pos = (-62,214);
+pos = (-62,166);
 ref = grave;
 }
 );
@@ -10408,7 +10411,7 @@ unicode = 376;
 },
 {
 glyphname = Ygrave;
-lastChange = "2024-01-25 14:19:30 +0000";
+lastChange = "2025-11-13 10:36:27 +0000";
 layers = (
 {
 layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
@@ -10434,7 +10437,7 @@ ref = Y;
 },
 {
 alignment = -1;
-pos = (144,215);
+pos = (144,165);
 ref = grave;
 }
 );
