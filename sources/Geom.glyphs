@@ -2,7 +2,7 @@
 .appVersion = "3428";
 .formatVersion = 3;
 DisplayStrings = (
-"nĥn"
+"Ω"
 );
 axes = (
 {
@@ -25706,7 +25706,7 @@ unicode = 938;
 },
 {
 glyphname = Upsilondieresis;
-lastChange = "2025-10-31 11:44:26 +0000";
+lastChange = "2025-11-13 10:34:20 +0000";
 layers = (
 {
 layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
@@ -25822,6 +25822,7 @@ shapes = (
 {
 closed = 1;
 nodes = (
+(353,0,l),
 (353,281,l),
 (623,705,l),
 (528,705,l),
@@ -25829,8 +25830,7 @@ nodes = (
 (98,705,l),
 (-2,705,l),
 (269,280,l),
-(269,3,l),
-(353,0,l)
+(269,3,l)
 );
 },
 {
@@ -39379,14 +39379,14 @@ unicode = 8747;
 },
 {
 glyphname = Ohm;
-lastChange = "2024-01-25 14:19:30 +0000";
+lastChange = "2025-11-13 10:35:31 +0000";
 layers = (
 {
 layerId = "F6364453-91B0-4CE2-A857-F52B6F68B874";
 shapes = (
 {
 alignment = -1;
-pos = (-47,0);
+pos = (-14,0);
 ref = Omega;
 }
 );
@@ -39408,7 +39408,7 @@ layerId = "F1A19D98-9E48-4F05-B6A0-CD51606DBCB8";
 shapes = (
 {
 alignment = -1;
-pos = (-72,0);
+pos = (-38,0);
 ref = Omega;
 }
 );
